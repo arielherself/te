@@ -1,20 +1,21 @@
 import requests
-import datetime
+import article_format
 
 MIRROR = 'https://www.economist.com'
 
-def getHome(proxy=False, http_proxy='', https_proxy='') -> tuple:
+def get(sectionName='', proxy=False, http_proxy='', https_proxy='') -> tuple:
     try:
         if proxy:
-            raw = requests.get('https://www.economist.com', proxies={'http': http_proxy, 'https': https_proxy})
+            raw = requests.get(f'https://www.economist.com/{sectionName}', proxies={'http': http_proxy, 'https': https_proxy})
         else:
-            raw = requests.get('https://www.economist.com')
+            raw = requests.get(f'https://www.economist.com/{sectionName}')
     except:
         return None #####################################
     content = raw.text
-    content = content[content.find('top-stories'):]
-    while content.find('<figure') != -1:
-        content = content[:content.find('<figure')] + content[content.find('<figure'):][content[content.find('<figure'):].find('</div>'):]
+    if not sectionName:
+        content = content[content.find('top-stories'):]
+        while content.find('<figure') != -1:
+            content = content[:content.find('<figure')] + content[content.find('<figure'):][content[content.find('<figure'):].find('</div>'):]
     
     titles = []     # [title, URI]
     details = []    # [img, section, subTitle]
@@ -41,6 +42,8 @@ def getHome(proxy=False, http_proxy='', https_proxy='') -> tuple:
 
         h3 = content[content.find('<h3 '):content.find('</h3>')]
         link = MIRROR + h3[h3.find('href="')+6:h3[h3.find('href="')+6:].find('"')+h3.find('href="')+6]
+        if article_format.mark(link) == 0:
+            link = f'archive/{link[link.rfind("/")+1:]}.html'
         h3 = h3[h3.find(">")+1:]
         h3 = h3[h3.find(">")+1:]
         title = h3[:h3.find('</a>')]
@@ -53,14 +56,68 @@ def getHome(proxy=False, http_proxy='', https_proxy='') -> tuple:
 
         details.append(currentDetail)
 
-    titles.insert(3, ['The world in brief', 'https://arielherself.github.io/espresso-native'])
-    details.insert(3, ['', 'Espresso', 'Catch up quickly on the global stories that matter'])
+    if not sectionName:
+        titles.insert(3, ['The world in brief', 'https://arielherself.github.io/espresso-native'])
+        details.insert(3, ['', 'Espresso', 'Catch up quickly on the global stories that matter'])
 
-    print(titles, '\n\n', details)
-    print(len(titles), len(details))
+    # print(titles, '\n\n', details)
+    # print(len(titles), len(details))
     assert(len(titles) == len(details))
 
     return titles, details
+
+def getSection1(sectionName, proxy=False, http_proxy='', https_proxy='') -> tuple:
+    try:
+        if proxy:
+            raw = requests.get(f'https://www.economist.com/{sectionName}', proxies={'http': http_proxy, 'https': https_proxy})
+        else:
+            raw = requests.get(f'https://www.economist.com/{sectionName}')
+    except:
+        return None #####################################
+    content = raw.text
+    content = content[content.find('id="reports-archive"'):]
+    
+    titles = []     # [title, URI]
+    details = []    # [img, section, subTitle]
+    while content.find('<p ') != -1:
+        currentDetail = []
+
+        if content.find('<img ') != -1 and content.find('<img ') < content.find('<p '):
+            imgURI = content[content.find('<img ')+5:]
+            imgURI = imgURI[imgURI.find('src="')+5:]
+            imgURI = imgURI[:imgURI.find('"')]
+            if not imgURI.startswith('data:'):
+                currentDetail.append(imgURI)
+            else:
+                currentDetail.append('')
+        else:
+            currentDetail.append('')
+
+        content = content[content.find('<time ')+6:]
+        time = content[content.find('>')+1:content.find('<')]
+        currentDetail.append(time)
+
+        content = content[content.find('<h2 ')+4:]
+        h2 = content[content.find('>')+1:content.find('</h2>')]
+
+        content = content[content.find('<p ')+3:]
+        dscp = content[content.find('>')+1:content.find('</p>')]
+        currentDetail.append(dscp)
+
+        content = content[content.find('<a ')+3:]
+        link = content[content.find('href=')+5:content.find('>')]
+        if article_format.mark(link) == 0:
+            link = f'archive/{link[link.rfind("/")+1:]}.html'
+
+        titles.append([h2, link])
+        details.append(currentDetail)
+
+    # print(titles, '\n\n', details)
+    # print(len(titles), len(details))
+    assert(len(titles) == len(details))
+
+    return titles, details
+
 
 def makeCell(titles, details) -> list:
     cells = []
@@ -153,8 +210,33 @@ def layout(cells) -> str:
 
     return html
 
+def sectionGet(sectionName=''):
+    try:
+        html = layout(makeCell(*get(sectionName)))
+        with open(f'{sectionName if sectionName else "index"}.html', 'w') as f:
+            print(html, file = f)
+        return 0
+    except:
+        return 1
+
+def section1Get(sectionName=''):
+    try:
+        html = layout(makeCell(*getSection1(sectionName)))
+        with open(f'{sectionName}.html', 'w') as f:
+            print(html, file = f)
+        return 0
+    except:
+        return 1
+
 if __name__ == '__main__':
-    html = layout(makeCell(*getHome()))
-    with open('index.html', 'w') as f:
-        print(html, file = f)
-    
+    sections = ('', 'leaders', 'letters', 'briefing', 'united-states', 'the-americas',
+                'asia', 'china', 'middle-east-and-africa.html', 'europe', 'britain', 'international',
+                'business', 'finance-and-economics', 'science-and-technology', 'culture',
+                'graphic-detail', 'obituary', 'essay')
+    section1s = ('special-reports', 'technology-quarterly')
+
+    for section in sections:
+        while sectionGet(section) == 1: pass
+
+    for section in section1s:
+        while section1Get(section) == 1: pass
