@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/finance-and-economics/" data-analytics="sidebar:section">Finance &amp; economics</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The wrong competition</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">What America’s protectionist turn means for the world</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Officials from Berlin to Tokyo are planning their response</h2></section>
+<div class="mdui-container"><img alt="WIND GENERATORS, ALTAMONT PASS, CALIFORNIA (*)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230114_FNP002.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230114_FNP002.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230114_FNP002.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230114_FNP002.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230114_FNP002.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230114_FNP002.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230114_FNP002.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_FNP002.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_FNP002.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_FNP002.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">S</span><small>tep for</small> a moment into the ancient past. The year is 2016. Michael Froman, the United States Trade Representative, is making a stirring call to arms. American workers and businesses are competing against firms that get subsidies and other favours from their governments. “The question”, he says, “is what do we do about it? Do we accept this status quo, or do we actively work to change it?” Mr Froman’s choice, in line with decades of his country’s trade policies, is the latter: try to tear down the subsidies hurting American exporters and gumming up global trade.</p><p class="article__body-text">Now, return to the present—with a thud. America’s answer to Mr Froman’s question has been flipped. Rather than trying to get other countries to cut subsidies, the Biden administration’s unabashed focus is on building a subsidy architecture of its own, complete with the kinds of local-content rules that American officials once railed against. Thanks to landmark legislation on semiconductors and greenery passed last year, the government is poised to shower $465bn on chips and climate technology. Officials have started getting into the nitty-gritty of how to distribute the money; some of the new rules went into effect on January 1st. </p><p class="article__body-text">For many in Washington—both Democrats and Republicans—this new approach is common sense. It is, they believe, the only way that America can protect its industrial base, fend off the challenge from a rising China and reorient the economy towards greener growth. But for America’s allies, from Europe to Asia, it is a startling shift. A country that they had counted on as the stalwart of an open-trading world is instead taking a big step towards protectionism. They, in turn, must decide whether to fight money with money, boosting their subsidies to counter America’s. If the result is a global subsidy race, the downsides could include a fractured international trading system, higher costs for consumers, more hurdles to innovation and new threats to political co-operation.</p><p class="article__body-text">To advocates of free trade, subsidies are bad in their own right: they make goods produced by one country artificially cheaper, reducing economic efficiency. America’s new subsidies are that much more objectionable because in many cases they require recipients to meet local-content thresholds. To obtain a $7,500 credit towards their purchase of an electric vehicle, consumers need to buy a car assembled in North America. At least half of the battery components in eligible cars must also be made in North America. Wind, solar and geothermal projects will all receive heftier subsidies if they use American steel and iron. Roughly half of their manufactured components must also be made in America. And so the list goes on.</p><p class="article__body-text">America’s protectionist turn has numerous motivations. China’s ascendancy is the starting point. American leaders once believed they could get China to rein in the worst of its industrial policies. These hopes were dashed, giving way to the view that America needs its own industrial policies to avoid becoming reliant on a rival in the technologies of tomorrow. Politicians’ concerns about disruption to supply chains early in the covid-19 pandemic strengthened this view, as did a desire to boost middle-class jobs. Climate change is another reason: spending on renewable energy is expected to lead to a sharp reduction in America’s carbon emissions. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230114_FNC309.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230114_FNC309.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230114_FNC309.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230114_FNC309.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230114_FNC309.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230114_FNC309.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230114_FNC309.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230114_FNC309.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230114_FNC309.png 1280w"  alt=""/></div><p class="article__body-text">The economic thinking that underpins much of this logic is dubious. Yet its political momentum is, for the time being, inexorable. That gives rise to two critical questions for countries around the world. How big an economic threat are the American subsidies? And how should they respond?</p><p class="article__body-text">This readjustment is a source of angst, even for some firms. Morris Chang, founder of <small>tsmc</small>, a Taiwanese chipmaker, estimates that manufacturing costs in America are 55% higher than in Taiwan. Work will be duplicated rather than merely distributed differently. The chipmaking giants fret about breaking up networks of expertise in their most advanced manufacturing centres, and surrendering the technological leads that sustain their existence. Research by Boston Consulting Group suggests investment of between $900bn and $1.2trn would be required to create multiple self-sufficient semiconductor supply chains around the world, with annual operational costs rising by between $45bn and $125bn.</p><p class="article__body-text">Governments could in theory take America to the World Trade Organisation (<small>wto</small>). The <small>wto</small>’s prohibition against subsidies involving local-content requirements is clear. Yet so far there is little appetite for such a challenge. If America were to lose, it could appeal against the ruling, which would in effect bring the case to an end since the <small>wto</small> no longer has a viable appellate body (thanks to America’s decision to block appointments). Another recourse would be to slap tariffs on American exports benefiting from unfair subsidies. That could get very messy. Everything from cars to solar panels and hydrogen to semiconductors would be in play.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

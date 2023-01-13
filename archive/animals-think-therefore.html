@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/essay/" data-analytics="sidebar:section">Essay</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Animal minds</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Animals think, therefore…</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">The inner lives of animals are hard to study. But there is evidence that they may be a lot richer than science once thought</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 360w, https://www.economist.com/img/b/384/216/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 384w, https://www.economist.com/img/b/480/270/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 480w, https://www.economist.com/img/b/600/337/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 600w, https://www.economist.com/img/b/834/469/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 834w, https://www.economist.com/img/b/960/540/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 960w, https://www.economist.com/img/b/1096/617/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 1096w, https://www.economist.com/img/b/1280/720/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 1280w, https://www.economist.com/img/b/1424/801/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/sites/default/files/images/2015/12/articles/main/20151219_esp077.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text">IN 1992, at Tangalooma, off the coast of Queensland, people began to throw fish into the water for the local wild dolphins to eat. In 1998, the dolphins began to feed the humans, throwing fish up onto the jetty for them. The humans thought they were having a bit of fun feeding the animals. What, if anything, did the dolphins think? </p><p class="article__body-text">For much of the 20th century biology cleaved closer to Descartes than to Darwin. Students of animal behaviour did not rule out the possibility that animals had minds but thought the question almost irrelevant since it was impossible to answer. One could study an organism’s inputs (such as food or the environment) or outputs (its behaviour). But the organism itself remained a black box: unobservable things such as emotions or thoughts were beyond the scope of objective inquiry. As one such “behaviourist” wrote in 1992, “attributing conscious thought to animals should be strenuously avoided in any serious attempt to understand their behaviour, since it is untestable [and] empty...”.</p><p class="article__body-text">Consider Billie, a wild bottlenose dolphin which got injured in a lock at the age of five. She was taken to an aquarium in South Australia for medical treatment, during which she spent three weeks living with captive dolphins which had been taught various tricks. She herself, though, was never trained. After she was returned to the open sea local dolphin-watchers were struck to see her “tailwalking”—a move in which a dolphin stands up above the water by beating its flukes just below the surface, travelling slowly backwards in a vaguely Michael Jackson manner. It was a trick that Billie seemed to have picked up simply by watching her erstwhile pool mates perform. More striking yet, soon afterwards five other dolphins in her pod started to tailwalk, though the behaviour had no practical function and used up a lot of energy.</p><p class="article__body-text">Recognising yourself is one thing; what of recognising others—not just as objects, but as things with purposes and desires like one’s own, but aimed at different ends. Some animals clearly pass this test too. Santino is a chimpanzee in Furuvik zoo in Sweden. In the 2000s zookeepers noticed that he was gathering little stockpiles of stones and hiding them around his cage, even constructing covers for them, so that at a later time he would have something to throw at zoo visitors who annoyed him. Mathias Osvath of Lund University argues that this behaviour showed various types of mental sophistication: Santino could remember a specific event in the past (being annoyed by visitors), prepare for an event in the future (throwing stones at them) and mentally construct a new situation (chasing the visitors away).</p><p class="article__body-text">Animals communicate all the time and don’t need big brains to do so. In the 1940s Karl von Frisch, an Austrian ethologist, showed that the “waggle dances” of honeybees pass on information about how far away food is and in what direction. Birds sing long, complex songs either to mark territory or as mating rituals. So do pods of whales (see “The singing whales”). It is hard, though, to say what information, or intention, goes into all this. The bees are more likely to be automatically downloading a report of their recent travels than saying, “There’s pollen thataway, slackers.”</p><p class="article__body-text">TThere is a great deal more to learn about animal minds. Grammatical language can pretty thoroughly be ruled out; learned toolmaking for some species is now indubitable: but many conclusions are in the middle, neither definitively in nor out. Whether you accept them depends partly on the standard of evidence required. If the question of animal empathy were being tested in a criminal court, demanding proof beyond reasonable doubt, you might hesitate to find that it exists. If the trial were a civil one, requiring a preponderance of evidence, you would probably conclude that animals had empathy.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/595/335/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 1000w,https://www.economist.com/img/b/1280/721/90/sites/default/files/images/2015/12/articles/body/20151219_esp005.jpg 1280w"  alt=""/></div><p class="article__body-text">All that said, the third general truth seems to be that there is a link between mind and society which animals display. The wild animals with the highest levels of cognition (primates, cetaceans, elephants, parrots) are, like people, long-lived species that live in complex societies, in which knowledge, social interaction and communication are at a premium. It seems reasonable to speculate that their minds—like human ones—may well have evolved in response to their social environment (see “The lonely orca”). And this may be what allows minds on the two sides of the inter-species gulf to bridge it.</p><p class="css-crkmw2 efr6q1o0">This article appeared in the Essay section of the print edition under the headline "Animals think, therefore…"</p><div class="mdui-container"><img alt="Christmas double issue" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="responsive" /></div><div class="mdui-container"><img alt="Christmas double issue"  srcSet="https://www.economist.com/img/b/16/21/90/sites/default/files/print-covers/20151219_cuk400.jpg 16w, https://www.economist.com/img/b/32/42/90/sites/default/files/print-covers/20151219_cuk400.jpg 32w, https://www.economist.com/img/b/48/63/90/sites/default/files/print-covers/20151219_cuk400.jpg 48w, https://www.economist.com/img/b/64/84/90/sites/default/files/print-covers/20151219_cuk400.jpg 64w, https://www.economist.com/img/b/96/126/90/sites/default/files/print-covers/20151219_cuk400.jpg 96w, https://www.economist.com/img/b/128/168/90/sites/default/files/print-covers/20151219_cuk400.jpg 128w, https://www.economist.com/img/b/256/336/90/sites/default/files/print-covers/20151219_cuk400.jpg 256w, https://www.economist.com/img/b/360/473/90/sites/default/files/print-covers/20151219_cuk400.jpg 360w, https://www.economist.com/img/b/384/504/90/sites/default/files/print-covers/20151219_cuk400.jpg 384w, https://www.economist.com/img/b/480/631/90/sites/default/files/print-covers/20151219_cuk400.jpg 480w, https://www.economist.com/img/b/600/789/90/sites/default/files/print-covers/20151219_cuk400.jpg 600w, https://www.economist.com/img/b/834/1096/90/sites/default/files/print-covers/20151219_cuk400.jpg 834w, https://www.economist.com/img/b/960/1262/90/sites/default/files/print-covers/20151219_cuk400.jpg 960w, https://www.economist.com/img/b/1096/1441/90/sites/default/files/print-covers/20151219_cuk400.jpg 1096w, https://www.economist.com/img/b/1280/1683/90/sites/default/files/print-covers/20151219_cuk400.jpg 1280w, https://www.economist.com/img/b/1424/1872/90/sites/default/files/print-covers/20151219_cuk400.jpg 1424w" src="https://www.economist.com/img/b/1424/1872/90/sites/default/files/print-covers/20151219_cuk400.jpg" decoding="async" data-nimg="responsive"  loading="lazy"/></div><p orientation="vertical" class="css-20abx8 elrdawu5">Discover stories from this section and more in the list of contents </p><p class="css-1tj7b79 e1dj3j7p0">The oil flows more slowly, the climate changes more quickly</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220709_ESD001.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220709_ESD001.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220709_ESD001.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220709_ESD001.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220709_ESD001.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220709_ESD001.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220709_ESD001.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">It was a long time in the planning</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1000w,https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">They are ubiquitous, diverse and very powerful</p><p class="ds-footer__mission-statement">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </p><p id="ds-footer-copyright" class="ds-footer__copyright">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

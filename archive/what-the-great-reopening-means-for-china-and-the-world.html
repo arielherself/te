@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/finance-and-economics/" data-analytics="sidebar:section">Finance &amp; economics</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Life after covid-19</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">What the great reopening means for China—and the world</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">This year’s biggest economic event is already under way</h2></section>
+<div class="mdui-container"><img alt="People celebrate the new year at a bar in Nanjing, in China&#x27;s eastern Jiangsu province on January 1, 2023. (Photo by AFP) (Photo by STR/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_FNP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_FNP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_FNP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_FNP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_FNP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_FNP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_FNP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_FNP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_FNP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_FNP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">W</span><small>hen its</small> borders open on January 8th, China will have spent 1,016 days closed to the outside world. The country’s “zero-covid” policy has been a social and economic experiment without precedent: a vast <a href="/leaders/2022/12/01/xi-jinpings-zero-covid-policy-has-turned-a-health-crisis-into-a-political-one">public-health campaign</a> that mostly kept the disease at bay; Xi Jinping’s pride and joy; and, by the end, a waking nightmare for many of China’s 1.4bn people. </p><p class="article__body-text">Armies in white hazmat suits have been deployed to collect tens of billions of throat and nasal swabs. Millions were quarantined or hauled off to fever camps, often arbitrarily. Fear of isolation sent people fleeing from offices and factories where cases were found. Amateur videos captured residents leaping to their deaths from apartment blocks after weeks of seclusion. In major cities daily life stood still for months on end. A cosmopolitan class of young, wealthy Chinese was forced to come to grips with a life without international travel. Foreign entrepreneurs and executives were barred from returning to their homes and businesses in the country.</p><p class="article__body-text">Before vaccines were widely available, officials could argue this approach was needed to save lives. By the end, the experiment offered a bleak existence at an <a href="/china/2022/12/15/the-politics-of-xi-jinpings-covid-retreat">extraordinary cost</a>. China’s economy probably grew by less than 3% in 2022. Over the past 18 months, it has forgone about $1trn-worth of <small>gdp</small>, according to Oxford Economics, a research firm, compared with what it would have produced had its reopening resembled the rest of the world’s. Restrictions on movement snarled the most advanced global supply chains. In November profits at industrial firms dropped by 9% year on year. Meanwhile, exchanges between China and the outside world fell to their lowest in decades. Few foreign students remain. Overseas tourism has collapsed. Mr Xi has only recently resumed foreign travel after remaining in China for two-and-a-half years. </p><p class="article__body-text">Li Pengfei, until recently a product manager at an industrial-software firm in Beijing, is among those desperate for a return to normality. Mr Li lost his job in February when restrictions made basic duties, such as travelling to meet clients, near-impossible. He spent part of last year living with his sister, but was forced to return home to Jilin province in China’s far northeast, where economic prospects were dismal even before the pandemic. “Things seem so volatile that even the big companies are downsizing,” he says. </p><p class="article__body-text">Consumption will rise, too. Incomes have fallen, but zero-covid also squashed spending, as people avoided travelling and eating out. All told, households saved one-third of their income last year. Many will be getting back on their feet after job losses, stagnating pay and declines in the value of their homes, meaning the splurge will be limited. But Jacqueline Rong of <small>bnp</small> Paribas, a bank, reckons household consumption will grow by about 9% in 2023—a big improvement on the previous year’s growth rate, if not full retribution for the enforced abstemiousness of recent years.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230107_FNC269.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230107_FNC269.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230107_FNC269.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230107_FNC269.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230107_FNC269.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230107_FNC269.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230107_FNC269.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230107_FNC269.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230107_FNC269.png 1280w"  alt=""/></div><p class="article__body-text">China’s recovery will lift global growth for the simple reason that the country is a large part of the world economy. <small>hsbc</small> reckons that one year from now, in the first quarter of 2024, China’s <small>gdp</small> could be as much as 10% higher than it will be in the first three troubled months of 2023 (see chart 1). According to our rough calculation, a recovering China could account for two-thirds of global growth in that period. </p><p class="article__body-text">China’s appetite for metals remained strong during zero-covid, as the government encouraged spending on electric vehicles, renewable energy and other forms of green infrastructure, all of which require lots of aluminium, copper and other metals. But buyers lacked the confidence to stock up on these materials: inventories of copper fell to their skimpiest in 15 years. Reopening will encourage restocking. In November Goldman Sachs, a bank, reckoned the price of copper would increase to $9,000 per tonne within 12 months. Now it thinks the price will reach $11,000. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/776/90/media-assets/image/20230107_FNC264.png" srcSet="https://www.economist.com/img/b/200/255/90/media-assets/image/20230107_FNC264.png 200w,https://www.economist.com/img/b/300/383/90/media-assets/image/20230107_FNC264.png 300w,https://www.economist.com/img/b/400/511/90/media-assets/image/20230107_FNC264.png 400w,https://www.economist.com/img/b/600/766/90/media-assets/image/20230107_FNC264.png 600w,https://www.economist.com/img/b/640/817/90/media-assets/image/20230107_FNC264.png 640w,https://www.economist.com/img/b/800/1021/90/media-assets/image/20230107_FNC264.png 800w,https://www.economist.com/img/b/1000/1276/90/media-assets/image/20230107_FNC264.png 1000w,https://www.economist.com/img/b/1280/1634/90/media-assets/image/20230107_FNC264.png 1280w"  alt=""/></div><p class="article__body-text">The biggest boost to neighbours will come not from selling goods to China but from selling tourist destinations to Chinese citizens (see chart 2). Ni Na, a mother of two from Shanghai, travelled overseas about five times a year pre-pandemic, often spending three or four months a year outside the country. She attempted to travel once within China in 2022, only to give up owing to restrictions. When quarantine requirements are lifted, Ms Ni will get back on the road. She has renewed her passport and her sons’ travel documents in anticipation. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_FNP004.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230107_FNP004.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230107_FNP004.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230107_FNP004.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230107_FNP004.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230107_FNP004.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230107_FNP004.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230107_FNP004.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_FNP004.jpg 1280w"  alt="A winter swimming enthusiast holds a Chinese national flag as he dives into a pool cut in the frozen riverbank to celebrate the new year in Shenyang, in China&amp;#39;s northeastern Liaoning province on January 1, 2023. (Photo by AFP) / China OUT (Photo by STR/AFP via Getty Images)"/></div><p class="article__body-text">Thailand, a popular destination, could enjoy a three-percentage-point boost to growth once China has fully reopened, reckons Goldman Sachs. That would remove the uncertainty weighing on local asset prices, including the currency, says Arup Raha of Oxford Economics, reducing pressure on the central bank to raise rates—welcome freedom in a country where output is still below potential. But the biggest winner will be Hong Kong. Increased exports, which include tourism, could boost its <small>gdp</small> by almost 8% after full reopening. The city used to attract more than 4m mainland visitors a month. Without them, it has felt roomier but poorer.</p><p class="article__body-text">The Communist Party is deft at rewriting history. Yet Mr Xi will struggle to shake the <a href="/china/2022/12/15/the-politics-of-xi-jinpings-covid-retreat">damage done to his reputation</a> in 2022. The clumsy enforcement of zero-covid, followed by its hasty abandonment, will go down as an error for the ages. Many investment houses adjusted their risk assessments for China, and will allocate less to the country over the next three years unless they are compensated for it. About $18bn of foreign exchange flowed out of China in November, up from $11bn in October. These outflows are expected to reverse when China’s economy stabilises in 2023, but a swift return to the type of inflows witnessed before the pandemic is unlikely.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230107_FNC275.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230107_FNC275.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230107_FNC275.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230107_FNC275.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230107_FNC275.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230107_FNC275.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230107_FNC275.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230107_FNC275.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230107_FNC275.png 1280w"  alt=""/></div><p class="article__body-text">Deep damage has been done to parts of China’s supply chain. A covid outbreak, followed by protests, at a plant making Apple’s iPhone 14 in central China has delayed orders for the product. For foreign firms, the crisis was the first time that central policy interfered with local officials’ commitment to keep factories running. Many companies are now willing to pay more to manufacture elsewhere. Take the process of launching new products, which requires an almost continuous flow of researchers and scientists between headquarters, usually in the West, and plants in China. The covid years made this dance impossible. Engineers stopped visiting; fewer new products were launched in the country. Multinational firms have been forced, often reluctantly, to launch elsewhere.</p><p<script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

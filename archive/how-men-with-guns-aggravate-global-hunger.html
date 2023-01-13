@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/international/" data-analytics="sidebar:section">International</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Bread-blocking bandits</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">How men with guns aggravate global hunger</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Vladimir Putin’s attempt at grain blackmail highlights a wider problem</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221105_IRD001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221105_IRD001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221105_IRD001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221105_IRD001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221105_IRD001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221105_IRD001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221105_IRD001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221105_IRD001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221105_IRD001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221105_IRD001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">A</span><small>t first glance</small>, Vladimir Putin has little in common with an Ethiopian foot-soldier. One man has palaces and nuclear weapons, the other a shack and an old Kalashnikov. Yet both illustrate a global problem: that food supplies are often disrupted by men with guns. </p><p class="article__body-text">On October 29th Russia said it was suspending its participation in a deal to allow Ukraine to export grain by sea. The foreign ministry said Russia could “no longer guarantee the safety of civilian dry-cargo ships” leaving Ukrainian ports. Since the only threat to such ships is Russia itself, the meaning was plain. Global wheat prices jumped by 6% on October 31st, the first trading day after the announcement. </p><p class="article__body-text">But the saga illustrated an uncomfortable truth. The global food supply is vulnerable to men with guns. Indeed, of the 828m people who do not get enough food, nearly 60% live in countries racked by conflict. Armed violence is the single greatest obstacle to ending hunger, says the <small>UN</small>’s World Food Programme. </p><p class="article__body-text">The deal’s fragility matters because it has done a lot of good. Between early August and late October Ukraine shipped 9.3m tonnes of grain across the Black Sea, helping to ease painfully high global food prices. In normal years, Ukraine is a huge supplier of calories. Last year it provided 10%, 14% and 47%, respectively, of global exports of wheat, maize and sunflower oil. It usually ships 95% of these through its ports on the Black Sea. Roads, rail and river are dismal alternatives: Ukraine’s total exports of grain fell from 5m tonnes in February to 1.4m tonnes in March, after Russia invaded. By last month, the deal allowed 4.2m tonnes to flow through the Black Sea route alone. Keeping it open is essential. </p><p class="article__body-text">Other rogue regimes have weaponised food even more directly than Russia does. In Mekelle, the capital of Tigray, streets are filled with hungry women and children. The price of the local staple, teff, is three times higher than in other parts of Ethiopia. Hundreds of thousands are starving. “People ask for food everywhere,” says a doctor at the region’s main hospital. “Tigray is hell on earth,” says the head of the Tigray Development Association, an <small>NGO</small>. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/701/90/media-assets/image/20221105_IRC611.png" srcSet="https://www.economist.com/img/b/200/231/90/media-assets/image/20221105_IRC611.png 200w,https://www.economist.com/img/b/300/346/90/media-assets/image/20221105_IRC611.png 300w,https://www.economist.com/img/b/400/461/90/media-assets/image/20221105_IRC611.png 400w,https://www.economist.com/img/b/600/692/90/media-assets/image/20221105_IRC611.png 600w,https://www.economist.com/img/b/640/738/90/media-assets/image/20221105_IRC611.png 640w,https://www.economist.com/img/b/800/922/90/media-assets/image/20221105_IRC611.png 800w,https://www.economist.com/img/b/1000/1153/90/media-assets/image/20221105_IRC611.png 1000w,https://www.economist.com/img/b/1280/1476/90/media-assets/image/20221105_IRC611.png 1280w"  alt=""/></div><p class="article__body-text">Global hunger has many causes, from poverty (recently exacerbated by covid-19) to drought (made more common by climate change). All these are made worse by war. Of the ten countries with the largest absolute numbers of acutely hungry people, all but Sri Lanka are conflict-riven (and Sri Lanka has seen huge riots).</p><p class="article__body-text">“Farmers need peace to produce,” says David Laborde of <small>IFPRI</small>. Where war rages, fields are burned, cattle are slaughtered and farmers are drafted. Armies grab fuel, leaving little to power tractors and irrigation systems. Roads become hazardous. In Congo, where dozens of armed groups plunder and rape, local women “might not want to walk five minutes down the road to sell [their] food”, observes Mr Laborde. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/788/90/media-assets/image/20221105_IRM983.png" srcSet="https://www.economist.com/img/b/200/123/90/media-assets/image/20221105_IRM983.png 200w,https://www.economist.com/img/b/300/185/90/media-assets/image/20221105_IRM983.png 300w,https://www.economist.com/img/b/400/246/90/media-assets/image/20221105_IRM983.png 400w,https://www.economist.com/img/b/600/369/90/media-assets/image/20221105_IRM983.png 600w,https://www.economist.com/img/b/640/394/90/media-assets/image/20221105_IRM983.png 640w,https://www.economist.com/img/b/800/493/90/media-assets/image/20221105_IRM983.png 800w,https://www.economist.com/img/b/1000/616/90/media-assets/image/20221105_IRM983.png 1000w,https://www.economist.com/img/b/1280/788/90/media-assets/image/20221105_IRM983.png 1280w"  alt=""/></div><p class="article__body-text">Elsewhere, conflict has simply brought food production to a halt. In parts of the Sahel, including northern Nigeria and Chad, jihadists terrorise farmers so they will flee to cities and destabilise the government. “They attack and kill you if you’re in your fields,” says Mr Brown. “They want the whole place to fall apart,” he adds—so they can take over. </p><p class="article__body-text">Since the American withdrawal in August 2021, the guns have largely fallen silent—because the men who wielded them most effectively are now in charge. The Taliban bar women from travelling without a chaperone, making it harder for families to buy or sell food. Soaring diesel prices add to their woes. In mobile-phone surveys of Afghan households conducted in July by the World Food Programme (<small>WFP</small>), a third said they had trouble getting to markets in the previous fortnight.</p><p class="article__body-text">It is a terrible time for disruptions. Ukraine is hoping to start shipping the 20m tonnes of wheat it harvested over the summer. Big importers in north Africa and the Middle East have exhausted their own harvests and need to restock. The countries that most need Ukrainian exports, such as Egypt, Lebanon, Sudan and Yemen, have restive populations who may take to the streets if bread becomes unaffordable. Food-price inflation is an explosive grievance in Turkey, which holds an election next year. The <small>WFP</small> usually relies on Ukraine for half the wheat it distributes to the needy elsewhere. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/701/90/media-assets/image/20221105_IRC606.png" srcSet="https://www.economist.com/img/b/200/231/90/media-assets/image/20221105_IRC606.png 200w,https://www.economist.com/img/b/300/346/90/media-assets/image/20221105_IRC606.png 300w,https://www.economist.com/img/b/400/461/90/media-assets/image/20221105_IRC606.png 400w,https://www.economist.com/img/b/600/692/90/media-assets/image/20221105_IRC606.png 600w,https://www.economist.com/img/b/640/738/90/media-assets/image/20221105_IRC606.png 640w,https://www.economist.com/img/b/800/922/90/media-assets/image/20221105_IRC606.png 800w,https://www.economist.com/img/b/1000/1153/90/media-assets/image/20221105_IRC606.png 1000w,https://www.economist.com/img/b/1280/1476/90/media-assets/image/20221105_IRC606.png 1280w"  alt=""/></div><p class="article__body-text">Mykola Solsky, Ukraine’s agriculture minister, recently estimated that Ukrainian farmers, with too little water, too few hands and too many unexploded shells in their fields, would sow 20% less wheat this autumn than they had planned. Now soaring costs, dwindling revenue and uncertainty over export capacity may prompt them to plant fewer spring crops. </p><p class="article__body-text">Farmers in rich countries have coped by using old stocks of fertiliser, or skipping some applications not vital to near-term productivity. Next year they may simply decide to use less, reckons Seth Meyer of America’s Department of Agriculture. That could hurt yields. Many poorer countries have already run out of fertiliser. In Colombia and Peru, governments have sought to calm rural unrest by subsidising the stuff. Gro Intelligence, a data firm, calculates that the projected reductions in nitrogen applications next season could result in a loss of production of wheat, maize, soyabeans and rice of up to 216trn calories worldwide—enough to feed 240m adult males for a year.</p><p class="article__body-text">When supply cannot grow, demand must adjust. Many people are eating less meat, milk and cheese, which are pricey. Demand for biofuel made from maize and soyabeans has also fallen. But wheat demand is not contracting, partly because so many governments subsidise it. In much of north Africa and the Middle East people see cheap loaves as a birthright, or at least as a small compensation for having oppressive governments. Drought-stricken local harvests mean such countries will import more this season.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/663/90/media-assets/image/20221105_IRD003.jpg" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221105_IRD003.jpg 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221105_IRD003.jpg 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221105_IRD003.jpg 400w,https://www.economist.com/img/b/600/654/90/media-assets/image/20221105_IRD003.jpg 600w,https://www.economist.com/img/b/640/698/90/media-assets/image/20221105_IRD003.jpg 640w,https://www.economist.com/img/b/800/872/90/media-assets/image/20221105_IRD003.jpg 800w,https://www.economist.com/img/b/1000/1090/90/media-assets/image/20221105_IRD003.jpg 1000w,https://www.economist.com/img/b/1280/1396/90/media-assets/image/20221105_IRD003.jpg 1280w"  alt=""/></div><p class="article__body-text">The result is that, for a third year in a row, the world will consume more grain than it produces. More concerning still, stocks held by big exporters have been dwindling for years because of bad harvests. In Russia and Ukraine, grain that cannot get out may pile up. But elsewhere the stock-to-use ratio of exporters is projected to fall from 22% in 2019 to less than 12% in 2023 and 11% in 2024. </p><p class="article__body-text">Even if the current hunger crisis only lasts for a year, the consequences will be felt far longer. A short spell of malnutrition can stunt young bodies and brains. The World Bank says that the share of ten-year-olds in poor and middle-income countries unable to read a simple text has increased from 57% in 2019 to an estimated 70% this year. The pandemic and hunger are probably the main causes.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/the-americas/" data-analytics="sidebar:section">The Americas</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The agony of Peronism</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Argentina’s populist political movement is at its lowest ebb</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">The country has a mighty football team but a decrepit ruling party</h2></section>
+<div class="mdui-container"><img alt="ARGENTINA - OCTOBER 17: Upon the 5th anniversary of the Peronist movement in Buenos Aires, Argentinian President Juan PERON and his wife Eva PERON hail the crowd from the presidential balcony. (Photo by Keystone-France/Gamma-Keystone via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221217_AMP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221217_AMP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221217_AMP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221217_AMP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221217_AMP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221217_AMP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221217_AMP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221217_AMP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221217_AMP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221217_AMP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">H</span><small>oused in a</small> neo-hispanic mansion in Palermo, a posh neighbourhood in Buenos Aires, the capital of Argentina, the Evita Perón museum tells the story of the birth of Latin American populism as a mass movement. In grainy newsreels, Eva and Juan Perón (pictured) address multitudes in the Plaza de Mayo, the city’s main square. One reel shows a demonstration by workers on October 17th 1945 that secured the freedom of Colonel Perón, as he then was, after a brief imprisonment—events that would propel him to victory in a presidential election. </p><p class="article__body-text">Perón pledged that he would “place myself at the complete service of the true Argentine people”. Eva Perón insisted: “I want nothing for me. I only want to be Perón’s shield and my people’s flag.” In her last public speech before dying of cancer aged just 33, she declared: “I will always do what the people say.”</p><p class="article__body-text">It was a successful formula. Perón was overthrown by a military coup in 1955. But the movement which he called Justicialismo and everyone else calls Peronism has, with many twists and turns, dominated Argentina’s political life ever since. It is still in power, as it has been for 16 of the past 20 years. And it has been copied, with varying degrees of success, across Latin America. </p><p class="article__body-text">Others note that while they were politicians she and her husband amassed a fortune of $10m, which she declared to the anti-corruption agency when stepping down after eight years as president in 2015. She says she will appeal the verdict. But she also surprised her followers by saying that she would not seek to run for office in the general election due in October 2023. That may be a ruse. But it may also reflect her dwindling public support. </p><p class="article__body-text">Today the economy is held together by a battery of price and exchange controls. Even so, inflation will be close to 100% this year, and in the (tolerated) black market the peso is worth less than a quarter of its value three years ago. The government lives from week to week. Some 37% of the population are poor, up from 28% in 2011, according to <small>CEDLAS</small>, a think-tank, using a poverty line of 120,000 pesos a month for a family of four ($698 at the official exchange rate or $381 at the unofficial rate).</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/1286/90/media-assets/image/20221217_AMC128.png" srcSet="https://www.economist.com/img/b/200/423/90/media-assets/image/20221217_AMC128.png 200w,https://www.economist.com/img/b/300/635/90/media-assets/image/20221217_AMC128.png 300w,https://www.economist.com/img/b/400/846/90/media-assets/image/20221217_AMC128.png 400w,https://www.economist.com/img/b/600/1269/90/media-assets/image/20221217_AMC128.png 600w,https://www.economist.com/img/b/640/1354/90/media-assets/image/20221217_AMC128.png 640w,https://www.economist.com/img/b/800/1692/90/media-assets/image/20221217_AMC128.png 800w,https://www.economist.com/img/b/1000/2115/90/media-assets/image/20221217_AMC128.png 1000w,https://www.economist.com/img/b/1280/2707/90/media-assets/image/20221217_AMC128.png 1280w"  alt=""/></div><p class="article__body-text">In 1914 Argentina was one of the ten richest countries in the world, albeit a very unequal one. In the mid-1970s it was still a predominantly middle-class country. No longer. The past half-century has seen underlying decline punctuated by temporary rebounds (see chart). In the 1990s Carlos Menem, a Peronist president, adopted free-market policies and capital flooded in for a while. But a fixed and overvalued exchange rate, combined with loose fiscal policy, culminated in economic and financial collapse in 2001. A commodity boom came to the rescue under the Kirchners, until 2012. Then distortions kicked in.</p><p class="article__body-text">Peronism has survived by organising and representing the informal economy, through social movements and a powerful clientelistic network in the poorer suburbs of cities. These Peronist social movements are now divided, with some supporting Mr Fernández, others Ms Kirchner and some leaders closer to Pope Francis, who was previously the archbishop of Buenos Aires and was long a Peronist sympathiser.</p><p class="article__body-text">Peronism is woven so deeply into the national fibre that it is hard to imagine it disappearing. Its religious quality emphasises emotion and redemption. “Peronists can make mistakes but we have to continue to be Peronists,” says Sonia Manzoni, the leader of a small co-operative producing nursery plants that is part of the Movimiento Evita, a Peronist social movement, tucked in former railway scrubland close to affluent Palermo.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

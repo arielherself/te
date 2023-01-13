@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/asia/" data-analytics="sidebar:section">Asia</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Asian geopolitics</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Reinventing the Indo-Pacific</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">A new super-region is taking shape—mainly to counter Chinese aggression</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_ASD002.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_ASD002.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_ASD002.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_ASD002.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_ASD002.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_ASD002.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_ASD002.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_ASD002.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_ASD002.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_ASD002.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">U</span><small>ntil a few</small> years ago, the term “<a href="/asia/2022/06/09/what-is-the-point-of-the-indo-pacific-economic-framework">Indo-Pacific</a>” was hardly uttered in international affairs. Now many countries have adopted so-called Indo-Pacific strategies, including America, Australia, Britain, France, India, Indonesia, Japan, the Philippines and even Mongolia. South Korea joined the pack in December. The main Asian holdout is China, which scorns the phrase. That is key to understanding what the Indo-Pacific is all about.</p><p class="article__body-text">Outside geopolitics, the term, implying a conjoined perspective on the Indian Ocean and the even vaster Pacific, is not new. Its first recorded use was by a British colonial lawyer and ethnographer in the mid-19th century. Patterns of human trade and exchange had already spanned the two oceans for millennia, with Islam spreading eastward from the Middle East and Hinduism and Buddhism fanning outwards from India. In more recent decades scientists have grasped how the circulation and biogeography of the two oceans are closely connected. The great story of <a href="/asia/2022/11/17/how-the-rivalry-between-america-and-china-worries-south-east-asia">Asia</a> can be usefully framed by the two-ocean notion of an Indo-Pacific.</p><p class="article__body-text">Yet for strategists, alternative frameworks such as the “East Asian hemisphere”, “Pacific Basin” or “Asia-Pacific” were until recently more compelling. The Asia-Pacific Economic Co-operation, or <small>APEC</small>, a late-20th-century initiative of 21 states, was intended to unite the economic dynamism of the Pacific Rim, including especially East Asia. What need for a new geographical descriptor? For this newspaper, it has been enough simply to define everywhere from Afghanistan to the top of Japan, and from the Maldives to New Zealand, simply as “Asia”.</p><p class="article__body-text">China’s “wolf warrior” diplomacy reflects the nationalist grievances its president, Xi Jinping, is stoking at home. Thus, the Indo-Pacific defines not only a space. It represents perhaps the greatest geopolitical challenge: how to respond to Chinese aggression without, as Mr Medcalf puts it, resorting to “capitulation or conflict”. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/672/90/media-assets/image/20230107_ASM989.png" srcSet="https://www.economist.com/img/b/200/105/90/media-assets/image/20230107_ASM989.png 200w,https://www.economist.com/img/b/300/158/90/media-assets/image/20230107_ASM989.png 300w,https://www.economist.com/img/b/400/210/90/media-assets/image/20230107_ASM989.png 400w,https://www.economist.com/img/b/600/315/90/media-assets/image/20230107_ASM989.png 600w,https://www.economist.com/img/b/640/336/90/media-assets/image/20230107_ASM989.png 640w,https://www.economist.com/img/b/800/420/90/media-assets/image/20230107_ASM989.png 800w,https://www.economist.com/img/b/1000/525/90/media-assets/image/20230107_ASM989.png 1000w,https://www.economist.com/img/b/1280/672/90/media-assets/image/20230107_ASM989.png 1280w"  alt=""/></div><p class="article__body-text">Since then Chinese border incursions in the Himalayas have tilted India, once insistent that it would not be part of an anti-China bloc, towards the Western camp. It is now a more engaged member of the Quad, not only militarily but also, for instance, offering to work with the other members to get covid-19 vaccines to the region. India has warmly embraced the <small>foip</small> principle. Still, drawing proud, cautious India deep into a Western network of security alliances is going to require a long courtship—assuming it is possible.</p><p class="article__body-text">Under President Donald Trump, America backed out of the Trans-Pacific Partnership, a free-trade pact which Japan and Australia then helped to salvage as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership. Mr Biden’s Indo-Pacific <a href="/asia/2022/06/09/what-is-the-point-of-the-indo-pacific-economic-framework">Economic Framework</a> may nod to the region’s new nomenclature, but offers none of the market access its members want. “For Asians, the American market is the biggest pie to eat,” Mr Kanehara says. Despite years of negotiations and lobbying from Abe, India opted not to join the Regional Comprehensive Economic Partnership, another jumbo trade agreement now dominated by China. For Japan, that decision brought “a great sense of disappointment”, says Mr Taniguchi.</p><p class="article__body-text">Even Michael Green, a former American official now at the University of Sydney and a fan of the Indo-Pacific, compares the framework to “a big piece of <small>IKEA</small> furniture, held together by little dowels”. Mr Kanehara describes <small>foip</small> as primarily a “networking concept”. Most non-defence regional initiatives, with the exception of Japanese infrastructure investment, are small beer. Indian technical assistance and South Korean projects promoting women’s empowerment are notably modest. Nonetheless, as Mr Green argues, through all the Indo-Pacific activity a common theme is emerging: smaller states “cannot be bribed or forced into a Chinese sphere of hegemony and influence”.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

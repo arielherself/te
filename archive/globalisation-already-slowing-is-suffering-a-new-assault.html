@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-17nswhw e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Efficiency be damned</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Globalisation, already slowing, is suffering a new assault</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Subsidies, export controls and curbs on foreign investment are proliferating</h2></section>
+<p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">T</span><small>rade ministers</small> are not known for histrionics. Yet South Korea’s, Ahn Duk-geun, is alarmed. The world is on the verge of opening Pandora’s box, he warned last month. If the European Union follows through on threats to mimic America’s protectionist industrial policies, “Japan, Korea, China, every country will engage in this very difficult race to ignore global trading rules.” The international system of trade and investment, painstakingly negotiated over decades, will be upended.</p><p class="article__body-text">William Reinsch, who used to oversee America’s export controls as an undersecretary of commerce, is just as blunt. America has always wanted to maintain a technological edge over other economic powers, he says. These days, however, it is pursuing that goal in a new way: “We have moved from a ‘run faster’ to a ‘run faster and trip the other guy’ policy.” The great powers are coming to see economic advances, at least in the broad swathe of industry they define as strategic, in zero-sum terms. The implications for global prosperity are bleak.</p><p class="article__body-text">Mr Sullivan described two main ways to ensure American supremacy: using subsidies and other forms of industrial policy to shift supply chains away from geopolitical rivals, and stricter investment screening and export controls to keep advanced technology out of unfriendly hands. As America, once the world’s loudest advocate of free trade and open economies, adopts and reinforces such policies, other countries are mimicking its approach. The result is a proliferation of obstacles to international trade and investment at a time when both were already stagnating.</p><p class="article__body-text">It is not just America which is trying to boost domestic industry at the expense of foreign rivals. According to the <small>UN</small>, more than 100 countries accounting for over 90% of the world’s <small>GDP</small> have adopted formal industrial strategies. Spending on subsidies among <small>G</small>7 countries has risen sharply in recent years, from 0.6% of <small>gdp</small> on average in 2016 to 2% in 2020. In part, this is a response to the pandemic: the European Union, for example, adopted a gargantuan recovery package, involving more than $850bn in spending, including many handouts for business. But although spending on subsidies has fallen from its peak in 2020, it remains well above its pre-covid levels.</p><p class="article__body-text">Multinationals having second thoughts about manufacturing in China are in some cases being paid to relocate. Japan included incentives for such relocations in its budget in 2020. India is trying to lure footloose firms in 14 different industries by offering up to $26bn of production-linked incentives over five years. Such overtures may become common if commerce begins to fragment and firms are required to choose a side. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230114_FBC333.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230114_FBC333.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230114_FBC333.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230114_FBC333.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230114_FBC333.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230114_FBC333.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230114_FBC333.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230114_FBC333.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230114_FBC333.png 1280w"  alt=""/></div><p class="article__body-text">Investment screening is another policy that Mr Sullivan champions as a means to preserve America’s technological edge. Selling to the highest bidder is not as straightforward as it used to be, especially if that bidder is Chinese. <small>UNCTAD</small>, a <small>UN </small>agency which tracks investment policies around the world, counted a record number of new measures restricting foreign investment in 2020 (see chart 1). <small>UNCTAD </small>calculates that 63% of global investment flows were subject to a screening regime last year, up from 52% in 2020.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230114_FBC332.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230114_FBC332.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230114_FBC332.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230114_FBC332.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230114_FBC332.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230114_FBC332.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230114_FBC332.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230114_FBC332.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230114_FBC332.png 1280w"  alt=""/></div><p class="article__body-text">The committee has been busy—between 2017 and 2021 <small>CFIUS </small>investigated 661 transactions, more than twice as many as during the previous five years. Although it blocks relatively few investments outright, many deals are called off under the glare of its scrutiny, before a final decision is reached (see chart 2). ByteDance, the Chinese parent of TikTok, a video app, remains locked in negotiations with it more than two years after Donald Trump issued an order, later revoked, demanding the divestment of TikTok’s American business.</p><p class="article__body-text">Mr Sullivan would like to go further. “We are making progress,” he said in his speech, “in formulating an approach to address outbound investments in sensitive technologies.” There is a broad consensus in Washington that American capital must not be allowed to “enhance the technological capabilities of our competitors”, as he put it (since 2000, for instance, American venture capitalists have invested more than $50bn in China). Some restrictions already exist: the <small>CHIPS </small>Act bars firms that receive its subsidies from making big investments that could benefit China’s semiconductor industry, for instance. A comprehensive regime, however, might lead to big changes in the allocation of America’s $171bn a year in foreign direct investment in new projects. The European Commission has said that it, too, will consider screening outbound investments in 2023.</p><p class="article__body-text">The restrictions are so severe America may struggle to persuade its allies to adopt equivalent measures. Yet without such unity, they will not work. Other countries with advanced semiconductor industries—in particular the Netherlands and Japan—could undermine their effectiveness by providing China with substitutes. American policymakers will find a worrying precedent in the satellite industry. After America introduced broad export controls against China in 1999, firms in Europe began designing satellites free from American parts to evade the new strictures. American firms lost revenue, but China did not lose access to cutting-edge satellites.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/741/90/media-assets/image/20230114_FBD002.jpg" srcSet="https://www.economist.com/img/b/200/244/90/media-assets/image/20230114_FBD002.jpg 200w,https://www.economist.com/img/b/300/366/90/media-assets/image/20230114_FBD002.jpg 300w,https://www.economist.com/img/b/400/488/90/media-assets/image/20230114_FBD002.jpg 400w,https://www.economist.com/img/b/600/731/90/media-assets/image/20230114_FBD002.jpg 600w,https://www.economist.com/img/b/640/780/90/media-assets/image/20230114_FBD002.jpg 640w,https://www.economist.com/img/b/800/975/90/media-assets/image/20230114_FBD002.jpg 800w,https://www.economist.com/img/b/1000/1219/90/media-assets/image/20230114_FBD002.jpg 1000w,https://www.economist.com/img/b/1280/1560/90/media-assets/image/20230114_FBD002.jpg 1280w"  alt=""/></div><p class="article__body-text">The same is true of all the new impediments to international trade and investment. As the logic of efficiency and comparative advantage gives way to a focus on security and economic nationalism, investments will be duplicated and costs will rise. The result will be higher bills for taxpayers and consumers and therefore diminished prosperity.</p><p class="article__body-text">Viewed in isolation these plans increase investment in national economies; at the global level they represent an enormous increase in costs. By our calculation, duplicating the world’s existing stock of investments in semiconductors, clean energy and batteries would cost between 3.2% and 4.8% of global <small>GDP</small>. And the logic of the zero-sum world means further escalation in government intervention is likely: after all, if no country’s firms can be assured of equal treatment and open market access when operating abroad, it makes more sense for all countries to nurture and protect industries at home.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

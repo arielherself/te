@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->A murmuration of Starlinks</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">How Elon Musk’s satellites have saved Ukraine and changed warfare</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">And the worries about what comes next</h2></section>
+<div class="mdui-container"><img alt="Ukrainian soldiers Pavlo and Dorokhin retrieve a Starlink satellite connection hardware from a roof of a damaged university, as Russia’s attack on Ukraine continues, from a recent missile attack in Kramatorsk Ukraine, December 13, 2022. REUTERS/Shannon Stapleton"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_FBP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_FBP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_FBP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_FBP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_FBP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_FBP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_FBP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_FBP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_FBP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_FBP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">I</span><small>T IS ONE</small> of the wonders of the world—or, more accurately, off the world. The Starlink constellation currently consists of 3,335 active satellites; roughly half of all working satellites are Starlinks. In the past six months new satellites have been added at a rate of more than 20 a week, on average. SpaceX, the company which created Starlink, is offering it as a way of providing off-grid high-bandwidth internet access to consumers in 45 countries. A million or so have become subscribers.</p><p class="article__body-text">And a huge part of the traffic flowing through the system currently comes from Ukraine. Starlink has become an integral part of the country’s military and civil response to Russia’s invasion. Envisaged as a celestial side-hustle that might help pay for the Mars missions dear to the founder of SpaceX, Elon Musk, it is not just allowing Ukraine to fight back; it is shaping how it does so, revealing the military potential of near-ubiquitous communications. “It’s a really new and interesting change,” says John Plumb, America’s assistant secretary of defence for space policy.</p><p class="article__body-text">Mr Musk replied to him within hours, saying that the Starlink service had been turned on over Ukraine and that the hardware would follow. Within days lorries full of the pizza-sized flat dishes used to access the satellites began to arrive in Ukraine. </p><p class="article__body-text">Crucially, Starlink has become the linchpin of what military types call <small>C4ISR</small> (command, control, communications, computers, intelligence, surveillance and reconnaissance). Armies have long relied on satellite links for such things. An hour before Russia launched its attack, its hackers sought to disable thousands of modems associated with the terminals which provide access to the main satellite used by Ukraine’s army and government, among many other clients. But the capabilities Russia sought to degrade in that pre-emptive strike were far less advanced than the capabilities Ukraine enjoys today. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230107_FBC279.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230107_FBC279.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230107_FBC279.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230107_FBC279.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230107_FBC279.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230107_FBC279.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230107_FBC279.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230107_FBC279.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230107_FBC279.png 1280w"  alt=""/></div><p class="article__body-text">Starlink does not just provide Ukraine’s military leaders with a modicum of connectivity. The rank and file are swimming in it. This is because of the singular capacities of the Starlink system. Most satellite communications make use of big satellites which orbit up at 36,000km. Perched at such a height a satellite seems to sit still in the sky, and that vantage allows it to serve users spread across very large areas. But even if such a satellite is big, the amount of bandwidth it can allocate to each user is often quite limited.</p><p class="article__body-text">Franz-Stefan Gady, of the International Institute for Strategic Studies, a think-tank, recently visited the Ukrainian front lines and saw an example of what cheap, ubiquitous connectivity makes possible: a sort of Uber for howitzers. Ukrainian soldiers upload images of potential targets via a mobile network enabled by Starlink. These are sent to an encrypted group chat full of artillery-battery commanders. Those commanders then decide whether to shell the target and, if so, from where. It is much quicker than the means used to co-ordinate fire used up until now.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230107_FBC278.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230107_FBC278.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230107_FBC278.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230107_FBC278.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230107_FBC278.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230107_FBC278.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230107_FBC278.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230107_FBC278.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230107_FBC278.png 1280w"  alt=""/></div><p class="article__body-text">This kind of connectivity is something no previous army has enjoyed. Western armies fighting in Afghanistan and Iraq had access to some vast flows of data. For the most part, though (with special forces being the notable exceptions) they found it very hard to get that information to where it was needed in a timely manner. </p><p class="article__body-text">If its signals cannot be jammed, the system itself could be attacked instead. In September the Russian delegation to a <small>UN </small>working group on space security hinted that, despite its status as a nominally civilian system, Starlink might be considered a legitimate military target under international humanitarian law—which is probably a fair assessment. In May researchers affiliated with the Chinese People’s Liberation Army published a paper calling for the development of “countermeasures” that could be used against Starlink. </p><p class="article__body-text">Cyber-attacks like the one aimed at Ukraine’s legacy satellite system on February 24th are one possibility. So far, though, similar sallies against Starlink appear to have been ineffective, in part thanks to SpaceX’s ability to quickly update the system’s software. Dave Tremper, director of electronic warfare for the Office of the Secretary of Defence, has said the speed of the software response he witnessed to one attack was “eye-watering”. </p><p class="article__body-text">One possibility would be to try to trigger a chain reaction in which the debris from one target goes on to destroy secondary targets, debris from which spreads the destruction yet farther in a sort of scorched-orbit strategy. Such a wholesale attack on a global commons would be a desperate measure. Experts contacted by <i>The Economist</i> were also unconvinced that it would be of military benefit. For one thing, debris clouds would start out mostly confined to particular orbits, and expand only gradually. “It’s not obvious to me that, even if you deliberately set out to create as much debris as possible, that you could deny the use of Starlink on a timescale that was relevant to a war,” says Jonathan McDowell, an astrophysicist at Harvard who keeps a census of objects in orbit</p><p class="article__body-text">More is to come. The company is working on a much larger, fully reusable spacecraft called Starship which would be capable of launching some 400 Starlinks at a time, and thus taking the constellation from thousands of satellites to tens of thousands. The long-delayed first attempt to get a Starship out into space and back is expected this year. The programme has seen explosive failures in the past and may well do so in the future; among other things Starships will have to re-enter the atmosphere at much higher speeds than the first stage of a Falcon 9 does. But investors in the company, which is privately held, seem confident. SpaceX raised $2bn in 2022; it is said to be in the process of raising more at a price which values the company at $137bn.</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_FBP002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230107_FBP002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230107_FBP002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230107_FBP002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230107_FBP002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230107_FBP002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230107_FBP002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230107_FBP002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_FBP002.jpg 1280w"  alt="frame from the live video feed from the upper stage of the rocket. The stack is 60 Starlink broadband data satellites"/></div><p class="article__body-text">This means that Mr Musk currently has a dominant position in both the launch market and satellite-internet operations. This concentration of power provides three causes of concern. Mr Musk is an unaccountable single individual; Mr Musk’s other business interests may play a role in his decisions; and Mr Musk is Mr Musk. </p><p class="article__body-text">If service is denied in some places, it can be permitted in others, even if it is unwelcome. Some countries do not want Starlink services making the internet uncontrollable, and so do not allow the company to operate within their borders. But this can be circumvented when ground stations in neighbouring countries are close enough. Starlink services are currently being used by protesters in Iran, says Mr Musk, despite the country not officially allowing the technology in. In future, service will be possible even in places with no convenient ground stations nearby; the next generation of satellites is intended to be able to pass messages between themselves, rather than sending them back down to the nearest ground station, creating a network which could be much more unevenly tethered to the Earth.</p><p class="article__body-text">But that does not mean countries will be forced to accept Starlink; some will have ways to fight back. Given the importance of its Shanghai gigafactory to the fortunes of Tesla, Mr Musk’s car company, for example, it would be something of a surprise to see Starlink being made available to internal opponents of the Chinese state. And could Taiwan, if push came to shove, depend on Starlink in the way that Ukraine has come to? Just conceivably not—which may explain why the island is accelerating efforts to develop its own satellite constellation.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/essay/" data-analytics="sidebar:section">Essay</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The Mekong</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Requiem for a river</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Can one of the world’s great waterways survive its development?</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 360w, https://www.economist.com/img/b/384/216/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 384w, https://www.economist.com/img/b/480/270/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 480w, https://www.economist.com/img/b/600/337/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 600w, https://www.economist.com/img/b/834/469/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 834w, https://www.economist.com/img/b/960/540/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 960w, https://www.economist.com/img/b/1096/617/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 1096w, https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 1280w, https://www.economist.com/img/b/1424/801/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/sites/default/files/images/print-edition/20160213_ESP001_2.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text">GUO, the driver, pulls his car to a merciful halt high above a crevasse: time for a cigarette, and after seven hours of shuddering along narrow, twisting roads, time for his passengers to check that their fillings remain in place. Lighting up, he steps out of the car and dons a cloth cap and jacket: sunny, early-summer days are still brisk 3,500 metres above sea level. Mr Guo is an impish little dumpling of a man, bald, brown-toothed and jolly. He is also an anomaly: a Shanghainese in northern Yunnan who opted to stay with his local bride rather than return to his booming hometown.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/580/1978/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png" srcSet="https://www.economist.com/img/b/200/682/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 200w,https://www.economist.com/img/b/300/1023/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 300w,https://www.economist.com/img/b/400/1364/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 400w,https://www.economist.com/img/b/600/2046/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 600w,https://www.economist.com/img/b/640/2183/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 640w,https://www.economist.com/img/b/800/2728/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 800w,https://www.economist.com/img/b/1000/3410/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 1000w,https://www.economist.com/img/b/1280/4365/90/sites/default/files/images/2016/02/articles/body/20160213_esm978.png 1280w"  alt=""/></div><p class="article__body-text">It has sustained many more. From trickles of meltwater in arid Qinghai, the river grows quickly as it passes through Tibet and Yunnan. Leaving China, and in doing so changing its name from the Lancang to the Mekong, it descends through a landscape ripening into jungle. Swollen by rainforest tributaries, it defines the Myanmar-Laos border and most of the Laos-Thailand border. It cuts Cambodia in two, and then splits into distributaries in south-western Vietnam, the lush, claustral delta landscape opposite in every way to the craggy austerity where it began.</p><p class="article__body-text">The Mekong region is Asia’s rice bowl: in 2014 lower Mekong countries (Myanmar, Laos, Cambodia, Thailand and Vietnam) produced more than 100m tonnes of rice, around 15% of the world’s total. The region’s fertile soil depends on nutrient-rich sediment that the Mekong carries downriver, mainly during the rainy season from June to October; more than half the sediment in central Cambodia comes from China. The river and the nutrients it brings also support the world’s biggest inland fishery, accounting for a quarter of the global freshwater catch, feeding tens of millions of people.</p><p class="article__body-text">Since its French colonial days the Mekong has been more of a backwater. But the life-changing development seen elsewhere in Asia is spreading into this mostly rural world. Pickup trucks are replacing bullock-carts, karaoke bars dot lonely two-lane roads, fishermen can catch up on soap-operas at night. People are getting richer, and their lives longer.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/595/335/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 1000w,https://www.economist.com/img/b/1280/721/90/sites/default/files/images/2016/02/articles/body/20160213_esd002.jpg 1280w"  alt=""/></div><p class="article__body-text">THE scent of woodsmoke from Mr Guo’s cast-iron stove hangs heavy in the brisk evening air. The household generatoris switched off for the night, and the low kitchen in which his family and two guests gather is made cozy by the light of kerosene lamps. His wife brings a succession of bowls to the table: steamed rice, chunks cut from a salted pig’s leg that hangs above the stove, lettuce braised with garlic, scraps of beef sautéed with chilies, and <em>tsampa</em>, a roast barley powder favoured by his ethnically Tibetan family. His mother-in-law serves a medicinal-tasting infusion made from local leaves and berries, as well as eggshell cups of local wine. The wine tastes as though it was made by someone who knew only two things about wine: it is supposed to be red, and it is supposed to get you drunk.</p><p class="article__body-text">But that is about to change. A little way downriver, a state-owned power utility is building the 990-megawatt Wunonglong dam. In 1995 the Manwan dam, some 600km farther downstream, became the first to stem the river’s flow. Since then five more dams have been finished along its Chinese reach; the Wunonglong dam is one of a further 14 being planned or built there.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/595/335/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 1000w,https://www.economist.com/img/b/1280/721/90/sites/default/files/images/2016/02/articles/body/20160213_esd003.jpg 1280w"  alt=""/></div><p class="article__body-text">AT HUAY XAI on the Thailand-Laos border, around 1,000km downriver from Mr Guo’s house in Cizhong, a sampan’s tubercular engine kicks in with a wheeze, a gag and a violent sneeze of black smoke. As the motor stammers a tiny conductor terrorises the boat, calling brusquely for tickets, chastising people for where and how they sit, shouting at the pilot to get a move on. As the boat pulls away she jumps off, smoking and yelling the whole time. Some of the locals immediately set about the business of napping, using rice sacks as pillows. Others spread bolts of fabric to picnic on, pulling out plastic bags of grilled chicken, sticky rice, bamboo shoots and tiny, floral South-East Asian oranges. The tourists, meanwhile, open cans of beer—except for the Brits, who open bottles of rotgut Thai whiskey. Tourists and locals alike start the journey staring at their phones. Eventually reception wanes and they are forced to gaze out at the wonder on all sides.</p><p class="article__body-text">About two hours into the two-day journey east from Huay Xai to Luang Prabang, the boat pulls over to a muddy shore, distinguished only by a concrete staircase cut into the side of a mountain. As the boat approaches people suddenly appear out of the jungle at the top of the stairs. The scene repeats itself with minor variations throughout the journey: a muddy path rather than a staircase, a rickety little jetty or two. A couple of hours before the boat pulls in to regally sleepy Luang Prabang, it passes the Pak Ou caves: two caverns in a mountainside from which hundreds of Buddha statues brought by devotees stare down at passing boats.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/595/335/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 1000w,https://www.economist.com/img/b/1280/721/90/sites/default/files/images/2016/02/articles/body/20160213_esd005.jpg 1280w"  alt=""/></div><p class="article__body-text">CHANG NAA stands up on the prow of his narrow wooden canoe and casts a small net into the water under the watchful eyes of his son Chang Thung, a four-year-old as solid and sombre as his father is lithe and placid. Beneath the canoe’s tattered fabric roof his wife stirs a pot of <em>samlaa macchu</em>, a sour soup. Before serving it she rinses the dishes in the murky water.</p><p class="article__body-text">Mainly he catches what he calls <em>chkok</em> and <em>onpun</em>—small, silvery fish. Some are destined for his wife’s soup pot. The rest—he catches between two and three kilos per day—he sells for <em>prahok</em> and <em>tuk trey</em>, a chunky paste and clear brown liquid both made from salted, fermented fish. Some fishermen supplement their meagre income with rice farming, but Mr Chang Naa and his family own no land. Like most people he knows, he is working off a perpetual debt incurred by money borrowed at extortionate rates for food, fuel and equipment. A fisherman from a village near Mr Chang Naa’s says he spends four or five months a year paying off local moneylenders.</p><p class="article__body-text">At this point in the river’s descent to the sea, its potential as a power generator has been used up. The lowest lying of the dams under discussion, Cambodia’s dam at Sambor, lies around 300km upriver. Cambodia’s fisheries thus illustrate the fundamental political tension at the heart of the region’s development: upstream economies overwhelmingly reap the benefits of changes to the river’s regime, while those downstream bear the cost.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/595/335/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 1000w,https://www.economist.com/img/b/1280/721/90/sites/default/files/images/2016/02/articles/body/20160213_esd004.jpg 1280w"  alt=""/></div><p class="article__body-text">FIVE waitresses work the busy rooftop bar, ferrying drinks to the bright young things of Can Tho, the Mekong delta’s biggest city. Melodic, minor-key Vietnamese pop blares from the speakers as smartly turned-out young men and women sip lurid drinks, their faces lit by their phones. In the early evening the Hau river, a broad Mekong distributary, has taken on the same blue-grey cast as the sky, reflecting rows of quayside lamps as it flows into the distance, reaching for the sea.</p><p class="article__body-text">To drive the four hours from Phnom Penh to Can Tho is to witness an increasingly blurry line between land and water. Narrow, glittering streams bisect rice fields. Rills, canals and other waterways flow deep into lush jungle, while the river itself wanders lazily toward the sea. Cambodians like to remind visitors that much of this delta region was theirs before the French partitioned the territory in 1949. The Vietnamese dispute this. The delta’s fertile soil has long been worth arguing over—or fighting for.</p><p class="css-crkmw2 efr6q1o0">This article appeared in the Essay section of the print edition under the headline "Requiem for a river"</p><div class="mdui-container"><img alt="The right way to do drugs: Legalising cannabis safely" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="responsive" /></div><div class="mdui-container"><img alt="The right way to do drugs: Legalising cannabis safely"  srcSet="https://www.economist.com/img/b/16/21/90/sites/default/files/print-covers/20160213_cuk400.jpg 16w, https://www.economist.com/img/b/32/42/90/sites/default/files/print-covers/20160213_cuk400.jpg 32w, https://www.economist.com/img/b/48/63/90/sites/default/files/print-covers/20160213_cuk400.jpg 48w, https://www.economist.com/img/b/64/84/90/sites/default/files/print-covers/20160213_cuk400.jpg 64w, https://www.economist.com/img/b/96/126/90/sites/default/files/print-covers/20160213_cuk400.jpg 96w, https://www.economist.com/img/b/128/168/90/sites/default/files/print-covers/20160213_cuk400.jpg 128w, https://www.economist.com/img/b/256/336/90/sites/default/files/print-covers/20160213_cuk400.jpg 256w, https://www.economist.com/img/b/360/473/90/sites/default/files/print-covers/20160213_cuk400.jpg 360w, https://www.economist.com/img/b/384/504/90/sites/default/files/print-covers/20160213_cuk400.jpg 384w, https://www.economist.com/img/b/480/631/90/sites/default/files/print-covers/20160213_cuk400.jpg 480w, https://www.economist.com/img/b/600/789/90/sites/default/files/print-covers/20160213_cuk400.jpg 600w, https://www.economist.com/img/b/834/1096/90/sites/default/files/print-covers/20160213_cuk400.jpg 834w, https://www.economist.com/img/b/960/1262/90/sites/default/files/print-covers/20160213_cuk400.jpg 960w, https://www.economist.com/img/b/1096/1441/90/sites/default/files/print-covers/20160213_cuk400.jpg 1096w, https://www.economist.com/img/b/1280/1683/90/sites/default/files/print-covers/20160213_cuk400.jpg 1280w, https://www.economist.com/img/b/1424/1872/90/sites/default/files/print-covers/20160213_cuk400.jpg 1424w" src="https://www.economist.com/img/b/1424/1872/90/sites/default/files/print-covers/20160213_cuk400.jpg" decoding="async" data-nimg="responsive"  loading="lazy"/></div><p orientation="vertical" class="css-20abx8 elrdawu5">Discover stories from this section and more in the list of contents </p><p class="css-1tj7b79 e1dj3j7p0">The oil flows more slowly, the climate changes more quickly</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220709_ESD001.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220709_ESD001.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220709_ESD001.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220709_ESD001.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220709_ESD001.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220709_ESD001.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220709_ESD001.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">It was a long time in the planning</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1000w,https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">They are ubiquitous, diverse and very powerful</p><p class="ds-footer__mission-statement">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </p><p id="ds-footer-copyright" class="ds-footer__copyright">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
