@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/essay/" data-analytics="sidebar:section">Essay</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Europe</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Between the borders</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">The idea of European unity is more complicated than its supporters or critics allow</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 360w, https://www.economist.com/img/b/384/216/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 384w, https://www.economist.com/img/b/480/270/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 480w, https://www.economist.com/img/b/600/337/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 600w, https://www.economist.com/img/b/834/469/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 834w, https://www.economist.com/img/b/960/540/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 960w, https://www.economist.com/img/b/1096/617/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 1096w, https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 1280w, https://www.economist.com/img/b/1424/801/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/sites/default/files/images/print-edition/20160618_ESP009_0.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text">OF ALL the glories contained in the French foreign ministry, the most glorious is the Salon de l’Horloge. Sumptuous in gold and marble, graced by chandeliers and silks, washed with light slanting up from the River Seine, this is where old men thrashed out the Treaty of Versailles after the first world war. The Kellogg-Briand pact was signed here in 1928, pledging to outlaw the aggressive resort to arms for ever. And, on April 18th 1951, exalted by the trappings of empire, ministers from West Germany, Italy, France and the three Benelux countries put their names to the Treaty of Paris, the founding document of what, four decades later, was to become the European Union.</p><p class="article__body-text">Were they alive today, those ministers would be amazed by how their successors have crammed that empty page full to bursting with institutions and countries. The community started out with six members, four languages, 177m people and (in 2014 money) $1.6 trillion in annual output. Today’s EU has 28 members, 24 languages, 505m people and a GDP of $19 trillion.</p><p class="article__body-text">Only a few years ago pundits were writing books with titles like “The European Dream” and “Why Europe will run the 21st Century”. Yet today Jan Zielonka, professor of European politics at Oxford, reports that when he talks to European policymakers he is “stunned by their scepticism”. In May the president of the commission, Jean-Claude Juncker, lamented that: “in former times we were working together…we were in charge of a big piece of history. This has totally gone.” Donald Tusk, president of the European Council, is even bleaker, saying that: “the idea of one EU state, one vision…was an illusion.”</p><p class="article__body-text">The post-war desolation was unlike anything since the Thirty Years War of the 17th century, a religious paroxysm which killed a similar share of the continent’s population. The Treaty of Westphalia, signed at that war’s end in 1648, shaped how Europe thought about conflict for the next three centuries: states should not interfere in each other’s domestic affairs; the way to contain countries’ ambitions was by maintaining a balance of power.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/290/435/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg" srcSet="https://www.economist.com/img/b/200/300/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 200w,https://www.economist.com/img/b/300/450/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 300w,https://www.economist.com/img/b/400/600/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 400w,https://www.economist.com/img/b/600/900/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 600w,https://www.economist.com/img/b/640/960/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 640w,https://www.economist.com/img/b/800/1200/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 800w,https://www.economist.com/img/b/1000/1500/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 1000w,https://www.economist.com/img/b/1280/1920/90/sites/default/files/images/print-edition/20160618_ESP010_0.jpg 1280w"  alt=""/></div><p class="article__body-cite"><cite>“A leap in the dark” – Robert Schuman on the Treaty of Paris</cite></p><p class="article__body-text">IN THOSE early years the states guarded their privileges jealously—to the fury of Monnet and his band of federalists. Take, for instance, a proposal in 1950 to create a European army as an alternative to West German rearmament under NATO (which had been created the previous year). During the Korean war, seen as a sign of menacing Soviet ambition, the idea made progress. But the six governments found it hard to agree on how a European army should be run; French Gaullists hated the loss of sovereignty. America threatened an “agonising reappraisal” of relations if France voted against the defence treaty. Nevertheless in August 1954, after the Korean war was over, the French National Assembly rejected the European Defence Community by 319 votes to 264. The victors celebrated with a rousing chorus of the “Marseillaise”.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/1000/654/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png" srcSet="https://www.economist.com/img/b/200/131/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 200w,https://www.economist.com/img/b/300/196/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 300w,https://www.economist.com/img/b/400/262/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 400w,https://www.economist.com/img/b/600/392/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 600w,https://www.economist.com/img/b/640/419/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 640w,https://www.economist.com/img/b/800/523/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 800w,https://www.economist.com/img/b/1000/654/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 1000w,https://www.economist.com/img/b/1280/837/90/sites/default/files/images/2016/06/articles/body/20160618_esc820_apple_news.png 1280w"  alt=""/></div><p class="article__body-text">It suits the EU’s devotees and its critics alike to treat the strengthening and deepening of the Delors years as a default condition. The period conforms to the founding myth of an ever-closer union run out of Brussels by a powerful bureaucracy, something devotees treat as inevitable and critics as conspiracy. In fact, though, Mr Delors was the exception. His achievements were possible chiefly because the member states wanted to use the EU machinery as a way of catching up with the economic liberalisation that was bearing fruit in America and Britain under Ronald Reagan and Margaret Thatcher. For her part, Thatcher went along; she saw the single market as the sort of Europe that Britain wanted.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/290/432/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg" srcSet="https://www.economist.com/img/b/200/298/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 200w,https://www.economist.com/img/b/300/447/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 300w,https://www.economist.com/img/b/400/596/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 400w,https://www.economist.com/img/b/600/894/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 600w,https://www.economist.com/img/b/640/953/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 640w,https://www.economist.com/img/b/800/1192/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 800w,https://www.economist.com/img/b/1000/1490/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 1000w,https://www.economist.com/img/b/1280/1907/90/sites/default/files/images/print-edition/20160618_ESP012_0.jpg 1280w"  alt=""/></div><p class="article__body-cite"><cite>People here feel deeply that they are European – André Klein</cite></p><p class="article__body-text">Now that this borderland finds itself in the heart of Europe, the frontiers barely exist. Not far down the A35 is EuroAirport, serving France, Switzerland and Germany. On a recent Sunday French and German protesters met on the banks of the Rhine to demonstrate in two languages against the nearby nuclear power station at Fessenheim. “Radioaktivität kennt keine Grenzen”, one banner read: radioactivity knows no borders.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/290/435/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg" srcSet="https://www.economist.com/img/b/200/300/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 200w,https://www.economist.com/img/b/300/450/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 300w,https://www.economist.com/img/b/400/600/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 400w,https://www.economist.com/img/b/600/900/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 600w,https://www.economist.com/img/b/640/960/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 640w,https://www.economist.com/img/b/800/1200/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 800w,https://www.economist.com/img/b/1000/1500/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 1000w,https://www.economist.com/img/b/1280/1920/90/sites/default/files/images/print-edition/20160618_ESP011_0.jpg 1280w"  alt=""/></div><p class="article__body-cite"><cite>“We don’t have a European people.” – Marco Zanni</cite></p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/907/907/90/sites/default/files/images/print-edition/20160618_ESC920.png" srcSet="https://www.economist.com/img/b/200/200/90/sites/default/files/images/print-edition/20160618_ESC920.png 200w,https://www.economist.com/img/b/300/300/90/sites/default/files/images/print-edition/20160618_ESC920.png 300w,https://www.economist.com/img/b/400/400/90/sites/default/files/images/print-edition/20160618_ESC920.png 400w,https://www.economist.com/img/b/600/600/90/sites/default/files/images/print-edition/20160618_ESC920.png 600w,https://www.economist.com/img/b/640/640/90/sites/default/files/images/print-edition/20160618_ESC920.png 640w,https://www.economist.com/img/b/800/800/90/sites/default/files/images/print-edition/20160618_ESC920.png 800w,https://www.economist.com/img/b/1000/1000/90/sites/default/files/images/print-edition/20160618_ESC920.png 1000w,https://www.economist.com/img/b/1280/1280/90/sites/default/files/images/print-edition/20160618_ESC920.png 1280w"  alt=""/></div><p class="article__body-text">When, in 1861, Massimo d’Azeglio, an Italian statesman, said “We have made Italy. Now we must make Italians,” he was outlining what seemed like a reasonable project. Germany was doing much the same with Germans; Britain had done something similar with Britons. But the tools which forged nations in the 19th century—forebears, symbols, cultural achievements—look unacceptably clumsy when used by Brussels today.</p><p class="article__body-text">But the EU has since entered people’s lives. Mr Delors’s burst of integration began in 1986 with the Single European Act, the first ambitious reworking of the Treaty of Rome. This created a single market, with consumer protection and product regulation. Six years later, the Maastricht treaty, a flawed attempt to deepen the union as a response to the perceived crisis of German unification, provided for an end to the franc, the lira and the escudo. When the eastern countries joined the EU, the rules on freedom of movement brought Polish plumbers and Romanian roofers into everyday contact with Parisians and Londoners.</p><p class="article__body-text">Those who look to solve this with a leap of integration are likely to be disappointed. The politics of pooling sovereignty has rarely been easy. Delay usually prevails. But Eurosceptics who see the EU as a house of cards are likely to be disappointed, too. When faced with an inescapable choice, leaders usually find a compromise to tide themselves over until the next crisis. They value the EU greatly and they rightly fear the consequences of its failure.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/595/335/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 1000w,https://www.economist.com/img/b/1280/721/90/sites/default/files/images/print-edition/20160618_ESP013_0.jpg 1280w"  alt=""/></div><p class="article__body-text">Security and the slow accretion of confidence can help people move past nationalism to embrace a new European landscape of regions, cultures and cities. This is the Europe that is to be found in Colmar and CERN; in the student bars of universities—even, perhaps particularly, if the students from Germany and Greece mock and goad each other there; in old battlefields as well stocked with holiday homes as with past glory and in the football stadiums where Europe’s great clubs vie for the cup.</p><p class="css-crkmw2 efr6q1o0">This article appeared in the Essay section of the print edition under the headline "Between the borders"</p><div class="mdui-container"><img alt="Divided we fall: The future of Britain and Europe" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="responsive" /></div><div class="mdui-container"><img alt="Divided we fall: The future of Britain and Europe"  srcSet="https://www.economist.com/img/b/16/21/90/sites/default/files/print-covers/20160618_cuk400.jpg 16w, https://www.economist.com/img/b/32/42/90/sites/default/files/print-covers/20160618_cuk400.jpg 32w, https://www.economist.com/img/b/48/63/90/sites/default/files/print-covers/20160618_cuk400.jpg 48w, https://www.economist.com/img/b/64/84/90/sites/default/files/print-covers/20160618_cuk400.jpg 64w, https://www.economist.com/img/b/96/126/90/sites/default/files/print-covers/20160618_cuk400.jpg 96w, https://www.economist.com/img/b/128/168/90/sites/default/files/print-covers/20160618_cuk400.jpg 128w, https://www.economist.com/img/b/256/336/90/sites/default/files/print-covers/20160618_cuk400.jpg 256w, https://www.economist.com/img/b/360/473/90/sites/default/files/print-covers/20160618_cuk400.jpg 360w, https://www.economist.com/img/b/384/504/90/sites/default/files/print-covers/20160618_cuk400.jpg 384w, https://www.economist.com/img/b/480/631/90/sites/default/files/print-covers/20160618_cuk400.jpg 480w, https://www.economist.com/img/b/600/789/90/sites/default/files/print-covers/20160618_cuk400.jpg 600w, https://www.economist.com/img/b/834/1096/90/sites/default/files/print-covers/20160618_cuk400.jpg 834w, https://www.economist.com/img/b/960/1262/90/sites/default/files/print-covers/20160618_cuk400.jpg 960w, https://www.economist.com/img/b/1096/1441/90/sites/default/files/print-covers/20160618_cuk400.jpg 1096w, https://www.economist.com/img/b/1280/1683/90/sites/default/files/print-covers/20160618_cuk400.jpg 1280w, https://www.economist.com/img/b/1424/1872/90/sites/default/files/print-covers/20160618_cuk400.jpg 1424w" src="https://www.economist.com/img/b/1424/1872/90/sites/default/files/print-covers/20160618_cuk400.jpg" decoding="async" data-nimg="responsive"  loading="lazy"/></div><p orientation="vertical" class="css-20abx8 elrdawu5">Discover stories from this section and more in the list of contents </p><p class="css-1tj7b79 e1dj3j7p0">The oil flows more slowly, the climate changes more quickly</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220709_ESD001.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220709_ESD001.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220709_ESD001.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220709_ESD001.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220709_ESD001.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220709_ESD001.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220709_ESD001.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">It was a long time in the planning</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1000w,https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">They are ubiquitous, diverse and very powerful</p><p class="ds-footer__mission-statement">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </p><p id="ds-footer-copyright" class="ds-footer__copyright">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

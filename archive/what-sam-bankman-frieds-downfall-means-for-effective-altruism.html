@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->EA Games</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">What Sam Bankman-Fried’s downfall means for effective altruism</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">FTX’s implosion puts the movement in the spotlight</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221119_BBD002.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221119_BBD002.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221119_BBD002.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221119_BBD002.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221119_BBD002.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221119_BBD002.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221119_BBD002.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221119_BBD002.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221119_BBD002.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221119_BBD002.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">S</span><small>am bankman-fried</small> explained a curious belief in an interview earlier this year. The boss of <small>ftx</small>, a now-bankrupt crypto exchange, was asked by Tyler Cowen, an economist, what it means to him to be “risk neutral”. The concept is one used by investors who wish to be just as open to good surprises as bad ones. But Mr Bankman-Fried applies it more widely.</p><p class="article__body-text">What would he do, Mr Cowen continued, if given the choice between two options. One (with a 51% probability) doubles the number of worlds in existence; the other (with a 49% probability) wipes out our world and any others. Mr Bankman-Fried ummed and ahhed. Mr Cowen noted he could repeatedly offer the same options, surely wiping out the world by the end of the game. Would this not make taking the risk an example of a “St Petersburg paradox”, in which maximising gains leads to a nonsensical conclusion? Mr Bankman-Fried countered that it might also lead to “an enormously valuable existence”.</p><p class="article__body-text">Mr Bankman-Fried’s sudden fall from grace has cast a spotlight on effective altruism, a burgeoning movement to which he belongs. As an effective altruist, he seeks to maximise expected utility, even if doing so presents uncomfortable trade-offs. He has promised to give away his lifetime earnings, which he was making good on by pouring money into effective-altruist<!-- --> causes at the time of his downfall. The blow-up has raised hard questions. Was he motivated by the movement’s goals? Why did its leading lights not see this coming? And what now for effective altruism?</p><p class="article__body-text">Mr Bankman-Fried’s life story is intertwined with the history of effective altruism. The movement, which took inspiration from the utilitarian ethics of Peter Singer, a philosopher, was formally established in Oxford in 2011 by Mr MacAskill, a mentor to Mr Bankman-Fried, along with colleagues. Effective altruism was initially focused on helping poor people around the world, albeit in unusual ways. Effective altruists often advised graduates to “earn to give”—ie, to make lots of money and then donate it. More effective to be the banker who buys millions of bed nets than the guy who hands them out, or so the logic went.</p><p class="article__body-text">According to a profile of Mr Bankman-Fried published by Sequoia, a venture-capital firm that invested in his crypto exchange, Mr MacAskill nudged Mr Bankman-Fried to take a trading internship so he could earn to give. After a few years in finance and a stint at the Centre for Effective Altruism, Mr Bankman-Fried corralled some fellow effective altruists to start a crypto firm. “This thing couldn’t have taken off without <small>ea</small>,” said a colleague. “All the employees, all the funding—everything was <small>ea</small> to start with.” Nine of Mr Bankman-Fried’s inner circle, mostly effective altruists who worked with him, lived with him in the same Bahamian penthouse. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221119_BBC769.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221119_BBC769.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221119_BBC769.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221119_BBC769.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221119_BBC769.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221119_BBC769.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221119_BBC769.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221119_BBC769.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221119_BBC769.png 1280w"  alt=""/></div><p class="article__body-text">Mr Bankman-Fried claimed to be a long-termist, and spent a lot of money advancing the cause. In 2015 nearly all effective-altruist spending went to global development. This year nearly 40% went to minimising existential risk (see chart). Mr Bankman-Fried’s “<small>ftx</small> Future Fund,” which was launched in February, disbursed $130m in its first four months, mostly to long-termist causes. So fast was the spending, some altruists believed the movement was no longer “funding-constrained”—it had so much money, the only problem was finding talented people who could make good use of it.</p><p class="article__body-text"><small>ea</small> is now funding-constrained. As one poster on an online forum puts it: “Back to earning [to] give I guess, I’ll see you guys at the McKinsey office.” The loss of trust may be more damaging for effective altruism’s long-term prospects than the loss of money, however. The problem is simple. As Mr Moskovitz wrote: “Either <small>ea</small> encouraged Sam’s unethical behaviour, or provided a convenient rationalisation for such actions.” Josh Morrison of 1Day Sooner, a public-health charity part-funded by Mr Bankman-Fried’s fund, worries that, “Fewer people may call themselves <small>ea</small>, and we may see fewer college students sign up.” </p><p class="article__body-text">In messages with Vox, an online publication, published on November 15th, Mr Bankman-Fried claimed his ethical positions were “dumb shit”; a move to gain a better reputation and impose his version of “good” on the world. To do this, he sought to win “by this dumb game we woke Westerners play”. The question now is exactly what he meant by “good” and which ethical positions he was disavowing.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
