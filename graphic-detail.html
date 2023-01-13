@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/europes-freakish-winter-heatwave-breaks-records.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_WOT354.png"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">Europe’s freakish winter heatwave breaks records</div>
+        <div class="mdui-card-primary-subtitle">Last year was the continent’s second-hottest</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/antidepressants-are-over-prescribed-but-genuinely-help-some-patients.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Needles in haystacks</div>
+        <div class="mdui-card-primary-title">Antidepressants are over-prescribed, but genuinely help some patients</div>
+        <div class="mdui-card-primary-subtitle">In around 15% of cases, they offer large benefits</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_WOT995.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/why-did-teenage-suicides-decline-during-americas-first-covid-19-lockdowns.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">Why did teenage suicides decline during America’s first covid-19 lockdowns?</div>
+        <div class="mdui-card-primary-subtitle">Because of respite from bullying at school, research suggests</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_WOT312.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/president-joe-biden-polls.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">What Americans think about their government</div>
+        <div class="mdui-card-primary-title">How popular is Joe Biden?</div>
+        <div class="mdui-card-primary-subtitle">Weekly opinion polls from The Economist and YouGov, tracking Joe Biden&#x27;s approval ratings and the issues that are most important to voters</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/sites/default/files/20210508_OPD100_0.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/global-shipping-costs-are-returning-to-pre-pandemic-levels.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_WOT298.png"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">Global shipping costs are returning to pre-pandemic levels</div>
+        <div class="mdui-card-primary-subtitle">But a wave of covid-19 cases in China threatens to disrupt global supply chains once more</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/atheism-is-still-a-taboo-for-american-politicians.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">Atheism is still a taboo for American politicians</div>
+        <div class="mdui-card-primary-subtitle">Members of Congress are far more religious than their constituents</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_WOT288.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/india-will-soon-overtake-china-as-the-worlds-most-populous-country.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">India will soon overtake China as the world’s most populous country</div>
+        <div class="mdui-card-primary-subtitle">But it will struggle to reap the benefits of a young workforce</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_WOT994.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/these-are-the-most-expensive-cities-in-europe.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">These are the most expensive cities in Europe</div>
+        <div class="mdui-card-primary-subtitle">The strong dollar has skewed this year’s index</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_WOT992.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div><hr>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/americas-117th-congress-accomplished-a-lot-so-did-its-recent-predecessors.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_WOT988.png"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">The secret is out</div>
+        <div class="mdui-card-primary-title">America’s 117th Congress accomplished a lot. So did its recent predecessors</div>
+        <div class="mdui-card-primary-subtitle">But Republicans seem more willing to publicise bipartisan lawmaking during Joe Biden’s presidency</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/donald-trump-is-losing-ground-to-ron-desantis-ahead-of-2024.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">Donald Trump is losing ground to Ron DeSantis ahead of 2024</div>
+        <div class="mdui-card-primary-subtitle">But polls this far ahead of the election should not be trusted</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221224_WOT979.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/war-replaces-disease-as-the-worlds-most-newsworthy-subject.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">The year of Ukraine</div>
+        <div class="mdui-card-primary-title">War replaces disease as the world’s most newsworthy subject</div>
+        <div class="mdui-card-primary-subtitle">Russia’s invasion accounted for one-quarter of news-reading hours</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221224_WOT980.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/somalia-is-on-the-brink-of-famine.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Daily chart</div>
+        <div class="mdui-card-primary-title">Somalia is on the brink of famine</div>
+        <div class="mdui-card-primary-subtitle">Aid organisations are struggling to raise funds to help. Hundreds of thousands could die</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221217_WOT138.png"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div><hr>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/www.economist.com.html`);">
+
+  <div class="mdui-card-media">
+            <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle"></div>
+        <div class="mdui-card-primary-title"></div>
+        <div class="mdui-card-primary-subtitle">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </div>
+      </div>
+    </div>
+  </div>
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/www.economist.com.html`);">
+
+                          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle"></div>
+        <div class="mdui-card-primary-title"></div>
+        <div class="mdui-card-primary-subtitle">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</div>
+            </div>
+    </div>
+    </div>
+                <script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
