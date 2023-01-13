@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/a-copycat-insurrection-in-brazil-and-its-troubling-aftermath.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_AMP002.jpg"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">The storming of Congress</div>
+        <div class="mdui-card-primary-title">A copycat insurrection in Brazil, and its troubling aftermath</div>
+        <div class="mdui-card-primary-subtitle">The new president will find it hard to restore calm</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/latin-american-cities-are-becoming-far-nicer-for-poorer-inhabitants.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Barrios and baristas</div>
+        <div class="mdui-card-primary-title">Latin American cities are becoming far nicer for poorer inhabitants</div>
+        <div class="mdui-card-primary-subtitle">The world’s most urbanised region holds lessons for developing countries</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_AMP003.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/erotic-statues-in-peru-are-challenging-taboos.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Sex pots</div>
+        <div class="mdui-card-primary-title">Erotic statues in Peru are challenging taboos</div>
+        <div class="mdui-card-primary-subtitle">Ancient art has started a national conversation about sex</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_AMP001.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/supporters-of-jair-bolsonaro-mount-an-insurrection-in-brazil.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Bedlam in Brasília</div>
+        <div class="mdui-card-primary-title">Supporters of Jair Bolsonaro mount an insurrection in Brazil</div>
+        <div class="mdui-card-primary-subtitle">Questions will be asked about whose side the police were on</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_AMP599.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/brazils-new-president-faces-a-fiscal-crunch-and-a-fickle-congress.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_AMP001.jpg"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">Big plans, not much money</div>
+        <div class="mdui-card-primary-title">Brazil’s new president faces a fiscal crunch and a fickle Congress</div>
+        <div class="mdui-card-primary-subtitle">Luiz Inácio Lula da Silva was sworn in on January 1st, 20 years after first taking office</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/pele-king-of-the-beautiful-game.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Edson Arantes do Nascimento</div>
+        <div class="mdui-card-primary-title">Pelé, king of the beautiful game</div>
+        <div class="mdui-card-primary-subtitle">The death of a superstar footballer</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220129_OBP501.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/an-electoral-reform-in-mexico-will-make-elections-less-safe.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Man bites watchdog</div>
+        <div class="mdui-card-primary-title">An “electoral reform” in Mexico will make elections less safe</div>
+        <div class="mdui-card-primary-subtitle">President Andrés Manuel López Obrador is nobbling the electoral commission</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221224_AMP003.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/argentina-clinch-the-world-cup-after-beating-france-on-penalties.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">It was messy, but it’s Messi</div>
+        <div class="mdui-card-primary-title">Argentina clinch the World Cup after beating France on penalties</div>
+        <div class="mdui-card-primary-subtitle">The national team could teach its politicians a lesson</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221224_BLP904.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div><hr>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/argentinas-populist-political-movement-is-at-its-lowest-ebb.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221217_AMP001.jpg"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">The agony of Peronism</div>
+        <div class="mdui-card-primary-title">Argentina’s populist political movement is at its lowest ebb</div>
+        <div class="mdui-card-primary-subtitle">The country has a mighty football team but a decrepit ruling party</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/the-ticking-bomb-under-canadas-constitution.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Fights over citizens’ rights</div>
+        <div class="mdui-card-primary-title">The ticking bomb under Canada’s constitution</div>
+        <div class="mdui-card-primary-subtitle">The obscure-sounding “notwithstanding clause” is actually rather dangerous</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221210_AMD001.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/latin-america-is-in-a-mess-but-it-still-has-strengths.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Bello</div>
+        <div class="mdui-card-primary-title">Latin America is in a mess. But it still has strengths</div>
+        <div class="mdui-card-primary-subtitle">In his final column, Bello says adiós in troubled times</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221210_AMD002.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/after-a-bungled-coup-attempt-perus-president-falls.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Castillo the brief</div>
+        <div class="mdui-card-primary-title">After a bungled coup attempt, Peru’s president falls</div>
+        <div class="mdui-card-primary-subtitle">Pedro Castillo tried to shut down Congress. Instead, he was impeached</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221210_AMP003.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div><hr>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/www.economist.com.html`);">
+
+  <div class="mdui-card-media">
+            <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle"></div>
+        <div class="mdui-card-primary-title"></div>
+        <div class="mdui-card-primary-subtitle">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </div>
+      </div>
+    </div>
+  </div>
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/www.economist.com.html`);">
+
+                          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle"></div>
+        <div class="mdui-card-primary-title"></div>
+        <div class="mdui-card-primary-subtitle">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</div>
+            </div>
+    </div>
+    </div>
+                <script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

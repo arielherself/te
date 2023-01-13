@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/the-war-has-devastated-ukraines-environment-too.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_EUP002.jpg"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">Little green mayhem</div>
+        <div class="mdui-card-primary-title">The war has devastated Ukraine’s environment, too</div>
+        <div class="mdui-card-primary-subtitle">Trees, animals, fish and crops all suffer</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/might-turkey-seize-a-tiny-greek-island.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Gyros and gunboats</div>
+        <div class="mdui-card-primary-title">Might Turkey seize a tiny Greek island?</div>
+        <div class="mdui-card-primary-subtitle">Kastellorizo could be a flashpoint</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_EUP503.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/turkey-is-on-the-point-of-banning-the-main-kurdish-opposition-party.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Taking aim at the Kurds</div>
+        <div class="mdui-card-primary-title">Turkey is on the point of banning the main Kurdish opposition party</div>
+        <div class="mdui-card-primary-subtitle">The HDP’s MPs may also be barred from politics</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_EUP003.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/the-armenians-of-nagorno-karabakh-have-been-blockaded-by-azerbaijan.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">No way in</div>
+        <div class="mdui-card-primary-title">The Armenians of Nagorno-Karabakh have been blockaded by Azerbaijan</div>
+        <div class="mdui-card-primary-subtitle">There are fears of fresh conflict</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_EUP502.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/emmanuel-macron-unveils-his-pension-reforms.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_EUP001.jpg"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">Retirement gamble</div>
+        <div class="mdui-card-primary-title">Emmanuel Macron unveils his pension reforms</div>
+        <div class="mdui-card-primary-subtitle">He wants the French to work longer. Good luck with that</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/before-going-to-fight-many-ukrainians-are-freezing-their-sperm.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Cryo babies</div>
+        <div class="mdui-card-primary-title">Before going to fight, many Ukrainians are freezing their sperm</div>
+        <div class="mdui-card-primary-subtitle">Couples want babies even if the father never comes home</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_EUP504.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/the-west-sends-armoured-fighting-vehicles-to-ukraine.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Thanks but no tanks</div>
+        <div class="mdui-card-primary-title">The West sends armoured fighting vehicles to Ukraine</div>
+        <div class="mdui-card-primary-subtitle">They will help repel Russian attacks, but Ukraine wants heavier weapons</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_EUP503.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/france-reviews-its-hunting-rules.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Game-shooting in France</div>
+        <div class="mdui-card-primary-title">France reviews its hunting rules</div>
+        <div class="mdui-card-primary-subtitle">Fatal accidents pit hunters against other users of the countryside</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_EUP502.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div><hr>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/why-poland-loves-to-hate-germany.html`);">
+
+  <div class="mdui-card-media">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_EUP003.jpg"/>
+          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle">Frenemies on the Oder</div>
+        <div class="mdui-card-primary-title">Why Poland loves to hate Germany</div>
+        <div class="mdui-card-primary-subtitle">The two NATO allies can’t stop squabbling</div>
+    </div>
+  </div>
+</div>  
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/fifty-years-ago-the-eu-cracked-the-secret-of-its-current-success.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Charlemagne</div>
+        <div class="mdui-card-primary-title">Fifty years ago, the EU cracked the secret of its current success</div>
+        <div class="mdui-card-primary-subtitle">Enlargement has kept Europe dynamic and relevant</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_EUD000.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/a-russian-warlords-savagery-is-sending-a-loud-message-to-moscow.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Hills to die on?</div>
+        <div class="mdui-card-primary-title">A Russian warlord’s savagery is sending a loud message to Moscow</div>
+        <div class="mdui-card-primary-subtitle">Russia is bleeding, but reinforcing</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_EUP001.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/ukraines-women-snipers-take-the-fight-to-putin.html`);">
+
+                          <div class="mdui-card-primary">
+                          <div class="mdui-row">
+                          <div class="mdui-col-xs-9">
+        <div class="mdui-card-primary-subtitle">Femmes fatales</div>
+        <div class="mdui-card-primary-title">Ukraine’s women snipers take the fight to Putin</div>
+        <div class="mdui-card-primary-subtitle">“If a woman sniper is captured, she will be raped, humiliated, tortured—and then executed”</div>
+        </div><div class="mdui-col-xs-3">
+    <img src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221231_EUP501.jpg"/></div>
+    </div>
+    </div>
+    </div>
+    </div>
+                </div></div><hr>
+<div class="mdui-row">
+<div class="mdui-col-md-5">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/www.economist.com.html`);">
+
+  <div class="mdui-card-media">
+            <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle"></div>
+        <div class="mdui-card-primary-title"></div>
+        <div class="mdui-card-primary-subtitle">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </div>
+      </div>
+    </div>
+  </div>
+</div>  
+</div><div class="mdui-col-md-7">
+
+        <div class="mdui-row">
+<div class="mdui-card" style="cursor: pointer;" onclick="window.open(`archive/www.economist.com.html`);">
+
+                          <div class="mdui-card-primary">
+        <div class="mdui-card-primary-subtitle"></div>
+        <div class="mdui-card-primary-title"></div>
+        <div class="mdui-card-primary-subtitle">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</div>
+            </div>
+    </div>
+    </div>
+                <script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
