@@ -26,10 +26,10 @@ def imgZoom(html: str) -> str:
             break
     return html
 
-def mark(uri: str) -> int:      # return a error code.
+def mark(uri: str) -> int:      # return an error code.
     try:
         html = ''
-        with open('home_template.html') as f:
+        with open('article_template.html') as f:
             html += ''.join(f.readlines())
         raw = requests.get(uri)
         content = raw.text
