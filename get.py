@@ -105,7 +105,8 @@ def getSection1(sectionName, proxy=False, http_proxy='', https_proxy='') -> tupl
         currentDetail.append(dscp)
 
         content = content[content.find('<a ')+3:]
-        link = content[content.find('href=')+5:content.find('>')]
+        content = content[content.find('href="')+6:]
+        link = content[:content.find('"')]
         if article_format.mark(link) == 0:
             link = f'archive/{link[link.rfind("/")+1:]}.html'
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section data-id="our-story" class=" section content "><div class="section-id-placeholder" id="our-story"></div><div class="section__anchor"></div><div class="section-intro
+        
+        section-intro--image-bottom-indent section-intro--full-image section-intro--has-display
+      "><div class="section-intro__content"><div class="hero-container"><img src="https://images.ctfassets.net/2h5kbjx7tvqe/5uHbKhV6LfZwWAIdNlhji1/9aa7b690163db7e037c185a339b0a913/220128-About-us-hero.jpg?h=494" title="1920x449 About-us hero" alt="Media image" style="margin:auto;display:block" class="section-image hero-desktop-image"/></div><div class="container"><div class="intro__content-wrapper"><div class="intro__header"><h2 class="intro__title false">Our story</h2></div><div class="intro__content"><div class="intro__large">Inspiring progress globally</div></div></div></div></div></div><div class="section__content"><div class="block block--left-align block--text container"><div class="block__content"><div class="text-block  text-block--basic"><div class="text-block__primary"><div class="rt-module"><p>From its beginnings in 1843, when <i>The Economist</i> newspaper was founded by a Scottish hat manufacturer to further the cause of free trade, The Economist Group has evolved into a staunchly independent global media and information-services company with intelligent brands for an international audience.</p><p>Over time, the newspaper has helped readers grasp the great drivers of change, from technology to geopolitics, finance and economics. It added a dedicated section on the United States in 1942 and a China section in 2012. It expanded successfully into North America, which became its largest market. To serve decision-makers in businesses and beyond, the Economist Intelligence Unit (EIU) became a leader in country analysis and forecasting. Live events around the world brought global thought-leaders together to discuss critical topics at roundtables and summits.</p><p>In recent years, the great change has been digital. The EIU started to deliver a timely stream of business intelligence and data. <i>The Economist</i> expanded its journalism online, onto its app and into podcasts, films, interactive infographics and social media. Economist Education began online executive courses, and Economist Impact grew, combining the reach and rigour of a think-tank with the creativity of a media brand to engage influential stakeholders and find new ways to pursue progress. </p></div></div></div></div></div><div class="block block--image-grid container"><div class="block__content"><div class="image-grid block--left-align"><div class="block block--img2-grid container"><div class="block__content"><div><div class="firstImageContainer"><img class="twiImageGeedItem" src="https://images.ctfassets.net/2h5kbjx7tvqe/2JifuqBwyJhLmi6Y8Et77V/f169ab1eb72e860bf31b12bec0ffbdc4/18430902-Newspaper-first-edition-alt-resized.jpg" alt="grid item"/><p><b>First issue published in 1843</b></p></div><div><img class="twiImageGeedItem" src="https://images.ctfassets.net/2h5kbjx7tvqe/5LOxegKhVGOC1gGtZ4O6sV/5cc717ea79b49f94046d564ddb0d70a7/The-Adelphi-resized-alt.jpg" alt="grid item"/><p><b>Our editorial offices in London (Photo: Alamy)</b></p></div></div></div></div></div></div></div></div></section>
+<div class="mdui-container"><img src="https://images.ctfassets.net/2h5kbjx7tvqe/5uHbKhV6LfZwWAIdNlhji1/9aa7b690163db7e037c185a339b0a913/220128-About-us-hero.jpg?h=494" title="1920x449 About-us hero" alt="Media image"  class="section-image hero-desktop-image"/</div><br><div class="mdui-container"><img class="twiImageGeedItem" src="https://images.ctfassets.net/2h5kbjx7tvqe/2JifuqBwyJhLmi6Y8Et77V/f169ab1eb72e860bf31b12bec0ffbdc4/18430902-Newspaper-first-edition-alt-resized.jpg" alt="grid item"/</div><br><div class="mdui-container"><img class="twiImageGeedItem" src="https://images.ctfassets.net/2h5kbjx7tvqe/5LOxegKhVGOC1gGtZ4O6sV/5cc717ea79b49f94046d564ddb0d70a7/The-Adelphi-resized-alt.jpg" alt="grid item"/</div><br><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
