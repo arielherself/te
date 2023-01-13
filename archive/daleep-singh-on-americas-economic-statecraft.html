@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/by-invitation/" data-analytics="sidebar:section">By Invitation</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->America and China</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Daleep Singh on America’s economic statecraft</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">A former official in the Biden administration says it needs a principled framework for competition</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230114_BID003.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230114_BID003.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230114_BID003.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230114_BID003.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230114_BID003.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230114_BID003.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230114_BID003.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_BID003.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_BID003.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_BID003.jpg" decoding="async" data-nimg="responsive" /</div><br><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">T</span><small>HE BIDEN</small> administration is determined to challenge China’s high-tech aspirations. After a series of smaller moves, it has in recent months launched new export controls that broaden and deepen its denial of semiconductor technology to China in dramatic fashion.The rules add three big restrictions. First, they go beyond targeting specific companies and now start by denying exports to China of any chips that perform above a certain threshold. Second, they prevent any American citizen, green-card holder or company that does not have a licence to do so from working with any Chinese company to manufacture chips. Third, the new rules restrict the use of American tools, equipment or software anywhere in the world to manufacture and export advanced chips to China.<br/><br/>Some criticise the Biden administration’s actions, calling them tantamount to a declaration of an economic cold war. Arguments against such a war claim that it could accelerate Beijing’s drive for technological self-sufficiency, alienate American allies who resent the extraterritorial application of American economic force and push the world into rigid and separate technology ecosystems. </p<br><p class="article__body-text">In reality America is simply adapting to intensified geopolitical competition for pre-eminence in the foundational technologies of our time. Targeted American efforts to permit China’s access to high-end chips for commercial purposes, while blocking sales to Chinese military users, have largely failed because of the fusion of military and civilian sectors within China’s industrial complex. Indeed, the Commerce Department acknowledges this in its filings for the new export controls.</p<br><p class="article__body-text">Meanwhile, American firms earn $100bn each year from semiconductor-related sales to China. It would be naïve for policymakers to expect any individual company to consider the collective risks to national security from the unfettered supply of high-end technology to China, including critical inputs to Beijing’s nuclear and digital-surveillance programmes.</p<br><p class="article__body-text">And yet, pretending that American companies are competing on a level playing-field with China’s state-directed national champions over cutting-edge technology is to put our heads deep in the sand. China’s pursuit of absolute advantage across virtually all advanced technologies—including semiconductors, robots, electric vehicles, batteries, biotech, artificial intelligence, blockchain and supercomputing—is well documented. Beijing has implicitly rejected the logic of comparative advantage, in which countries specialise in the production of products at which they are most efficient and trade for the rest. </p<br><p class="article__body-text">The export controls announced by the Biden administration reflect a sober recognition that the dynamics of global economic competition are not as they should be, and that will not change for the foreseeable future. The best we can hope for in this environment is for America and China to put in place economic guardrails to prevent an uncontrolled and destructive race to the bottom. </p<br><p class="article__body-text">To start, the Biden administration should establish and articulate a doctrine of economic statecraft at the highest levels of government. America has spent hundreds of years developing military doctrine. But it has spent only a fraction of that time setting out the rules of economic engagement for the growing list of potent measures used by major powers across the world. These include export controls, but also sanctions, tariffs, capital and investment restrictions, subsidies and price caps. Producing clear rules would serve two purposes: to prevent overreach and overuse of economic statecraft, and to provide comfort to the world that America is not firing economic weapons in an arbitrary and capricious way.</p<br><p class="article__body-text">The foundation of such a doctrine would be a set of guiding principles. For example, sanctions and export controls should be used sparingly—when core international principles that underpin peace and security are at stake—and not for commercial advantage. They should be designed to avoid unnecessary spillovers into the global economy, while recognising that costs are inevitable and must be outweighed by expected benefits. They should be calibrated to maximise the chance of co-ordination with like-minded partners. They should be designed flexibly so they can be ratcheted higher or lower depending on the target’s response and on the impact delivered; for this reason, calls for America and its allies to unleash their economic weapons pre-emptively against Russia were misguided. Last, the use of economic statecraft must be sustainable. These measures tend to work over the long term and so they must be robust enough to endure even if the targeted country is able to counter their initial effects.</p<br><p class="article__body-text">Putting these principles into practice requires an upgraded analytical infrastructure across America’s government. The first step is to take stock of the full suite of economic tools at the government’s disposal, much as central banks have done for their growing and increasingly unconventional toolkit. Civil servants could then assess and regularly update policymakers on the efficacy of these tools when used alone or in tandem with other measures, and distinguish between the effects of unilateral and multilateral deployments.</p<br><p class="article__body-text">Policymakers should also study history and simulations to understand the spillovers and limitations of using economic statecraft, learning from previous experiences and interdisciplinary expertise that draws from economics, finance, foreign policy and the law. For example, the sanctions regime against Russia should receive careful study as to whether the chosen pressure points—mostly the capital account and cutting-edge technology rather than the current account, namely energy exports—would be appropriate elsewhere.</p<br><p class="article__body-text">Most importantly, America should make every effort to achieve balance in how it uses economic statecraft. Export controls and sanctions are known as negative coercive devices: if a target’s behaviour does not change, it will feel economic pain. That is rarely the way to win hearts and minds, either in a target’s constituency or in other countries. As such, the use of export controls and their kin should be balanced with an even greater emphasis on measures that offer the prospect of mutual gain. Global infrastructure finance, debt relief, loan guarantees, bilateral support, multilateral assistance through the <small>IMF</small> and World Bank, supply-chain linkages and the sharing of technological expertise are all tools that deserve top billing as America revitalises its approach to economic leadership.</p<br><p class="article__body-text">Context is crucial to consider. Great-power competition is not going away and it will probably intensify for decades to come. Set against the alternatives of direct confrontation between nuclear-armed forces or doing nothing to defend dearly held principles when conflict emerges, economic statecraft will remain a fixture of foreign policy. That is all the more likely since national power is increasingly measured in terms of economic heft. America cannot afford to defer the development of an overarching strategy for economic statecraft any longer.<span data-ornament="ufinish">■</span><br/>_______________</p<br><p class="article__body-text"><i>Daleep Singh is the chief global economist at <small>PGIM</small> Fixed Income and a former deputy national security adviser for international economics in the Biden administration.</i></p<br><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`../essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-17nswhw e139ysjh0"><style data-emotion="css 1do351o">.css-1do351o{color:var(--ds-color-london-10);font-family:var(--1843-type-system-slab-serif);font-size:var(--ds-type-scale-9);font-weight:300;line-height:1;font-weight:700;}@media (min-width: 37.5rem){.css-1do351o{font-size:var(--ds-type-scale-11);line-height:1;}}@media (min-width: 60rem){.css-1do351o{font-size:var(--ds-type-scale-12);line-height:1;}}</style><h1 class="css-1do351o e164j1a30">Britain’s health service is in such dire straits that doctors like me are expected to have to cut corners</h1><style data-emotion="css 7doiom">.css-7doiom{color:var(--ds-color-london-10);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale-2);font-weight:300;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-7doiom e1fr8l080">A general practitioner laments the new normal</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_Header.jpg" decoding="async" data-nimg="responsive" /</div><br><p class="css-kr8gub edmkub40">By Gavin Francis</p<br><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">O</span>n March 11th 2020, as covid-19 overwhelmed health services in Italy, I received a letter from the General Medical Council, the doctors’ regulator, and the chief medical officers of the United Kingdom. The missive was intended to reassure general practitioners (<small>GP</small>s) like me and doctors on hospital wards inundated with patients sick with the virus that we shouldn’t fear censure if we made mistakes. How could we not make mistakes, when we were being asked to operate with levels of staffing and support far below those which we had been trained to expect? </p<br><p class="article__body-text">The letter informed us that we “may need to depart, possibly significantly, from established procedures in order to care for patients in the highly challenging but time-bound circumstances of the peak of an epidemic”. A mantra of medical-school training is “always see the patient”. If you haven’t listened to their chest, put a hand on their belly, looked into the back of their throats, then you won’t have made a proper assessment. Now we were told to keep away from our patients whenever possible for their safety and ours, and use our professional judgment instead. Referrals for cancer and other serious diseases plummeted, and the excess-mortality figures suggest that people died as a result.</p<br><p class="article__body-cite"><cite>How could we not make mistakes, when we were being asked to operate with levels of staffing and support far below those which we had been trained to expect?</cite></p<br><p class="article__body-text">It’s worth lingering on the letter’s use of the phrase “time-bound”. On November 14th last year I received a similar letter from the same correspondents. “The past few years have been some of the most challenging that health and <a href="/britain/2022/11/28/britains-social-care-sector-is-in-even-worse-shape-than-its-health-service">social care</a> and our professions have faced in modern times,” it said. “It’s clear that there will be further challenges ahead over the coming weeks and months as we look towards winter.” I was being asked to depart from “established procedures” not because of a murderous virus, but because of the annual tilting of the northern hemisphere away from the sun. The signatories understood that I might be fearful of rebuke because of errors made under the duress of winter pressures, but they assured me they would “consider the context” in which I was working when assessing any case against me. </p<br><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/810/810/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg" srcSet="https://www.economist.com/img/b/200/200/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 200w,https://www.economist.com/img/b/300/300/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 300w,https://www.economist.com/img/b/400/400/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 400w,https://www.economist.com/img/b/600/600/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 600w,https://www.economist.com/img/b/640/640/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 640w,https://www.economist.com/img/b/800/800/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 800w,https://www.economist.com/img/b/1000/1000/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 1000w,https://www.economist.com/img/b/1280/1280/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_01.jpg 1280w"  alt=""/</div><br><p class="article__body-text">A sensible, supportive and necessary intervention in 2020, intended to reassure a workforce facing a frightening pandemic, had, by 2022, become something far more sinister: an acceptance of a new status quo, and a chilling normalisation of crisis. I expect I’ll receive another letter next November, and every November after that, until the chronic underfunding of the National Health Service (<small>NHS</small>) is abandoned as an electoral liability, or <a href="/the-world-ahead/2022/11/18/britains-nhs-faces-huge-challenges-in-2023">the <small>NHS</small> collapses</a>.</p<br><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">B</span>efore the pandemic our hospitals were under-resourced and overwhelmed. Simon Stevens, who was then chief executive of the <small>NHS</small> in England, had said in 2017 that the health system was no longer funded adequately to cope with what was being asked of it. Even before covid, in 2019, a friend who is a consultant geriatrician told me that her hospital was having to pack five patients into bays designed for four. There were only four sets of curtains for privacy and four wall outlets for oxygen – if more was needed, it had to come in bottles. Crucially, there were only enough nurses to care for four patients. </p<br><p class="article__body-cite"><cite>I was being asked to depart from “established procedures” not because of a murderous virus, but the annual tilting of the northern hemisphere away from the sun</cite></p<br><p class="article__body-text">Those four-bedded bays now routinely house six people, and they’re the lucky ones who manage to get a bed instead of a trolley or a chair. Staffing levels that even three or four years ago would have been considered unacceptably risky have become routine. Outpatient clinics have waiting lists so long that they might as well not exist: an urgent<!-- --> referral to see a gastrointestinal specialist in my city takes over a year; if your problem concerns urology, dermatology or vascular surgery, you’ll wait more than two. </p<br><p class="article__body-text">This is a service that’s no longer functioning. It creates a level of overwhelm that piles ever more pressure back onto the community as patients are told: “The hospitals are full, see your <small>GP</small> instead.” But we simply cannot cope.</p<br><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/810/810/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg" srcSet="https://www.economist.com/img/b/200/200/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 200w,https://www.economist.com/img/b/300/300/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 300w,https://www.economist.com/img/b/400/400/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 400w,https://www.economist.com/img/b/600/600/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 600w,https://www.economist.com/img/b/640/640/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 640w,https://www.economist.com/img/b/800/800/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 800w,https://www.economist.com/img/b/1000/1000/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 1000w,https://www.economist.com/img/b/1280/1280/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_02.jpg 1280w"  alt=""/</div><br><p class="article__body-text">Last month an elderly patient of mine spent more than 24 hours on a corridor trolley before a bed could be found. Another patient with ulcerative colitis, a condition that can lead to sepsis and bowel perforation, developed an agonising abdominal pain. He went, as he should have done, to the accident-and-emergency department, where he sat on a hard chair for seven hours before being admitted by harried, exhausted-looking staff. He described the ward as “bedlam” and, after 48 hours, he was discharged with no improvement in his pain. I spent much of one morning when I should have been seeing a dozen other patients trying to manage a problem that should have been addressed in hospital. </p<br><p class="article__body-cite"><cite>Doctors and nurses are accustomed to viewing themselves as members of a team – but as resources shrink we are being asked to see ourselves as rivals</cite></p<br><p class="article__body-text">Later in the week I called an ambulance for a frail and vulnerable woman who’d fallen down a flight of stairs and snapped her wrist. Her hand was very swollen and the blood flow sluggish – the bones required straightening urgently. The call handler told me that an ambulance would take four or maybe five hours to get to her. It’s now normal for patients with problems that require hospital admission to come to their <small>GP</small> instead because they’re terrified of the experience that awaits them when they get there. In the past month more than one elderly patient has pleaded with me not to send them in. The point of medicine should be to ease suffering; <small>NHS</small> failings are now amplifying it.</p<br><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">T</span>here is now a lottery of care, depending on your condition. Some can be dealt with efficiently; others are neglected. Urgent and cancer treatment trumps everything else, so chronic conditions deteriorate as they get pushed further and further down the priority list. Doctors and nurses are accustomed to viewing themselves as members of a team – a competitive mindset is alien to our training and thinking – but as demand rises and resources become more stretched, we are being asked to see ourselves as rivals, squabbling on behalf of our patients over the few available scraps of funding. </p<br><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/810/810/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg" srcSet="https://www.economist.com/img/b/200/200/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 200w,https://www.economist.com/img/b/300/300/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 300w,https://www.economist.com/img/b/400/400/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 400w,https://www.economist.com/img/b/600/600/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 600w,https://www.economist.com/img/b/640/640/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 640w,https://www.economist.com/img/b/800/800/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 800w,https://www.economist.com/img/b/1000/1000/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 1000w,https://www.economist.com/img/b/1280/1280/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_03.jpg 1280w"  alt=""/</div><br><p class="article__body-text">The diminution of resources in the <small>NHS</small> has led to a diminution of fellow feeling among colleagues working in specialities. As they struggle to care properly for their own patients, they seem increasingly obliged to reject requests for help or advice from <small>GP</small>s such as me. I’ve been rebuffed several times by cardiologists, paediatricians and the wound-dressing service. Psychiatrists are so overwhelmed that they routinely decline referrals without explanation. Even those patients who are accepted can wait four or five years to be seen. </p<br><p class="article__body-text">My profession of general practice has become punch-drunk from successive waves of reform, negligent workforce planning and the insistence that we take over the management of almost all chronic disease in a population that’s older and frailer than it has ever been. On top of that, we have to address the ballooning mental-health needs of a society <a href="/1843/2021/03/26/a-queue-of-ambulances-a-handful-of-beds-everyone-looked-to-her-for-solutions">traumatised by the pandemic</a>, all without any growth in our workforce or real-terms resources. Across the country <small>GP</small>s are providing more appointments than before the pandemic, but still people struggle to get seen.</p<br><p class="article__body-cite"><cite>I try not to become despondent or angry. Instead I tell myself that this must be the level of NHS funding that the British electorate wants</cite></p<br><p class="article__body-text">I now face daily decisions on how best to manage my patients given that the services I was taught to rely on are no longer available. There’s pressure on me from patients and from hospital colleagues to prescribe medications for everything from skin conditions to mental-health problems that are supposed to be the domain of specialists. During my training I took it for granted that a functioning hospital service would be able to see my patients when their problems went beyond my expertise. </p<br><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/810/810/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg" srcSet="https://www.economist.com/img/b/200/200/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 200w,https://www.economist.com/img/b/300/300/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 300w,https://www.economist.com/img/b/400/400/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 400w,https://www.economist.com/img/b/600/600/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 600w,https://www.economist.com/img/b/640/640/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 640w,https://www.economist.com/img/b/800/800/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 800w,https://www.economist.com/img/b/1000/1000/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 1000w,https://www.economist.com/img/b/1280/1280/90/media-assets/image/1843_20230106_NHS_DOC_CRISIS_04.jpg 1280w"  alt=""/</div><br><p class="article__body-text">The last time I remember things being this bad for the <small>NHS</small> was in my final years at medical school in the 1990s. At the fag end of the Conservative government of the day, it took years to get a hip replacement, an endoscopy or an appointment with a psychiatrist. In 2000, Britain spent 6.3% of GDP on health, considerably less than the European Union average of 8.5%. That same year, Tony Blair’s Labour government committed to matching the <small>EU</small> average, and waiting lists tumbled – I can just about remember when <small>GP</small>s could refer a patient to a specialist clinic and expect them to be seen within 12 weeks. This all seems very long ago. The average spending on health in those countries that were members of the <small>EU</small> prior to 2004 has grown into double digits as a percentage of GDP, while Britain has regressed. After peaking in 2010, public satisfaction with the <small>NHS</small> has been falling ever since. </p<br><p class="article__body-text">When my patients complain to me that they can’t see a <small>GP</small>, can’t walk because of their hip pain, can’t go outside because of their paralysing panic attacks, can’t sleep for the torment of a skin condition, or that they’re embarrassed by disabling bladder or bowel problems, I try not to become despondent or angry. Instead I tell myself that this must be the level of <small>NHS</small> funding that the British electorate wants. </p<br><p class="article__body-text">Stevens, the former <small>NHS</small> chief executive, acknowledged in 2016 that if general practice fails, the broader health system will fail. The latest winter letter from the medical great and good tacitly accepts that this has already happened. Doctors like me should adjust our expectations of what constitutes good care, rather than hope for more resources. We shouldn’t worry – they’ll have our backs. But patients will not be so lucky. Fewer and fewer will be able to obtain the diagnoses, treatments and surgery that they need. People will die as a result. </p<br><p class="article__body-text">“Crisis” is a Greek word coined over 2,000 years ago to describe the point in the evolution of an illness at which success and failure hang in the balance. To be in crisis once meant to be at the mercy of even the subtlest of interventions. Any one might prove decisive in tipping the patient towards recovery or demise. A “winter health crisis” has been declared so many times that the phrase has been drained of any sense of drama. But the gravity of the <small>NHS</small>’s problems this year might prove decisive in determining whether it lives or dies. <span data-ornament="ufinish">■</span></p<br><p class="article__body-text"><b>Gavin Francis</b> is a <small>GP</small> in Edinburgh and the author of, among other books, “Adventures in Human Being” and “Recovery: The Lost Art of Convalescence”</p<br><p class="article__body-text"><small>ILLUSTRATIONS</small>: <b><small>MARK SMITH</small></b></p<br><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
