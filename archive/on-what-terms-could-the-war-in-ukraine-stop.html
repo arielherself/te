@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Finding an ending</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">On what terms could the war in Ukraine stop?</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Pressure for peace talks is growing, even as Russia retreats from Kherson</h2></section>
+<div class="mdui-container"><img alt="Catherine, 70, looks out the window while holding a candle for light inside her house during a power outage, in Borodyanka, Kyiv region, Ukraine, Thursday, Oct. 20, 2022. Airstrikes cut power and water supplies to hundreds of thousands of Ukrainians, part of what the country&#x27;s president called an expanding Russian campaign to drive the nation into the cold and dark and make peace talks impossible. (AP Photo/Emilio Morenatti)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221112_FBP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221112_FBP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221112_FBP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221112_FBP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221112_FBP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221112_FBP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221112_FBP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221112_FBP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221112_FBP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221112_FBP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">R</span><small>USSIA’S lightning</small> attack on Ukraine’s capital, Kyiv, was a failure. Its creeping artillery war to seize the eastern region of Donbas has ground to a bloody halt. It has lost a chunk of stolen territory south of the city of Kharkiv, and this week announced a retreat from Kherson, the only provincial capital it had captured since its invasion in February. With each setback, Vladimir Putin, Russia’s president, has sought new ways to torment Ukraine. The latest is a relentless bombardment that seeks to wreck Ukraine’s infrastructure. Residents of the capital have been told they may have to evacuate if the power grid collapses, halting water and sewage services.</p><p class="article__body-text">Power cuts have not sapped Ukraine’s will to fight. But they are a reminder that, eight months after his unprovoked invasion, Mr Putin keeps looking for ways to raise the stakes. Some worry he might blow up a dam on the Dnieper river, as Stalin did in 1941, to slow his adversaries’ advance. </p><p class="article__body-text">In America, too, questions have been raised. Hard-left Democrats recently issued a call, swiftly retracted, for negotiations. Gains by America-first Republicans in the midterm elections on November 8th, although smaller than expected, are a reminder that American politics might change dramatically after the next presidential election, in two years’ time, and with it policy on Ukraine. </p><p class="article__body-text">In private, Western and Ukrainian officials are starting to ponder what a stable outcome might look like. Will Ukraine become a new Finland, forced to cede land to its invaders and to remain neutral for decades? Or another West Germany, with its national territory partitioned by war and its democratic half absorbed into <small>NATO</small>? A much-discussed template is Israel, a country under constant threat that has been able to defend itself without formal alliances but with extensive military help from America.</p><p class="article__body-text">Mr Putin is hoping his campaign to destroy Ukraine’s electricity grid will freeze the country into submission, or at least turn it into a weak, failing state. But the evidence of past conflicts is that aerial bombing of civilians, in the absence of an effective ground campaign, rarely secures victory. Nearly 90% of Ukrainians want the country to keep fighting. </p><p class="article__body-text">Ukraine’s more avid Western supporters think that, with time, Ukraine will become stronger, and Russia weaker. But Mr Putin is hoping that “General Winter” will somehow revive his fortunes, if not by weakening Ukraine’s will to fight then by gnawing at the West’s readiness to support it, as the heating bills balloon in Europe.</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221112_FBP002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20221112_FBP002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20221112_FBP002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20221112_FBP002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20221112_FBP002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20221112_FBP002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20221112_FBP002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20221112_FBP002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20221112_FBP002.jpg 1280w"  alt="Artillerymen of Ukraine&amp;#39;s Armed Forces destroy the Russian invaders with the help of the German 155-mm FH70 howitzer, Zaporizhzhia Region, southeastern Ukraine. October 27, 2022. Photo by Dmytro Smolienko/Ukrinform/ABACAPRESS.COM"/></div><p class="article__body-text">“The <small>G</small>7 statement is basically a demand for total Russian surrender, which is not a plausible diplomatic outcome. Diplomacy by definition involves give and take. The expectation should not be another Treaty of Versailles,” says Samuel Charap of the <small>RAND</small> Corporation, an American think-tank, referring to the punitive terms imposed on Germany at the end of the first world war. The West, Ukraine and Russia, he argues, should start talking, if only to set the groundwork for more substantive negotiations in future: “Fighting and talking at the same time should be the norm.”</p><p class="article__body-text">Few Western leaders question Ukraine’s ambition to recapture the territory lost since Russia invaded in February. Many would support efforts to reclaim the parts of Donbas seized in 2014. But opinion is more divided when it comes to reconquering Crimea. Many worry that the prospect of losing the peninsula might prompt a dangerous escalation from Mr Putin. </p><p class="article__body-text">Whatever the diplomatic template, Russia’s blitz has proved that the West will need to help Ukraine create a properly integrated and layered air-defence system, mixing fighter aircraft, surface-to-air batteries and shoulder-launched weapons. At the moment weapons are arriving piecemeal and often cannot exchange data. There are also worries about Ukraine running out of certain types of air-defence munitions. If that were to happen Russia could then deploy much more air power in support of ground troops. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221112_FBP004.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20221112_FBP004.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20221112_FBP004.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20221112_FBP004.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20221112_FBP004.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20221112_FBP004.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20221112_FBP004.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20221112_FBP004.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20221112_FBP004.jpg 1280w"  alt="BAKHMUT, UKRAINE - OCTOBER 19: A Ukrainian tank crew member fighting on the frontline is seen in a field of sunflowers in Bakhmut, Donetsk Oblast, Ukraine on October 19, 2022. (Photo by Wolfgang Schwan/Anadolu Agency via Getty Images)"/></div><p class="article__body-text">Ukraine’s mix-and-match weapons—a “Mr Potato Head” arsenal, as some call it—cause problems elsewhere. For instance, it has no fewer than 14 different types of artillery pieces, with an average brigade operating four different sorts. “This is a logistical nightmare for them, especially when we talk about ammunition,” says Nick Reynolds of <small>RUSI</small>, a British think-tank. Some of the weapons are wearing out badly, and Europe’s defence industry, sapped by decades of low spending, is poorly placed to produce spare parts. “Red lights are flashing in terms of that support being available,” adds Mr Reynolds.</p><p class="article__body-text">A pause to play at diplomacy may suit Mr Putin for a time—particularly if it allows him to consolidate some territorial gains. That may explain his recent toning down of nuclear rhetoric and his sudden casting of Ukrainians as victims of Western aggression. “The West is throwing Ukrainians into a furnace”; Russia, in contrast, “has always treated Ukrainian people with respect,” Mr Putin declared on November 4th. (His propagandists and officials, though, still talk of “de-Satanising” Ukraine.) The shift fits another of Mr Putin’s guises, as the champion of a global movement to cast off Western dominance. </p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

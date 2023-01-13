@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/china/" data-analytics="sidebar:section">China</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The tsunami</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">China is overwhelmed, yet an even bigger covid wave may be coming</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">The transition back to normal life is proving difficult</h2></section>
+<div class="mdui-container"><img alt="China, Shanghai - January 3, 2023Shanghai Medical RunsPatients, mostly aged people with Covid syndromes, overwhelm the hall of a building at Changhai Hospital in Shanghai, China Tuesday, Jan. 03, 2023."  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_CNP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_CNP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_CNP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_CNP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_CNP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_CNP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_CNP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_CNP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_CNP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_CNP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">O</span><small>utside the</small> People’s Hospital of Dezhou, a small city in the coastal province of Shandong, an old woman on a stretcher, breathing quickly with her eyes closed, is unloaded from an ambulance. A few minutes later she is put back into it. Her family members start calling other hospitals. There is no room at this one.</p><p class="article__body-text">In the lobby, another family refuses to give up. “There are no beds at the moment, but let’s wait a bit,” says Mr Teng, who prefers that only his surname be used. He is trying to secure space for his father-in-law, who fell sick in late December and now has dangerously low levels of blood oxygen. The patient is sitting in a wheelchair, breathing through a mask attached to his own portable oxygen-concentrator, which is plugged into a wall socket.</p><p class="article__body-text">Similar scenes are common across China. Since December, when the country ended the lockdowns, mass testing and domestic-travel curbs of its “zero-covid” policy, the virus has spread at a blistering pace. Many young and middle-aged people have already shaken off a bout of the disease. But <a href="/china/2022/12/19/a-wave-of-covid-19-reveals-flaws-in-chinas-health-system">Chinese hospitals</a> are now full of people whom the virus is hitting harder. Most of them are elderly, or have pre-existing conditions such as heart disease and diabetes. They are often in a perilous state: many are under-vaccinated, if they have been jabbed at all. </p><p class="article__body-text">The outbreak is now spreading to smaller cities like Dezhou, which have fewer medical resources, and rural areas, which will struggle even more. Many doctors in the countryside have never treated covid patients before. Reports speak of queues forming outside village clinics, where many medical workers are also infected and drugs are lacking. On December 31st the government released a plan for tackling infections in the countryside. Many of its proposals, such as stockpiling drugs and increasing <small>ICU</small> capacity, will be hard to implement before the virus arrives. </p><p class="article__body-text">The Chinese Centre for Disease Control and Prevention has said that it will eventually release an estimate of excess mortality, which should indicate how many more people are dying compared with the average rate. Airfinity, a London-based data firm, estimates that around 9,000 people are probably dying of covid in China every day. It predicts the number may peak late this month at about 25,000, and that another—higher—peak of infections will occur in early March. <i>The Economist</i>’s model predicts that in a worst-case scenario 1.5m Chinese people will die from the virus in the coming months. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230107_CNC268.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230107_CNC268.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230107_CNC268.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230107_CNC268.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230107_CNC268.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230107_CNC268.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230107_CNC268.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230107_CNC268.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230107_CNC268.png 1280w"  alt=""/></div><p class="article__body-text">State media also shy away from discussing whether China could have been better prepared for the lifting of covid-related restrictions, which happened just as the winter flu season was getting under way. By late November only 40% of those aged over 80 had received the three shots of vaccine required to protect them from severe disease or death. By December 21st the average number of doses being administered daily had risen to more than 3.6m compared with fewer than 140,000 at the beginning of the month (see chart 1). </p><p class="article__body-text">At least one county (in Hunan province) has urged people not to return for the holiday “unless necessary”. The central government, however, is showing no sign of wavering. In contrast to its stance during the zero-covid phase, it has not tried to deter people from heading to their home towns. On January 8th it will begin managing covid as a “class B” disease, like <small>HIV</small> and hepatitis, rather than “class A”, which includes bubonic plague and cholera. This will involve abandoning the biggest remaining legacy of the zero-covid era: stringent quarantine requirements and pandemic-related visa restrictions that have made it extremely difficult for most foreigners to enter the country for nearly three years. The change will also apply to quarantine requirements for crossing the border between mainland China and Hong Kong. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/701/90/media-assets/image/20230107_CNC276.png" srcSet="https://www.economist.com/img/b/200/231/90/media-assets/image/20230107_CNC276.png 200w,https://www.economist.com/img/b/300/346/90/media-assets/image/20230107_CNC276.png 300w,https://www.economist.com/img/b/400/461/90/media-assets/image/20230107_CNC276.png 400w,https://www.economist.com/img/b/600/692/90/media-assets/image/20230107_CNC276.png 600w,https://www.economist.com/img/b/640/738/90/media-assets/image/20230107_CNC276.png 640w,https://www.economist.com/img/b/800/922/90/media-assets/image/20230107_CNC276.png 800w,https://www.economist.com/img/b/1000/1153/90/media-assets/image/20230107_CNC276.png 1000w,https://www.economist.com/img/b/1280/1476/90/media-assets/image/20230107_CNC276.png 1280w"  alt=""/></div><p class="article__body-text">While the disease spreads, it will be hard to keep production lines running and lorries on the road. Covid is already ripping through factory towns and causing serious disruption. Local governments and company managers are battling high infection rates on factory floors. In late December suppliers in major exporting provinces such as Guangdong, Zhejiang, Shandong and Jiangsu faced severe delays, according to <i>Caixin</i>, a Chinese magazine. Many home-appliance makers, for example, were operating at 20-50% capacity, the publication said. Its purchasing managers’ index, a gauge of the manufacturing sector, suggests a contraction in activity (see chart 2).</p><p class="article__body-text">Predicting how long such disruptions may last is difficult. The stunning collapse of the zero-covid policy means the route to economic recovery will be bumpier but quicker than many originally expected. Analysts have been bringing forward their projections of when the corner will be turned. Many economists think that the worst will be over by late March. At that point a recovery will begin that could gain strength later in the year.</p><p class="article__body-text">An economic rebound would be seized on by the Communist Party to shore up battered faith at home in its propaganda line, which in zero-covid days emphasised Western “chaos” in the face of the pandemic compared with China’s “order”. Officials must worry as they assess the cacophony that is erupting on Chinese social media about the current outbreak. Explicit criticism of the government is muted (as always, censorship helps to crush it). But the torrent of praise that zero-covid once elicited, at least until 2022, when many people began to balk at the growing number of lockdowns, has not been replaced with similar applause for the about-face. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_CNP002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230107_CNP002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230107_CNP002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230107_CNP002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230107_CNP002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230107_CNP002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230107_CNP002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230107_CNP002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_CNP002.jpg 1280w"  alt="Women wearing face masks gather to take souvenir pictures with a giant rabbit on display at a shopping mall ahead of the upcoming Chinese Year of the Rabbit in Beijing, Wednesday, Jan. 4, 2023. The Chinese government sharply criticized COVID-19 testing requirements imposed on visitors from China and threatened countermeasures against countries involved, which include the U.S. and several European nations. (AP Photo/Andy Wong)"/></div><p class="article__body-text">Even among the government’s most ardent online cheerleaders, hints emerge of surprise at the way the country’s exit from zero-covid is playing out. “The tsunami of infections caused by Omicron in Beijing has surpassed expectations,” wrote Hu Xijin, a nationalist former newspaper editor, on his Weibo account on December 25th. Concerning the covid-related deaths of old people he told his nearly 25m followers: “This kind of price causes people sorrow.” Another Chinese journalist, with nearly 1.9m followers, called the relaxation of covid controls “chaotic” and “ill prepared”. On December 29th a neo-Maoist website, Utopia, published a commentary accusing the government of ditching its strategy too swiftly. “We’re not a racing car, but a big bus full of old, weak, ill and handicapped people,” it said. “A smooth and steady transition is extremely important.” The article has been deleted. </p><p class="article__body-text">On Weibo, many commenters have been turning on people they call <i>tang fei</i>, or lying-flat bandits. The term refers to sceptics of the zero-covid policy, who are accused by pro-party types of wanting to lie down and accept the spread of the disease. Those who joined demonstrations against zero-covid measures that took place in several cities in late November are said to belong to the bandit group. The central government clearly is nervous that it might be deemed a member, too. Searches for the term <i>tang fei</i> were already being blocked by social media in November, before the government made fully clear that it was ditching its covid policy. To evade the censors, users now use homonyms.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

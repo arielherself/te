@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/letters/" data-analytics="sidebar:section">Letters</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->On church bells, Detroit, Jair Bolsonaro, Armenia and Azerbaijan, management consultants</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Letters to the editor</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">A selection of correspondence</h2></section>
+<div class="mdui-container"><img alt="12th August 1945: Collection of some 3,000 church bells taken by the Germans from churches in Germany dumped in the docks area. A British soldier in the foreground gives a perspective on their size. (Photo by Keystone/Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221001_EUP002.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221001_EUP002.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221001_EUP002.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221001_EUP002.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221001_EUP002.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221001_EUP002.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221001_EUP002.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221001_EUP002.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221001_EUP002.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221001_EUP002.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text"><b>Letters are welcome via e-mail to <a href="/cdn-cgi/l/email-protection#95f9f0e1e1f0e7e6d5f0f6fafbfaf8fce6e1bbf6faf8"><span class="__cf_email__" data-cfemail="e9858c9d9d8c9b9aa98c8a86878684809a9dc78a8684">[email&#160;protected]</span></a></b></p><p class="article__body-text">Regarding your article on the global trade in church bells (“<a href="/europe/2022/09/29/going-for-a-bong-the-global-trade-in-church-bells" data-tegid="ngs03mimk3inj8v1qjtc1omna2u418c3">Going for a bong</a>”, October 1st), although repurposing bells from scrap heaps should be celebrated, treating bells like commodities risks a more enduring loss. The staggering number of bells lost during the second world war speaks to the plundering of identity and soul that made the Nazi occupation so catastrophic. </p><p class="article__body-text">In an age where Benin bronzes, Italian marbles and Cambodian sandstones are being repatriated, and rightfully so, it seems incongruous that bells should be shuffled around without considered pause. Where possible, bells should be rehoused in the communities they have served for centuries. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220924_USP502.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220924_USP502.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220924_USP502.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220924_USP502.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220924_USP502.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220924_USP502.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220924_USP502.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220924_USP502.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220924_USP502.jpg 1280w"  alt="2K1523M Detroit, United States Of America. 14th Sep, 2022. Detroit, United States of America. 14 September, 2022. U.S President Joe Biden, prepares to get into a Chevrolet Corvette Z06 during a visit to the 2022 North American International Auto Show at Huntington Place Convention Center, September 14, 2022 in Detroit, Michigan. Credit: Adam Schultz/White House Photo/Alamy Live News"/></div><p class="article__body-text">You inadvertently offered a “Back to the Future” path for Detroit, by stating that “In the long run, the only way to fully reverse Detroit’s decline is to diversify its economy” (“<a href="/united-states/2022/09/19/detroit-is-once-again-betting-on-the-car-industry-to-rescue-it">Revving up</a>”, September 24th). The city’s diversification was recognised in 1969 by Jane Jacobs, in “The Economy of Cities”. Jacobs contrasted Detroit’s dynamic ecosystem of small producers to the stagnation of Pittsburgh’s steel-dominated economy. The intervening decades have been tough for Detroit, but perhaps its <small>DNA</small> will help it recover its former prosperity. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221008_AMP501.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20221008_AMP501.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20221008_AMP501.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20221008_AMP501.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20221008_AMP501.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20221008_AMP501.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20221008_AMP501.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20221008_AMP501.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20221008_AMP501.jpg 1280w"  alt="A Supporter of Brazilian former President (2003-2010) and candidate for the leftist Workers Party (PT) Luiz Inacio Lula da Silva reacts as she watches the vote count of the legislative and presidential election, in Rio de Janeiro, Brazil, on October 2, 2022. - Brazilians voted Sunday in a polarizing presidential election which front-runner Luiz Inacio Lula da Silva hopes to take in the first round as incumbent Jair Bolsonaro says he will accept the result if it is "/></div><p class="article__body-text">It is truly puzzling that <i>The Economist</i> does not support Jair Bolsonaro for re-election as president of Brazil (“<a href="/leaders/2022/10/04/to-win-brazils-presidency-lula-should-move-to-the-centre">On a knife-edge</a>”, October 8th). Mr Bolsonaro defends property rights and free-market policies, and yet you favour the leftist, socialist candidate. Luiz Inácio Lula da Silva was convicted of crimes and got out of jail on a legal technicality. He denies wrongdoing, but he was never found not guilty of corruption. Nor is he the pragmatic leftist you make him out to be. Lula’s government, in power from 2003 to 2010, leaned increasingly left as the years went by. His party is allied with the <i>Movimento Sem Terra</i>, a radical movement pushing for land reform. The threat of land invasions is real. </p><p class="article__body-text">Under the Lula government, funds were sent to Cuba and Venezuela, “investments” that eventually became worthless and yet were financed by Brazilian taxpayers. A new Lula government would eventually trend towards ever more left-leaning policies, and increase the tax burden to finance them with consequences for the private sector and the overall economy. </p><p class="article__body-text">As you point out, Azerbaijani guns, as well as the continued brutality and demonisation of Armenians, are doing the talk on the ground and domestically, while Baku presents itself as a champion of sustained peace (“<a href="/europe/2022/09/22/renewed-fighting-in-the-caucasus-shows-russias-waning-influence">The guns do the talking</a>”, September 24th). But is Azerbaijan interested in a peace agreement and, if so, in what kind of peace? Azerbaijan’s idea of peace is an imposed agreement, which means give me what I want, otherwise I will get it by force. Its soldiers continue to commit war crimes on Armenian prisoners of war and civilians. The recent barbarous, Daesh-style mutilation of Armenian female soldiers, and cold-blooded execution of unarmed prisoners by Azerbaijani soldiers are the latest examples of such heinous crimes.</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221008_WBD002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20221008_WBD002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20221008_WBD002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20221008_WBD002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20221008_WBD002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20221008_WBD002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20221008_WBD002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20221008_WBD002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20221008_WBD002.jpg 1280w"  alt=""/></div><p class="article__body-text">I was surprised to see you omitting the larger societal role that consultants fill in your criticism of management-consulting firms (“<a href="/business/2022/10/04/where-next-for-managements-consiglieri">Bulletproof suits</a>”, October 8th). Consultants are to the service economy what the means of production were to the industrial age. Occasionally consultants are called on to sprinkle holy water on a management decision, but more often than not, they are employed to help companies solve the issue of how to do more with less. </p><p class="article__body-text"><small>Sebastian Belmark</small><br/>Manager<br/>Finance and Performance<br/>Deloitte<br/><i>Copenhagen</i></p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221008_LDD002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20221008_LDD002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20221008_LDD002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20221008_LDD002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20221008_LDD002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20221008_LDD002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20221008_LDD002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20221008_LDD002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20221008_LDD002.jpg 1280w"  alt=""/></div><p class="article__body-text">Your piece reminded me of an old story. A shepherd was tending his flock when a shiny silver <small>BMW</small> emerged. The driver, a young man in an Armani suit and the latest Polarised sunglasses, asked the shepherd, “If I can tell you how many sheep you have in your flock, will you give me one?” The shepherd glanced at his peacefully grazing flock and answered, “Sure.” </p><p class="css-crkmw2 efr6q1o0">This article appeared in the Letters section of the print edition under the headline "On church bells, Detroit, Jair Bolsonaro, Armenia and Azerbaijan, management consultants"</p><div class="mdui-container"><img alt="A house-price horror show" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="responsive" /></div><div class="mdui-container"><img alt="A house-price horror show"  srcSet="https://www.economist.com/img/b/16/21/90/media-assets/image/20221022_DE_US.jpg 16w, https://www.economist.com/img/b/32/42/90/media-assets/image/20221022_DE_US.jpg 32w, https://www.economist.com/img/b/48/63/90/media-assets/image/20221022_DE_US.jpg 48w, https://www.economist.com/img/b/64/84/90/media-assets/image/20221022_DE_US.jpg 64w, https://www.economist.com/img/b/96/126/90/media-assets/image/20221022_DE_US.jpg 96w, https://www.economist.com/img/b/128/168/90/media-assets/image/20221022_DE_US.jpg 128w, https://www.economist.com/img/b/256/336/90/media-assets/image/20221022_DE_US.jpg 256w, https://www.economist.com/img/b/360/473/90/media-assets/image/20221022_DE_US.jpg 360w, https://www.economist.com/img/b/384/505/90/media-assets/image/20221022_DE_US.jpg 384w, https://www.economist.com/img/b/480/631/90/media-assets/image/20221022_DE_US.jpg 480w, https://www.economist.com/img/b/600/789/90/media-assets/image/20221022_DE_US.jpg 600w, https://www.economist.com/img/b/834/1097/90/media-assets/image/20221022_DE_US.jpg 834w, https://www.economist.com/img/b/960/1263/90/media-assets/image/20221022_DE_US.jpg 960w, https://www.economist.com/img/b/1096/1441/90/media-assets/image/20221022_DE_US.jpg 1096w, https://www.economist.com/img/b/1280/1684/90/media-assets/image/20221022_DE_US.jpg 1280w, https://www.economist.com/img/b/1424/1873/90/media-assets/image/20221022_DE_US.jpg 1424w" src="https://www.economist.com/img/b/1424/1873/90/media-assets/image/20221022_DE_US.jpg" decoding="async" data-nimg="responsive"  loading="lazy"/></div><p orientation="vertical" class="css-20abx8 elrdawu5">Discover stories from this section and more in the list of contents </p><p class="ds-footer__mission-statement">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </p><p id="ds-footer-copyright" class="ds-footer__copyright">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

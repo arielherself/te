@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/china/" data-analytics="sidebar:section">China</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->A pandemic stress test</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">A wave of covid-19 reveals flaws in China’s health system</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">It is better than it used to be, but still needs reform</h2></section>
+<div class="mdui-container"><img alt="A worker wears a mask during a government organised media tour at Tongji Hospital following the coronavirus disease (COVID-19) outbreak, in Wuhan, Hubei province, China September 3, 2020. REUTERS/Aly Song - RC2WQI9VMICC"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221224_CNP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221224_CNP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221224_CNP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221224_CNP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221224_CNP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221224_CNP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221224_CNP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221224_CNP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221224_CNP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221224_CNP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">W</span><small>ithin the</small> next month, China’s medical institutions will face their “darkest hour”. This warning by Zhang Wenhong, a prominent infectious-disease expert, has been circulated by state media. It reflects a view that not long ago would have been treated as heresy in “zero-covid” China. But with the virus now sweeping the country, including its hospitals, talk of crushing it has ceased. People are queuing for hours at fever clinics. Medical staff are falling sick in droves. In the coming weeks deaths will rise rapidly as the disease takes its toll on an undervaccinated population. </p><p class="article__body-text">For much of the past three years, since cases of covid-19 were first detected in the central city of Wuhan, the government has viewed its handling of the pandemic with pride. It had succeeded in keeping covid at bay and deaths to an astonishingly small number compared with many other countries. It had also managed to turn this to great propaganda advantage. At least until late this year, when the virus began to run loose and protests erupted over often-brutally enforced lockdowns, many people appeared to buy the official line that China’s accomplishments were the product of a superior political system, one said to be uniquely capable of mobilising people and resources on a scale needed to prevent the virus from spreading. </p><p class="article__body-text">With zero-covid now all but abandoned and streets near-emptied not by lockdowns but by fear, the public’s attention is turning to the health-care apparatus. In recent days calls in Beijing to 120, the number for medical emergencies, have risen to five or six times the normal level. “Covid chaos”, as a newspaper in Beijing called it, has broken out in hospitals. People in many cities have been flocking to them, terrified even by mild infection with the virus. They were once told that it posed a grave threat to their lives. Now, dismissively, officials are calling the current Omicron variant flu-like. But immunity to covid is low in China, so the ballooning number of cases will result in many deaths: about 1.5m in the next few months, by <i>The Economist</i>’s worst-case estimate. </p><p class="article__body-text">Under Xi Jinping, who became China’s leader a decade ago, public acknowledgment of policy error would be harder to imagine. Perhaps, he may feel, there is less need of one. Much has been done to remedy the problems that <small>SARS</small> highlighted. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221224_CNC223.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221224_CNC223.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221224_CNC223.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221224_CNC223.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221224_CNC223.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221224_CNC223.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221224_CNC223.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221224_CNC223.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221224_CNC223.png 1280w"  alt=""/></div><p class="article__body-text">After <small>SARS</small>, officials ramped up efforts to enroll rural residents in a government-funded health-insurance scheme. In 2007 they did the same in cities among those without formal jobs. Two years later the government unveiled a plan for health reform that aimed to provide affordable, basic care for everyone (“universal health coverage”, as the <small>WHO</small> calls it) by 2020. It involved a big increase in government spending. The government’s annual outlay on health as a share of <small>GDP</small> tripled to about 3% compared with the amount being spent at the time of <small>SARS</small>, the <small>WHO</small> reckons (see chart 1). By 2011 more than 95% of China’s population had some form of government-financed health insurance. By 2017 the number of health workers per person had increased by more than 85% and the number of hospital beds by nearly 145%. </p><p class="article__body-text">Much, then, to crow about. But the eruption of covid in 2019 showed that a lot remained to be done. The <small>SARS</small> outbreak, tiny by comparison, had revealed woeful inadequacy in China’s disease-surveillance apparatus. With American help, China tried to remedy this by training hundreds of people in how to respond to such events. But covid was rampant in Wuhan by the time the chief of the Chinese Centre for Disease Control and Prevention, George Gao, learned about it, according to reports. </p><p class="article__body-text">Days after the first covid-related death was announced, the tide began to turn. A citywide lockdown was imposed. The city’s government began demanding that citizens with symptoms be escorted to community health centres for checks. This helped to ease some of the pressure on hospitals. But the clinics struggled to cope. Many people with chronic conditions such as high blood pressure or diabetes had been getting their medicine and check-ups at hospitals. When hospitals stopped providing such services to limit the flow of people, community facilities were supposed to take up the reins. They were unprepared. “Throughout the city, it became difficult for outpatients with chronic diseases to see a doctor or get their medicine,” the academics said. </p><p class="article__body-text">Amy’s view is not surprising. China’s health-care system, and the ability of its health-care institutions to respond to emergencies such as covid, are still saddled with many of the same problems that were evident during <small>SARS</small>. In 2017 the government stopped allowing hospitals to sell essential drugs at a mark-up as a way of generating revenue—a practice that had been causing huge public resentment. But hospitals still find other ways to make money, such as by prescribing unnecessary treatments, including expensive inpatient care. To attract customers they buy shiny, imported <small>MRI</small> scanners and other diagnostic tools, and charge patients steep prices for tests, as less glamorous but important areas of care are neglected. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221224_CNC227.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221224_CNC227.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221224_CNC227.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221224_CNC227.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221224_CNC227.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221224_CNC227.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221224_CNC227.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221224_CNC227.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221224_CNC227.png 1280w"  alt=""/></div><p class="article__body-text">But <i>The Economist</i>’s modelling suggests that is still only about one-third of the number that may be needed to cope with the covid wave (see chart 2). A paucity of intensive-care capacity had been one of the main reasons for maintaining a zero-covid policy. Ramping it up now will not be helped by a chronic shortage of nurses with the necessary skills. Those who suffer most from the critical-care deficit will be people living in places other than the biggest cities, where the fanciest hospitals are concentrated. In the countryside many village “doctors” do not even have a university degree.</p><p<script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/international/" data-analytics="sidebar:section">International</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The generation game</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">The age of the grandparent has arrived</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">The ratio of grandparents to children is higher than ever before. That has big consequences</h2></section>
+<div class="mdui-container"><img alt="A family walk along an alley in Beijing on May 24, 2014. Chinese manufacturing activity saw a sharp improvement in May, hitting a five-month high, HSBC said on May 20, but it warned more government action was needed to kickstart the world&#x27;s number two economy. AFP PHOTO / WANG ZHAO (Photo credit should read WANG ZHAO/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230114_IRP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230114_IRP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230114_IRP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230114_IRP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230114_IRP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230114_IRP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230114_IRP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_IRP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_IRP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_IRP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">T</span><small>he most</small> saccharine song of 1980 was “There’s No One Quite Like Grandma”, performed by the St Winifred’s School choir from Stockport, England. It shot to the top of the British charts as kids everywhere gave it to granny for Christmas. “Grandma, we love you,” they sang. “Grandma, we do. Though you may be far away, we think of you.” </p><p class="article__body-text">Today, as the once-cherubic choristers start to become grandmas and grandpas themselves, grandparenting has changed dramatically. Two big demographic trends are making nana and gramps more important. First, people are living longer. Global life expectancy has risen from 51 to 72 since 1960. Second, families are shrinking. Over the same period, the number of babies a woman can expect to have in her lifetime has fallen by half, from 5 to 2.4. That means the ratio of living grandparents to children is steadily rising.</p><p class="article__body-text">We found that there are 1.5bn grandparents in the world, up from 0.5bn in 1960 (though the further back one goes, the fuzzier the estimates become). As a share of the population they have risen from 17% to 20%. And the ratio of grandparents to children under 15 has vaulted from 0.46 in 1960 to 0.8 today. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20230114_IRC302.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230114_IRC302.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230114_IRC302.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230114_IRC302.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20230114_IRC302.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20230114_IRC302.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20230114_IRC302.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20230114_IRC302.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20230114_IRC302.png 1280w"  alt=""/></div><p class="article__body-text">Since fertility rates and life expectancy vary enormously from country to country, the age of the grandparent has not yet dawned everywhere (see chart 1). They are 29% of Bulgarians but only 10% of Burundians. Their average age varies widely, too, from 53 in Uganda to 72 in Japan (see chart 2). To understand what a difference plentiful grandparents make, a good place to start is in a country where they are still scarce. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/701/90/media-assets/image/20230114_IRC334.png" srcSet="https://www.economist.com/img/b/200/231/90/media-assets/image/20230114_IRC334.png 200w,https://www.economist.com/img/b/300/346/90/media-assets/image/20230114_IRC334.png 300w,https://www.economist.com/img/b/400/461/90/media-assets/image/20230114_IRC334.png 400w,https://www.economist.com/img/b/600/692/90/media-assets/image/20230114_IRC334.png 600w,https://www.economist.com/img/b/640/738/90/media-assets/image/20230114_IRC334.png 640w,https://www.economist.com/img/b/800/922/90/media-assets/image/20230114_IRC334.png 800w,https://www.economist.com/img/b/1000/1153/90/media-assets/image/20230114_IRC334.png 1000w,https://www.economist.com/img/b/1280/1476/90/media-assets/image/20230114_IRC334.png 1280w"  alt=""/></div><p class="article__body-text">Consider Senegal. Most rural Senegalese are subsistence farmers. Although fertility has dropped from 7.3 babies per woman in 1980 to 4.5 today, large families remain the norm. Children under 15 outnumber living grandparents by 3.5 to 1.</p><p class="article__body-text">As for Mrs Diallo, she has never worked outside the home. But she has helped some of her offspring to do so. Ndeye, one of her daughters, got a job in an office despite having eight kids herself, because Mrs Diallo helped out with the children. </p><p class="article__body-text">In richer places, fertility has fallen much further than in Africa. A typical Mexican woman, for example, can expect to have only two children, down from nearly seven in 1960. Mexico’s ratio of living grandparents to children is three times higher than Senegal’s. Mexican <i>abuelas</i> thus have more time to lavish on each grandchild. </p><p class="article__body-text">Rich countries generally provide services that help women juggle child-care and work. But many parents seek extra help from grandparents nonetheless. Old-age pensions help, by allowing grandparents to give up work. According to one survey, 50% of very young children, 35% of primary-school-aged children and 20% of teens in America spend time with their grandparent in a typical week. </p><p class="article__body-text">And although grandmas help daughters return to the workforce, that often means withdrawing from it themselves. “There is a clear trade-off,” says Mr Talamas. Back in Mexico, Hermelinda Coapango Vázquez works as a manicurist but takes appointments only at times that fit around caring for her grandson. “My grandson is my life,” she says. “I don’t have a partner and I am not one for having lots of friends.” A study from Brazil found that when children aged 0-3 were randomly assigned formal childcare, the family collectively earned more, mainly because grandparents and older siblings were freed up to work. </p><p class="article__body-text">Overall, looking after kids appears to be good for grandparents. Those who spend time with their grandchildren report lower levels of depression and loneliness. But one can have too much of a good thing. Youngsters can be exhausting, frustrating and objectionable. A study in Singapore, with mainly ethnically Chinese families, found that many looked after their grandchildren more out of duty than because they relished it. Many find it harder as they age. Some are squeezed in the “grandsandwich generation”—relied upon to help both their grandchildren and their own ailing parents. Some hanker for a more relaxing retirement. Grandma Irma in Mexico admits she would like to travel more as her grandchildren grow more independent.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/739/90/media-assets/image/20230114_IRC335.png" srcSet="https://www.economist.com/img/b/200/243/90/media-assets/image/20230114_IRC335.png 200w,https://www.economist.com/img/b/300/365/90/media-assets/image/20230114_IRC335.png 300w,https://www.economist.com/img/b/400/486/90/media-assets/image/20230114_IRC335.png 400w,https://www.economist.com/img/b/600/729/90/media-assets/image/20230114_IRC335.png 600w,https://www.economist.com/img/b/640/778/90/media-assets/image/20230114_IRC335.png 640w,https://www.economist.com/img/b/800/972/90/media-assets/image/20230114_IRC335.png 800w,https://www.economist.com/img/b/1000/1215/90/media-assets/image/20230114_IRC335.png 1000w,https://www.economist.com/img/b/1280/1556/90/media-assets/image/20230114_IRC335.png 1280w"  alt=""/></div><p class="article__body-text">One place where grandparents have plenty of time to relax is Sweden, where a strong welfare state means parents seldom rely on them. For each child, a Swedish couple can take 16 months of parental leave, for most of which the state pays them most of their previous wages. (The man must take three months, or they are lost; many split the time off equally.) Afterwards, there are subsidised nurseries, and the norm is for both parents to go back to work. Since child-care is everywhere, Swedes find it relatively easy to move cities to find a better job.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/918/90/media-assets/image/20230114_IRP002.jpg" srcSet="https://www.economist.com/img/b/200/302/90/media-assets/image/20230114_IRP002.jpg 200w,https://www.economist.com/img/b/300/453/90/media-assets/image/20230114_IRP002.jpg 300w,https://www.economist.com/img/b/400/604/90/media-assets/image/20230114_IRP002.jpg 400w,https://www.economist.com/img/b/600/906/90/media-assets/image/20230114_IRP002.jpg 600w,https://www.economist.com/img/b/640/966/90/media-assets/image/20230114_IRP002.jpg 640w,https://www.economist.com/img/b/800/1208/90/media-assets/image/20230114_IRP002.jpg 800w,https://www.economist.com/img/b/1000/1510/90/media-assets/image/20230114_IRP002.jpg 1000w,https://www.economist.com/img/b/1280/1933/90/media-assets/image/20230114_IRP002.jpg 1280w"  alt="HPCBP2 RAJASTHAN, INDIA - NOVEMBER 20, 2016: Five young grandchildren with their elderly grandparents when their parent is at work."/></div><p class="article__body-text">Subsidies for parental leave are so generous that even entrepreneurs take a fair chunk of it. Sandra Kastås runs two companies in Stockholm. When her son was born in 2021 she took two months off, then spent a year working half-time, as did her husband, an <small>IT</small> specialist. Despite her hectic schedule, Mrs Kastås expects no regular help from her parents. They live on Gotland, a remote island, and do not visit often. Her mother “shows her love by sending gifts”, such as books and jumpers she has knitted. She talks to her grandson, on FaceTime. “He hugs the phone when she calls. It’s cute,” says Mrs Kastås. </p><p<script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

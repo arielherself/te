@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Thousand-island progressing</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Indonesia is poised for a boom—politics permitting</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Inconsistent policymaking may yet undermine its progress</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221119_FBD001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221119_FBD001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221119_FBD001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221119_FBD001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221119_FBD001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221119_FBD001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221119_FBD001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221119_FBD001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221119_FBD001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221119_FBD001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">I</span><small>ndonesians are</small> used to <a href="/asia/2022/07/21/why-indonesia-punches-below-its-weight-in-global-affairs">near-anonymity</a> on the world stage. John Riady, a scion of Indonesian business, once joked that his country was the planet’s biggest invisible object. But under the bonnets of new electric vehicles (<small>EV</small>s) and on apps used by hundreds of millions of customers, South-East Asia’s largest economy is rapidly becoming more visible. </p><p class="article__body-text">Indonesia holds more than a fifth of the world’s nickel, a crucial component of the batteries used in electric vehicles. The only other country with similarly big reserves is Australia. Indonesia is also the world’s third-largest source of cobalt, another vital input. Analysis by <i>The Economist</i> suggests that by 2030, Indonesia will probably be the fourth-largest producer of <a href="/asia/2022/11/03/indonesias-imams-are-doing-their-bit-for-the-environment">green</a> commodities in the world, behind only Australia, Chile and Mongolia. The government hopes this abundance of essential resources for the global energy transition can fuel an economic revival, accelerating growth and arresting two decades of deindustrialisation.</p><p class="article__body-text">“We want to be the main players in the <small>EV</small> battery industry,” says Joko Widodo, Indonesia’s president of eight years, known almost universally as Jokowi. As the host of the <a href="/asia/2022/11/13/the-dynamics-of-distrust-around-the-g20-summit"><small>G</small>20 summit</a> this week in Bali, he is eagerly advertising his country’s openness to foreign investment.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221119_EPC735.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221119_EPC735.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221119_EPC735.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221119_EPC735.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221119_EPC735.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221119_EPC735.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221119_EPC735.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221119_EPC735.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221119_EPC735.png 1280w"  alt=""/></div><p class="article__body-text">The island of Sulawesi illustrates the policy’s success. Construction at the Morowali Industrial Park began in 2013, and the area now hosts at least 11 working smelters. The project was little known even in Indonesia when it began, spearheaded by China’s Tsingshan Group, the largest producer of nickel in the world. It has since become a centrepiece of the country’s industrial strategy, with a cumulative $18bn invested by several companies. </p><p class="article__body-text">There are local initiatives, too. Electrum, a joint venture between <small>TBS</small> Energi Utama, a conglomerate, and Gojek, a huge ride-hailing and delivery service, aims to begin building an electric-motorbike factory in the second half of 2023. The new venture has partnered with Gogoro, a Taiwanese firm that has pioneered battery-swapping stations for electric motorbikes and mopeds. “It’s the future for us,” says Pandu Patria Sjahrir of <small>tbs</small>, which began life as a coal-mining firm. “Business and government think alike on this, and you have a large domestic market which helps things move faster.” </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/599/90/media-assets/image/20221119_EPM911.png" srcSet="https://www.economist.com/img/b/200/94/90/media-assets/image/20221119_EPM911.png 200w,https://www.economist.com/img/b/300/140/90/media-assets/image/20221119_EPM911.png 300w,https://www.economist.com/img/b/400/187/90/media-assets/image/20221119_EPM911.png 400w,https://www.economist.com/img/b/600/281/90/media-assets/image/20221119_EPM911.png 600w,https://www.economist.com/img/b/640/300/90/media-assets/image/20221119_EPM911.png 640w,https://www.economist.com/img/b/800/374/90/media-assets/image/20221119_EPM911.png 800w,https://www.economist.com/img/b/1000/468/90/media-assets/image/20221119_EPM911.png 1000w,https://www.economist.com/img/b/1280/599/90/media-assets/image/20221119_EPM911.png 1280w"  alt=""/></div><p class="article__body-text">Several startups are removing the middlemen that proliferate in every physical industry. Kargo Technologies, which launched in 2019, operates as a truck-hailing firm connecting shippers with Indonesia’s army of truckers. Tiger Fang, one of the company’s founders, was the general manager of Uber’s operations in Indonesia. His former boss, Travis Kalanick, has invested. GudangAda, an online marketplace for consumer goods, connects wholesalers direct to millions of tiny retailers. With 600 distribution centres across the country, it removes many layers of intermediaries who pushed up costs and eroded margins. </p><p class="article__body-text">Even as interest rates have risen this year and investors have backed away from emerging markets, Indonesian tech firms have continued to raise money. East Ventures, an Indonesian venture-capital firm, raised $550m for a fund in May. <small>AC</small> Ventures, another firm, raised $250m for its fifth fund in September. Indonesia has become a lasting, if small, element in the portfolio of many big private-equity investors, including <small>KKR</small> and the Carlyle Group. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221119_EPC726.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221119_EPC726.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221119_EPC726.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221119_EPC726.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221119_EPC726.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221119_EPC726.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221119_EPC726.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221119_EPC726.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221119_EPC726.png 1280w"  alt=""/></div><p class="article__body-text">Jokowi’s early focus was infrastructure. He likes to rattle through a list of concrete-heavy projects: 16 new airports, 18 ports and 2,100km of toll roads—more than two-and-a-half times the 821km built between 1978 and Jokowi’s election in 2014, according to official statistics.</p><p class="article__body-text">There remain two big risks, however, which could divert Indonesia from this heartening trajectory. The first is that reforms do not last. Jokowi himself is an inconsistent policymaker. As governor of Jakarta in 2013, he spooked business with a whopping 44% rise to the minimum wage. In 2018 his government bullied Freeport McMoRan, an American mining firm, into selling it a controlling stake in Grasberg, a gigantic gold and copper mine in the Indonesian half of New Guinea. </p><p class="article__body-text">But Mr Luhut’s circle is undoubtedly clubbish. Mr Sjahrir, of <small>tbs</small>, is his nephew. Erick Thohir, the minister of state-owned enterprises and former chairman of Inter Milan football club, is the brother of Garibaldi Thohir, president director of Adaro, the firm seeking to power green aluminium smelting in North Kalimantan. Unlike Jokowi, Mr Luhut is a long-standing member of the elite, having served as a general in the era of Suharto, Indonesia’s dictator for 32 years. He owns a coal mine. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221119_EPC732.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221119_EPC732.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221119_EPC732.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221119_EPC732.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221119_EPC732.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221119_EPC732.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221119_EPC732.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221119_EPC732.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221119_EPC732.png 1280w"  alt=""/></div><p class="article__body-text">To do that, Indonesia will need to capture some of the investment in manufacturing that is migrating from China to other parts of the developing world. So far, little seems to be coming. Apple has 26 suppliers in Vietnam, 20 in Malaysia, 18 in Thailand, 16 in the Philippines and 11 in India. In Indonesia, it has only two.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

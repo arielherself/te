@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->China v covid-19</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">China’s failing covid strategy leaves Xi Jinping with no good options</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Loosen up and deaths soar. Clamp down and the economy swoons</h2></section>
+<div class="mdui-container"><img alt="A worker in personal protective equipment (PPE) keeps warm by a heater near a residential area under lockdown due to Covid-19 coronavirus restrictions in Beijing on November 29, 2022. (Photo by Noel CELIS / AFP) (Photo by NOEL CELIS/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221203_FBP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221203_FBP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221203_FBP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221203_FBP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221203_FBP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221203_FBP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221203_FBP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221203_FBP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221203_FBP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221203_FBP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">R</span><small>eaders of the</small> <i>People’s Daily</i>, the Communist Party’s official mouthpiece, could scan the issue of November 29th and come away thinking that the fight against covid-19 is going splendidly. A front-page commentary on Xi Jinping’s first decade as China’s leader praised him for controlling the pandemic, stabilising the economy and defusing crises. Of the surging number of new infections, of the dire state of the economy owing to widespread, strict and enduring public-health restrictions, and of the protests that have erupted around the country against Mr Xi’s “zero-covid” strategy, there was not a whisper.</p><p class="article__body-text">Reality, however, is not as biddable as the <i>People’s Daily</i>. Mr Xi is in a crisis of his own making, with no quick or painless route out. New covid cases are near record levels (see chart 1). The disease has spread to more than 85% of China’s cities. Clamp down even harder to bring it back under control, and the economic costs will rise yet higher, further fuelling public anger. Allow it to spread and hundreds of thousands of people will die, if not more. <i>The Economist</i> has modelled the likely progress of China’s current outbreak. If it is allowed to proceed unchecked, even assuming all patients who need intensive care receive it (which they would not), some 680,000 people are likely to die. China’s leaders appear to be searching for a middle ground, but it is not clear there is any.</p><p class="article__body-text">But China is not ready for an orderly exit of this sort, says Yanzhong Huang of Seton Hall University in America. China’s leaders have failed to vaccinate the population properly, especially the old. A course of three locally made vaccines provides good protection against severe disease and death, but only 40% of those over 80 have had the full three. A campaign to encourage the old to get jabbed, announced on November 29th, will take time. Giving everyone a fourth booster would allow for a much safer exit, but work on that has barely begun. </p><p class="article__body-text">For nearly three years, zero-covid was broadly tolerated, indeed welcomed, because at any moment its heaviest costs fell on a minority of China’s 1.4bn people, be it residents of a city shut down by an outbreak, parents of children forced to learn online or business types struggling with barriers to travel. For most Chinese, life felt relatively normal, and safe.</p><p class="article__body-text">All discontent with zero-covid is a rebuke for Mr Xi, who is hailed by official media as commander-in-chief of a people’s war against the virus. It is a response, too, to the way he has used the policy to extend the reach of the state and the party into every corner of life. This has involved high-technology surveillance tools, such as movement-tracking smartphone apps, as well as low-tech campaigns to use grassroots party members to enforce quarantines. “Big Whites”, the nickname for covid workers in white protective overalls, have become icons of unaccountable coercion. Despite the best efforts of censors, social media is flooded with smartphone videos of citizens being beaten for walking outdoors without a face mask, of people being padlocked in their own homes and of parents trying to carry sick children through checkpoints. Freedoms have not felt this constrained in many years.</p><p class="article__body-text">Worse, lockdowns and restrictions on movement have stunted consumer confidence and growth. During the week of November 14th, as covid cases rose, the number of domestic flights fell by 45% year on year. The three biggest airlines lost a combined 74bn yuan in the first nine months of 2022. Subway traffic in the ten largest cities was down by 32% year on year, according to Macquarie, an Australian bank. A measure of road freight in the week to November 25th was 33% below its level the year before. Box-office revenues, a gauge of people’s willingness to go out and about, tumbled by 64%. Only 37% of cinemas were open on November 28th.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/739/90/media-assets/image/20221203_FBC009.png" srcSet="https://www.economist.com/img/b/200/243/90/media-assets/image/20221203_FBC009.png 200w,https://www.economist.com/img/b/300/365/90/media-assets/image/20221203_FBC009.png 300w,https://www.economist.com/img/b/400/486/90/media-assets/image/20221203_FBC009.png 400w,https://www.economist.com/img/b/600/729/90/media-assets/image/20221203_FBC009.png 600w,https://www.economist.com/img/b/640/778/90/media-assets/image/20221203_FBC009.png 640w,https://www.economist.com/img/b/800/972/90/media-assets/image/20221203_FBC009.png 800w,https://www.economist.com/img/b/1000/1215/90/media-assets/image/20221203_FBC009.png 1000w,https://www.economist.com/img/b/1280/1556/90/media-assets/image/20221203_FBC009.png 1280w"  alt=""/></div><p class="article__body-text">Full or partial lockdowns are now in place in cities accounting for about a third of China’s <small>gdp</small>, according to an index compiled by Gavekal Dragonomics, a research firm, although rules are changing fast. Every city is subject to some restrictions, worse than at the height of the previous surge, in April (see chart 2).</p><p class="article__body-text">In principle, renewed, massive lockdowns could keep zero-covid alive, says Ben Cowling, a professor of epidemiology at the University of Hong Kong. Shanghai locked most of its 25m residents indoors for more than two months in the spring of this year, an event still remembered with horror in that city. But it worked. “Shanghai is the nuclear option. Cases were rising rapidly, isolation sites were full and mass testing was overwhelmed.” Without a lockdown half of Shanghai’s population could have been infected, says Mr Cowling. Instead, the outbreak was wrestled back to zero, or close to it.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/814/90/media-assets/image/20221203_FBM938.png" srcSet="https://www.economist.com/img/b/200/268/90/media-assets/image/20221203_FBM938.png 200w,https://www.economist.com/img/b/300/402/90/media-assets/image/20221203_FBM938.png 300w,https://www.economist.com/img/b/400/536/90/media-assets/image/20221203_FBM938.png 400w,https://www.economist.com/img/b/600/803/90/media-assets/image/20221203_FBM938.png 600w,https://www.economist.com/img/b/640/857/90/media-assets/image/20221203_FBM938.png 640w,https://www.economist.com/img/b/800/1071/90/media-assets/image/20221203_FBM938.png 800w,https://www.economist.com/img/b/1000/1339/90/media-assets/image/20221203_FBM938.png 1000w,https://www.economist.com/img/b/1280/1714/90/media-assets/image/20221203_FBM938.png 1280w"  alt=""/></div><p class="article__body-text">In addition, over the past six months there has been a steady stream of protests against onerous public-health restrictions, with the incidence increasing markedly after the deadly fire in Urumqi in late November (see map). Young people on the streets of Beijing, Shanghai and other cities chanted, “We don’t want covid tests; we want freedom.”</p><p class="article__body-text">Under-investment in health care also makes an orderly end to zero-covid more difficult. China has built aircraft-carriers, sent spaceships to the Moon and staged two Olympic games in the past 20 years. But it has just 4.3 <small>icu</small> beds per 100,000 people, a number that proved cruelly inadequate during the first covid outbreak in Wuhan. By April 2020, 29 provinces had sent 42,600 medical personnel to Wuhan, including 19,000 <small>icu</small> doctors and nurses. No such solidarity would be on offer if dozens of cities suffer mass outbreaks at the same time.</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20221203_FBP002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20221203_FBP002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20221203_FBP002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20221203_FBP002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20221203_FBP002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20221203_FBP002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20221203_FBP002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20221203_FBP002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20221203_FBP002.jpg 1280w"  alt="TOPSHOT - A man is arrested while people gathering on a street in Shanghai on November 27, 2022, where protests against China&amp;#39;s zero-Covid policy took place the night before following a deadly fire in Urumqi, the capital of the Xinjiang region. (Photo by Hector RETAMAL / AFP) (Photo by HECTOR RETAMAL/AFP via Getty Images)"/></div><p class="article__body-text">China is a vast, surprisingly decentralised place. Throughout the pandemic, national leaders have had to chide local authorities for closing borders to lorry drivers and migrants. In one memorable incident in 2020, the lifting of a lockdown of Hubei province, where the virus was first detected, provoked scuffles between police from Hubei and their counterparts from the neighbouring province, Jiangxi. Officers joined thousands of locals in a mêlée on a border bridge over the Yangzi River, after Jiangxi police tried to stop Hubei residents from crossing.</p><p class="article__body-text">We found that if covid were allowed to spread unchecked 96% of the population would end up catching it, with new infections peaking at 45m people a day after a month. In this scenario, fatalities would reach 680,000, assuming no lack of <small>icu</small>s. But China would need 410,000 <small>icu</small> beds at the peak of the outbreak, which is almost seven times the current total. That suggests the true number of deaths would in fact be much higher. It could be reduced by widespread use of antiviral drugs (this scenario assumes that only 10% of patients will receive them), but the extent of China’s stocks is unknown. </p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

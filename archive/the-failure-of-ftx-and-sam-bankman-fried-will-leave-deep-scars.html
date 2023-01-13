@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Crypto’s crisis</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">The failure of FTX and Sam Bankman-Fried will leave deep scars</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">It is harder now to assert that crypto represents the future</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221119_BBD001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221119_BBD001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221119_BBD001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221119_BBD001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221119_BBD001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221119_BBD001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221119_BBD001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221119_BBD001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221119_BBD001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221119_BBD001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">N</span><small>obody in crypto</small> has slept in days. That, at least, is what it feels like in the never-ending Twitter “spaces” which have been running since <small>ftx</small>, a Bahamas-based crypto exchange and crown jewel in the empire of Sam Bankman-Fried, its once-feted founder, filed for bankruptcy on November 11th. The scattered crypto-community often comes together in these online forums—they are where people shill tokens, organise pump and dumps, and occasionally even discuss exciting innovations. In the days after the fall of <small>ftx</small> and Mr Bankman-Fried’s other firms, including <small>ftx.us</small>, an America-based exchange, and Alameda Research, a trading firm, they became places for traders to mourn, former employees to spill the beans and other exchange operators, including Changpeng Zhao of Binance and Jesse Powell of Kraken, to try to reassure customers. </p><p class="article__body-text">In other words, they are places that now reek of despair—not just about the billions of dollars that are trapped on a defunct exchange, but about the architect of the mess. Mr Bankman-Fried was crypto’s golden boy. He studied physics at the Massachusetts Institute of Technology and was supposed to have learned the craft of marketmaking and trading at Jane Street, an elite financial firm. It was this, along with the fact that <small>ftx </small>gobbled up market share after it was founded in 2019, that attracted investors like Sequoia, considered one of Silicon Valley’s sharpest venture-capital firms, and Temasek, Singapore’s sovereign-wealth fund. Mr Bankman-Fried used his credentials and newfound wealth—<small>ftx </small>was worth $32bn at its peak in January—to donate to politicians, push his views on regulation and buy up competitors. He was supposed to be crypto’s future. Instead, he may have robbed the industry of one. </p><p class="article__body-text">It was possible to get very rich, very fast in crypto. A certain type of winner got lucky, bought Lamborghinis and justified their riches by belligerently asserting that blockchain technology or bitcoin was the future. Those who disagreed got the now-familiar rejoinder: “Have fun staying poor.” It is tempting to see comeuppance in every scam, failure or hack that befalls the industry. The failure of <small>ftx</small> is certainly the closest thing to a death blow it has faced.</p><p class="article__body-text">Astute readers may notice this is not how an exchange should work. Normal ones hold customer deposits, not a mix of venture investments and tokens. Then there is an apparent hole in the accounts. In a grovelling note left in them seemingly by Mr Bankman-Fried, the writer claims not to have realised $8bn was missing, an amount worth more than half that deposited in the firm’s care. This is put down to a “poorly labelled” internal account. </p><p class="article__body-text">The balance-sheet of Alameda—information about which has been reported by CoinDesk, a news website—appears similarly full of holes. It shows the trading firm owed $8bn in loans and that its assets again consisted largely of tokens created by <small>ftx</small>. Combining the two balance-sheets in a rough calculation, it appears that before things went south, Mr Bankman-Fried’s firms had taken in around $14bn of deposits, borrowed $8bn and raised almost $2bn of equity capital from investors. His firms gave back $5bn to those savvy enough to run away fast, and probably hold around $5.7bn in equity and venture investments plus $1bn in cash. This means a hole of perhaps somewhere between $4bn and $12bn, depending on how much of Alameda’s debt is owed to <small>ftx</small>. Mr Bankman-Fried insisted on November 15th that the trading firm’s problem was liquidity, not solvency, because it held lots of illiquid but valuable assets. But the balance-sheets appear to have exposed what Mr Bankman-Fried counts as a valuable asset.</p><p class="article__body-text">The idea Alameda blew up in May or June may help explain why Mr Bankman-Fried swooped to rescue firms like Voyager. He may not, as was thought at the time, have considered himself the next John Pierpont Morgan, a banker who saved the American financial system in 1907. Instead, he may have been backed into a corner. Alameda is reported to have borrowed money from Voyager. If the lending platform had been liquidated it would have exacerbated problems at his fund.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/1582/90/media-assets/image/20221119_BBC757.png" srcSet="https://www.economist.com/img/b/200/520/90/media-assets/image/20221119_BBC757.png 200w,https://www.economist.com/img/b/300/781/90/media-assets/image/20221119_BBC757.png 300w,https://www.economist.com/img/b/400/1041/90/media-assets/image/20221119_BBC757.png 400w,https://www.economist.com/img/b/600/1561/90/media-assets/image/20221119_BBC757.png 600w,https://www.economist.com/img/b/640/1665/90/media-assets/image/20221119_BBC757.png 640w,https://www.economist.com/img/b/800/2082/90/media-assets/image/20221119_BBC757.png 800w,https://www.economist.com/img/b/1000/2602/90/media-assets/image/20221119_BBC757.png 1000w,https://www.economist.com/img/b/1280/3331/90/media-assets/image/20221119_BBC757.png 1280w"  alt=""/></div><p class="article__body-text">It is a view which Mr Bankman-Fried’s words appear to support, if not insurmountably prove. In an interview with Bloomberg, a news website, he described how to build a token in order to borrow against it. He suggested making the number of tokens traded low relative to the number issued, thus making it easier to pump up the market capitalisation. For a token in theory worth $20m, “Maybe there hasn’t been $20m that has flowed into it yet”. But “You can ...finance this, right? You put X token in a borrow-lending protocol and borrow dollars with it.” Mr Bankman-Fried then described how, once these tokens have been deposited as collateral for a loan in exchange for dollars, “If you think it’s worth less than two-thirds of that, you could even just put some in there, take the dollars out. Never...give the dollars back.” He gave this description of borrowing real dollars he would never give back against a low-float, imaginary token on April 25th—two months before Three Arrows Capital was liquidated, and Alameda’s problems seem to have started.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221119_BBC774.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221119_BBC774.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221119_BBC774.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221119_BBC774.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221119_BBC774.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221119_BBC774.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221119_BBC774.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221119_BBC774.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221119_BBC774.png 1280w"  alt=""/></div><p class="article__body-text">The events also reveal just how interconnected crypto is, and the vulnerability this brings. When one large project (the Terra-Luna stablecoin system) blew up in the summer, it was enough to bring down a hedge fund and two lending platforms, which was in turn enough to bankrupt one of crypto’s biggest exchanges. This dynamic has been supercharged by the failure of <small>ftx</small>, which already seems to have taken out three smaller exchanges, <small>aax, </small>BlockFi<!-- --> and Liquid, as well as a lending platform, Genesis. Other exchanges faced enormous withdrawals (see chart 2). Given that it took around six months for the fallout of the summer’s blow-up to hit <small>ftx</small>, the stage is now set for more blow-ups. </p><p class="article__body-text">Among the developers who work on the software powering the Ethereum blockchain, or those building applications on top of it, the promise of crypto has never seemed greater. In October, at a crypto conference in Colombia, Danny Ryan, an Ethereum developer, pleaded with the audience to work on functions and applications other than those related to finance. And that is the direction many are taking, especially now that efficient, scalable blockchains are beginning to emerge. Stani Kulechov, the creator of Aave, a decentralised-lending protocol, is building a social-media platform that would allow people to port their followers from application to application, thus allowing them to quit a platform without losing clout. The Gitcoin platform allows people to vote on grants to be distributed to so-called public-goods projects, like open-source software.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

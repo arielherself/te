@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://www.economist.com" class="mdui-typo-title" mdui-tooltip="{content: 'Visit the official website', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/essay/" data-analytics="sidebar:section">Essay</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The Economist at 175</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Liberalism: further reading</h1></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 360w, https://www.economist.com/img/b/384/216/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 384w, https://www.economist.com/img/b/480/270/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 480w, https://www.economist.com/img/b/600/337/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 600w, https://www.economist.com/img/b/834/469/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 834w, https://www.economist.com/img/b/960/540/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 960w, https://www.economist.com/img/b/1096/616/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/sites/default/files/images/2018/09/articles/main/20180915_esd001.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text">This essay benefited from the insights and assistance of a great many people. In particular, Alexander Zevin of City University of New York, author of a forthcoming independent history of this newspaper (&quot;The World According to <em>The Economist</em>&quot;, to be published by Verso Books), was an outstanding guide to our history.<br/><br/>The essay has drawn on the following books and articles:<br/><br/><strong>Books</strong><br/>“Reordering the World: Essays on Liberalism and Empire”, by Duncan Bell. Princeton University Press, 2016<br/><br/>“Refuge: Transforming a Broken Refugee System”, by Alexander Betts and Paul Collier. Penguin Books, 2017<br/><br/>“Exodus: How Migration is Changing Our World”, by Paul Collier. Oxford University Press, 2013<br/><br/>“The Future of Capitalism: Facing the New Anxieties”, by Paul Collier. Allen Lane, 2018<br/><br/>“Why Liberalism Failed”, by Patrick J. Deneen. Yale University Press, 2018<br/><br/>“The Pursuit of Reason: The Economist 1843-1993”, by Ruth Dudley Edwards. Hamish Hamilton, 1993<br/><br/>“Liberalism: The Life of an Idea”, by Edmund Fawcett, Princeton University Press, 2014<br/><br/>“The New Urban Crisis”, by Richard Florida. OneWorld, 2017<br/><br/>“Success and Luck: Good Fortune and the Myth of Meritocracy”, by Robert H. Frank. Princeton University Press, 2016<br/><br/>“Liberalism: A Very Short Introduction”, by Michael Freeden. Oxford University Press, 2015<br/><br/>“Capitalism and Freedom”, by Milton Friedman. University of Chicago Press, 1962<br/><br/>“The Road to Somewhere”, by David Goodhart. C. Hurst &amp; Co, 2017<br/><br/>“The Limits of the Market”, by Paul de Grauwe, Oxford University Press, 2017<br/><br/>“The Politics of Immigration: Contradictions of the Liberal State”, by James Hampshire. Polity Press, 2013<br/><br/>“Free Trade and Liberal England, 1846-1946”, by Anthony Howe. Clarendon Press, 1997<br/><br/>“Free Trade Under Fire” (3rd edition), by Douglas Irwin. Princeton University Press, 2015<br/><br/>“The World America Made”, by Robert Kagan. Alfred A. Knopf, 2012<br/><br/>“The Jungle Grows Back”, by Robert Kagan. Pisces Books, 2018<br/><br/>“Who Owns the Future?”, by Jaron Lanier. Simon &amp; Schuster, 2013<br/><br/>“AI Super-powers: China, Silicon Valley and the New World Order”, by Kai-Fu Lee. Houghton Mifflin Harcourt, 2018<br/><br/>“The Once and Future Liberal: After Identity Politics”, by Mark Lilla. Harper, 2017<br/><br/>“The Captured Economy: How the Powerful Enrich Themselves, Slow Down Growth, and Increase Inequality”, by Brink Lindsey and Steven M. Teles. Oxford University Press, 2017<br/><br/>“The Breadstealers: The Fight against the Corn Laws”, by Norman Longmate. St Martin’s Press, 1984<br/><br/>“The Retreat of Western Liberalism”, by Edward Luce, Little Brown, 2017<br/><br/>“Has the West Lost It?”, by Kishore Mahbubani. Allen Lane, 2018<br/><br/>“Age of Anger: A History of the Present”, by Pankaj Mishra. Penguin Books, 2017<br/><br/>“The People vs Democracy”, by Yascha Mounk. Harvard University Press, 2018<br/><br/>“What is Populism?”, by Jan-Werner Müller. University of Pennsylvania Press, 2016<br/><br/>“Adam Smith: What He Thought and Why It Matters”, by Jesse Norman. Penguin Books, 2018<br/><br/>“Is the American Century Over?”, by Joseph S. Nye, Jr. Polity Press, 2015<br/><br/>“Enlightenment Now: The Case for Science, Reason, Humanism and Progress”, by Stephen Pinker. Allen Lane, 2018<br/><br/>“Radical Markets: Uprooting Capitalism and Democracy for a Just Society”, by Eric A. Posner and E. Glen Weyl. Princeton University Press, 2018<br/><br/>&quot;Bread for All: the Origins of the Welfare State”, by Chris Renwick. Allen Lane, 2017<br/><br/>“Factfulness”, by Hans Rosling with Ola Rosling and Anna Rosling Ronnlund. Sceptre, 2018<br/><br/>“Rethinking the Economics of Land and Housing”, by Josh Ryan-Collins, Toby Lloyd and Laurie Macfarlane. Zed Books, 2017<br/><br/>“Where We Are: The State of Britain Now”, by Roger Scruton. Bloomsbury Press, 2017<br/><br/>“Counter-revolution: Liberal Europe in Retreat”, by Jan Zielonka. Oxford University Press, 2018<br/><br/><br/><strong>Articles</strong><br/>“The London Economist and the high tide of laissez faire”, by Scott Gordon, 1955. <em>Journal of Political Economy</em>, December 1995<br/><br/>&quot;<a href="https://www.newstatesman.com/politics/uk/2016/11/closing-liberal-mind">The closing of the liberal mind</a>&quot;, by John Gray. <em>New Statesman</em>, November 2016<br/><br/>“<a href="https://niskanencenter.org/wp-content/uploads/2018/04/Final_Free-Market-Welfare-State.pdf">The free-market welfare state</a>”, by Samuel Hammond. Niskanen Centre, May 2018<br/><br/>“Liberal internationalism 3.0: America and the dilemmas of liberal world order”, by G. John Ikenberry. <em>Perspectives on Politics</em>, 2009<br/><br/>“The future of liberal world order”, by G. John Ikenberry. <em>Japanese Journal of Political Science</em>, September 2015<br/><br/>“The end of liberal international order?”, by G. John Ikenberry. <em>International Affairs</em>, January 2018<br/><br/>“Reluctant or liberal collectivists. The social liberalism of Keynes and Beveridge, 1922-1945”, by Tudor Jones. <em>Journal of Liberal History 78</em>, Spring 2013<br/><br/>&quot;<a href="https://www.cgdev.org/blog/labor-mobility-economic-growth-and-targeted-programs">On labor mobility, economic growth and targeted programs</a>&quot;, Lant Pritchett, Centre for Global Development, 2018<br/><br/>&quot;<a href="https://institute.global/insight/renewing-centre/balanced-migration-progressive-approach">Balanced migration: A progressive approach</a>&quot;, by Harvey Redgrave. Tony Blair Institute for Global Change, March 2018<br/><br/>&quot;Is unrestricted immigration compatible with inclusive welfare states? National institutions, citizenship norms and the politics of free movement in the European Union&quot;, by Martin Ruhs, University of Oxford<br/><br/>&quot;<a href="https://www.manhattan-institute.org/html/measuring-immigrant-assimilation-united-states-5835.html">Measuring immigrant assimilation in the United States</a>&quot;, by Jacob L. Vigdor. Manhattan Institute, 2008<br/><br/>&quot;<a href="https://www.cato-unbound.org/print-issue/2305">Freeing the captured economy</a>&quot;, Discussion in Cato Unbound, January 2018</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP030.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220910_ESP030.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220910_ESP030.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220910_ESP030.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220910_ESP030.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220910_ESP030.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220910_ESP030.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220910_ESP030.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP030.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">The oil flows more slowly, the climate changes more quickly</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220709_ESD001.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220709_ESD001.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220709_ESD001.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220709_ESD001.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220709_ESD001.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220709_ESD001.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220709_ESD001.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220709_ESD001.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">It was a long time in the planning</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1000w,https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">They are ubiquitous, diverse and very powerful</p><p class="ds-footer__mission-statement">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </p><p id="ds-footer-copyright" class="ds-footer__copyright">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
