@@ -232,7 +232,7 @@ def section1Get(sectionName=''):
 
 if __name__ == '__main__':
     sections = ('', 'leaders', 'letters', 'briefing', 'united-states', 'the-americas',
-                'asia', 'china', 'middle-east-and-africa.html', 'europe', 'britain', 'international',
+                'asia', 'china', 'middle-east-and-africa', 'europe', 'britain', 'international',
                 'business', 'finance-and-economics', 'science-and-technology', 'culture',
                 'graphic-detail', 'obituary', 'essay')
     section1s = ('special-reports', 'technology-quarterly')
