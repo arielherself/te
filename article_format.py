@@ -34,25 +34,27 @@ def mark(uri: str) -> int:      # return an error code.
         raw = requests.get(uri)
         content = raw.text
         
-        content = content[content.find('<section'):content.find('"ufinish"')]
+        content = content[content.find('<section'):content.rfind('</section>')]
         head = content[:content.find('</section>')+10]
         html += head + '\n'
 
         while content.find('<img ') != -1 or content.find('<p ') != -1:
             if content.find('<img ') == -1:
-                html += content[content.find('<p '):content.find('</p>')+4]
-                content = content[content.find('</p>')+5:]
-            elif content.find('<p') == -1:
+                html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
+                content = content[content.find('</p>')+4:]
+            elif content.find('<p ') == -1:
                 content = content[content.find('<img '):]
-                html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+2]) + '</div>'
-                content = content[content.find('/>')+3:]
-            elif content.find('<p') < content.find('<img '):
-                html += content[content.find('<p '):content.find('</p>')+4]
-                content = content[content.find('</p>')+5:]
+                html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                content = content[content.find('/>')+2:]
+            elif content.find('<p ') < content.find('<img '):
+                html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
+                content = content[content.find('</p>')+4:]
             else:
                 content = content[content.find('<img '):]
-                html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+2]) + '</div>'
-                content = content[content.find('/>')+3:]
+                html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                content = content[content.find('/>')+2:]
+
+        print(content)
 
         with open('home_suf.html') as f:
             html += ''.join(f.readlines())
@@ -66,4 +68,4 @@ def mark(uri: str) -> int:      # return an error code.
 
 
 if __name__ == '__main__':
-    print(mark('https://www.economist.com/essay/2022/09/08/the-alaskan-wilderness-reveals-the-past-and-the-future'))
+    print(mark('https://www.economist.com/leaders/2023/01/12/the-destructive-new-logic-that-threatens-globalisation'))
