@@ -211,6 +211,7 @@ def layout(cells) -> str:
     return html
 
 def sectionGet(sectionName=''):
+    print(f'Processing {sectionName if sectionName else "index"} ...')
     try:
         html = layout(makeCell(*get(sectionName)))
         with open(f'{sectionName if sectionName else "index"}.html', 'w') as f:
@@ -220,6 +221,7 @@ def sectionGet(sectionName=''):
         return 1
 
 def section1Get(sectionName=''):
+    print(f'Processing {sectionName if sectionName else "index"} ...')
     try:
         html = layout(makeCell(*getSection1(sectionName)))
         with open(f'{sectionName}.html', 'w') as f:
