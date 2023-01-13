@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/middle-east-and-africa/" data-analytics="sidebar:section">Middle East &amp; Africa</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Uneasy peace</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Ethiopia’s war in Tigray has ended, but deep faultlines remain</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Lands remain occupied and Eritrean troops have not left</h2></section>
+<div class="mdui-container"><img alt="A worker carries a sack of grain in a warehouse of the World Food Programme (WFP) in the city of Abala, Ethiopia, on June 9, 2022. - The Afar region, the only passageway for humanitarian convoys bound for Tigray, is itself facing a serious food crisis, due to the combined effects of the conflict in northern Ethiopia and the drought in the Horn of Africa which have notably caused numerous population displacements. More than a million people need food aid in the region according to the World Food Programme. (Photo by EDUARDO SOTERAS / AFP) (Photo by EDUARDO SOTERAS/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230114_MAP505.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230114_MAP505.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230114_MAP505.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230114_MAP505.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230114_MAP505.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230114_MAP505.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230114_MAP505.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_MAP505.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_MAP505.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230114_MAP505.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">I</span><small>nside his</small> makeshift hut, Fisseha Gebreselassie contemplates all he has lost. Days after Ethiopia’s <a href="/middle-east-and-africa/2020/11/04/ethiopia-lurches-towards-civil-war">civil war began</a> in November 2020, Ethiopian soldiers killed his 12-year-old son in front of him. Fearing for his life, he fled Tigray, the northern region at the centre of the fighting, for Sudan, leaving behind his wife and three remaining children, hoping they would be safe. But militiamen from the neighbouring Amhara region soon seized their home, forced them onto a truck and drove them across the river to central Tigray.</p><p class="article__body-text">More than two years later, the family is still separated. A peace deal <a href="/middle-east-and-africa/2022/11/04/a-peace-deal-highlights-the-pointlessness-of-ethiopias-war">signed in November</a> has raised hopes that Fisseha and thousands like him might be able to go home. It has stopped both the fighting and a blockade of Tigray by federal forces that led to probably hundreds of thousands of deaths from bombs, bullets or war-induced famine and disease. By resetting relations between the two main belligerents—Ethiopia’s government and the Tigrayan People’s Liberation Front (<small>TPLF</small>)—the deal is also reshaping alliances inside Ethiopia and perhaps the wider region.</p><p class="article__body-text">But it is a fragile and uncertain peace. That much is evident in the Um Rakuba refugee camp in eastern Sudan, which shelters some 16,000 Tigrayans. Most are from the contested area known officially as Western Tigray. Refugees there say they cannot return home because their land is occupied by Amhara militias and settlers, or by soldiers from Eritrea, who fought alongside the Ethiopian government and are implicated in some of the war’s worst atrocities. “If there is peace, why are Eritreans still on our land?” asks Fisseha.</p><p class="article__body-text">Since Issaias is not a signatory to the latest peace agreement, he may not feel bound by its terms. Even if he eventually pulls his troops out, he may still find ways to stir up trouble to weaken the <small>tplf</small>—and possibly Ethiopia, too, if he thinks it has gone soft on his main foe. Eritrea is supporting Tigrayans opposed to the <small>TPLF</small>, in some cases through forced recruitment. In Um Rakuba a group of young Tigrayan men said they were abducted and taken to Eritrea for compulsory military training. They later managed to escape to Sudan.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/663/90/media-assets/image/20230114_MAM969.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20230114_MAM969.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20230114_MAM969.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20230114_MAM969.png 400w,https://www.economist.com/img/b/600/654/90/media-assets/image/20230114_MAM969.png 600w,https://www.economist.com/img/b/640/698/90/media-assets/image/20230114_MAM969.png 640w,https://www.economist.com/img/b/800/872/90/media-assets/image/20230114_MAM969.png 800w,https://www.economist.com/img/b/1000/1090/90/media-assets/image/20230114_MAM969.png 1000w,https://www.economist.com/img/b/1280/1396/90/media-assets/image/20230114_MAM969.png 1280w"  alt=""/></div><p class="article__body-text">Also present in Sudan are smaller rebel groups that are not party to the peace deal. Some are linked to minor Ethiopian ethnic groups. But one, the Oromo Liberation Army (<small>OLA</small>), says it is fighting for the self-determination of Ethiopia’s largest ethnic group (see map). The <small>ola</small> is a major headache for Abiy, who is himself Oromo. He has recently stepped up military operations against it, including launching drone strikes that have killed large numbers of civilians. If the war in Oromia escalates further, the <small>OLA</small> might seek support from Issaias, an old ally: Eritrea hosted it and several other Ethiopian rebel groups before the peace deal in 2018.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

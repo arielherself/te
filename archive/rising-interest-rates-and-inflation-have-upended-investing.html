@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/briefing/" data-analytics="sidebar:section">Briefing</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->When the tide turns</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Rising interest rates and inflation have upended investing</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Not all assets have been affected equally</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221210_FBD001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221210_FBD001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221210_FBD001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221210_FBD001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221210_FBD001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221210_FBD001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221210_FBD001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221210_FBD001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221210_FBD001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221210_FBD001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">F</span><small>or almost</small> a year, ever since America’s stockmarket peaked on January 3rd, investors have been craning their necks, looking for the bottom. Will the most recent trough, halfway through October, turn out to have been it? More importantly, bottom or not, what trends will shape returns going forward?</p><p class="article__body-text">Even at present levels, the slump in markets around the world this year has been painful. <small>MSCI</small>’s broadest index of global equities is down by 18%, as is the <small>S&amp;P</small> 500 index of big American firms. It is not just shares that have suffered. More speculative assets, naturally, have been bludgeoned far harder: the market value of all cryptocurrencies, which surged to nearly $3trn in 2021, has fallen to $840bn. Supposedly safer assets have not escaped the rout, either. The indices compiled by Bloomberg, a data provider, of global, European and emerging-market bonds have all dropped by 15%; the American equivalent by 11%.</p><p class="article__body-text">The breadth of losses is even more striking than the depth. In particular, the “60/40 portfolio”, comprising 60% stocks and 40% bonds, a popular choice for investors seeking a good return without running big risks, has performed appallingly. Evan Brown and Louis Finney of the asset-management arm of <small>ubs</small>, a Swiss bank, calculate that, as of mid-October, a 60/40 portfolio of American equities and Treasuries had had its worst year since 1937.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221210_FBC090.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221210_FBC090.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221210_FBC090.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221210_FBC090.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221210_FBC090.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221210_FBC090.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221210_FBC090.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221210_FBC090.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221210_FBC090.png 1280w"  alt=""/></div><p class="article__body-text">Typically, portfolios allocating more to bonds and less to equities are considered less risky. But losses on bonds have been so steep this year, says Alex Funk of Schroders, another asset manager, that this rule of thumb has not always held. Other presumed safe havens have also offered little shelter. Gold, seen by some as a hedge not just against the vagaries of financial markets, but also inflation, has fallen by 3%. The Japanese yen started the year at 115 to the dollar and is now 136. Well-timed bets on commodities, many of whose prices were supercharged by Russia’s invasion of Ukraine in February, would have paid off handsomely. Otherwise, investors have had startlingly few places to hide (see chart 1).</p><p class="article__body-text">The monetary backdrop that drove those trends has now changed dramatically. Though inflation in America peaked in June, it still stands at 7.7%. Elsewhere things are worse: in Britain prices are 11.1% higher than they were a year ago, and in the euro area the rise is 10%. The <small>IMF</small> forecasts a global inflation rate of 9.1% over the course of 2022.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221210_FBC111.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221210_FBC111.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221210_FBC111.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221210_FBC111.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221210_FBC111.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221210_FBC111.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221210_FBC111.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221210_FBC111.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221210_FBC111.png 1280w"  alt=""/></div><p class="article__body-text">When the dust finally settles, it will reveal a landscape that is likely to have changed for good. Though markets expect interest rates to fall after a peak next year, the odds that they will collapse back to next-to-nothing seem slim (see chart 2). That is because inflation is likely to be hard to tame. Nearly two years of it have raised expectations of price rises, which can be self-fulfilling. Tight labour markets in many countries will drive wages up, providing a further push. Unrelenting demands on government spending—from ageing populations to an ever-growing expectation that states will shield people and companies from economic storms—may also help elevate interest rates and propel inflation. Taken together, these forces will reshape investors’ portfolios and alter the returns they can expect.</p><p class="article__body-text">The end of ultra-low interest rates has more far-reaching consequences. The increase in the “risk-free” rate “affects how you think about private assets, equities, bonds, credit, everything”, says Schroders’ Mr Funk, by raising the hurdle rate against which all other returns are measured. <small>TINA</small> is dead, and has been succeeded by <small>TARA</small>:<!-- --> “there are real alternatives”. Or, as Raj Mody of <small>P</small>w<small>C</small>, a consultancy, puts it, “If you can get 4% on government bonds, is 7% on private assets enough?”</p><p class="article__body-text">Can they keep their appeal now that rising government-bond yields have resurrected the alternatives? For leveraged buy-outs, which by definition are extremely sensitive to the cost of borrowing, the answer is almost certainly no. Scarcer, more expensive debt makes such deals harder to finance and less attractive to complete, as higher interest payments eat into prospective returns. Higher rates also diminish the value of the companies such funds already own, given their high levels of debt.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221210_FBC091.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221210_FBC091.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221210_FBC091.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221210_FBC091.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221210_FBC091.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221210_FBC091.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221210_FBC091.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221210_FBC091.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221210_FBC091.png 1280w"  alt=""/></div><p class="article__body-text">When the interest rate is just 1%, $91 deposited in the bank will be worth $100 in ten years’ time. Put another way, $100 in ten years’ time is worth $91 today. But when the interest rate is 5%, it takes only $61 to generate $100 in a decade. So $100 in ten years’ time is worth just $61 today. That makes future growth much less valuable, and immediate profits much more so. As stockmarkets have tumbled, therefore, growth stocks have performed especially poorly (see chart 3).</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/741/90/media-assets/image/20221210_FBD002.jpg" srcSet="https://www.economist.com/img/b/200/244/90/media-assets/image/20221210_FBD002.jpg 200w,https://www.economist.com/img/b/300/366/90/media-assets/image/20221210_FBD002.jpg 300w,https://www.economist.com/img/b/400/488/90/media-assets/image/20221210_FBD002.jpg 400w,https://www.economist.com/img/b/600/731/90/media-assets/image/20221210_FBD002.jpg 600w,https://www.economist.com/img/b/640/780/90/media-assets/image/20221210_FBD002.jpg 640w,https://www.economist.com/img/b/800/975/90/media-assets/image/20221210_FBD002.jpg 800w,https://www.economist.com/img/b/1000/1219/90/media-assets/image/20221210_FBD002.jpg 1000w,https://www.economist.com/img/b/1280/1560/90/media-assets/image/20221210_FBD002.jpg 1280w"  alt=""/></div><p class="article__body-text">Ray Dalio, the founder of Bridgewater, the world’s biggest hedge fund, believes that a much bigger paradigm shift is under way than a simple rise in interest rates and inflation. He cites the risks of huge debts, populism within Western democracies and rising tensions between global powers. The first puts pressure on central banks to tolerate inflation and even monetise debt rather than raising rates. The second and the third could spur conflict both within and between states. Mr Dalio worries that the stage could be set for a period like that between 1910 and 1945, where in some regions “you have almost the complete destruction of wealth as we know it”.</p><p<script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

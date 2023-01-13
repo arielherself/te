@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/science-and-technology/" data-analytics="sidebar:section">Science &amp; technology</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Essential listens</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Best of our “Babbage” podcast in 2022</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Ten highlights from our science-and-technology podcast</h2></section>
+<div class="mdui-container"><img alt="TOSome of the 1232 dipole magnets that bend the path of accelerated protons are pictured in the Large Hadron Collider (LHC) in a tunnel of the European Organisation for Nuclear Research (CERN), during maintenance works on February 6, 2020 in Echenevex, France, near Geneva. - Six years after the historic discovery of the Higgs boson, the world&#x27;s largest particle accelerator is taking a break to boost its power, hoping to find new particles that would explain, among other things, dark matter, one of the great enigmas of the Universe. (Photo by VALENTIN FLAURAUD / AFP) (Photo by VALENTIN FLAURAUD/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221231_STP501.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221231_STP501.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221231_STP501.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221231_STP501.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221231_STP501.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221231_STP501.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221231_STP501.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221231_STP501.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221231_STP501.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221231_STP501.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">“B</span><small>ABBAGE”, <i>The Economist</i>’s</small> science-and-technology podcast, does a deep dive on a different topic every week. Our producer picks ten essential listens from 2022.</p><p class="article__body-text">In January, we investigated what could be behind new cases of <a href="/podcasts/2022/01/18/havana-syndrome-the-mystery-illness-baffles-again">Havana syndrome</a>, an illness mainly plaguing Western diplomats. The podcast looked at the main suspects, from microwave weapons to psychological explanations.</p><p class="article__body-text">A theme we explored from several different angles in 2022 was how wearable technology, such as <a href="/wearables">smartwatches</a>, could transform health care. The first episode was released in January.</p><p class="article__body-text">2022 was a rocky year for crypto. In February, we explained <a href="/podcasts/2022/02/08/web3-the-latest-silicon-valley-buzzword">what web3 is</a>, why backers say it will reinvent cyberspace, and why scepticism has been growing.</p><p class="article__body-text">Throughout the year, we examined the role of technology in the war in Ukraine, including how <a href="/podcasts/2022/10/18/how-much-damage-could-russias-tactical-nuclear-weapons-do">tactical nuclear weapons</a> could be used by Russia.</p><p class="article__body-text">2022 was the year the covid-19 pandemic began to fade away in much of the world. Our attention turned to how to fight other infectious diseases, such as <a href="/podcasts/2022/04/05/how-do-you-solve-a-problem-like-malaria">malaria</a>. Could vaccines or genetically modified mosquitoes vanquish one of the world’s most deadly diseases?</p><p class="article__body-text">In April, the <a href="/lhc-pod">Large Hadron Collider</a> (pictured) at <small>CERN</small> became operational again after a three-year break for maintenance and upgrades. For a series of special episodes, we travelled to the Franco-Swiss border to explain what the particle collider could reveal about the fundamental building blocks of the universe.</p><p class="article__body-text">This year the energy crisis has made it tougher to act on climate change. In April, we asked if the <a href="/podcasts/2022/04/19/why-the-energy-crisis-and-climate-change-are-reigniting-interest-in-nuclear-power">nuclear-energy industry</a> would be revived.</p><p class="article__body-text">A growing number of clinics now offer <a href="/ketamine-pod">ketamine</a>—also used illegally as a party drug—as a treatment for mental-health conditions. We explored the therapy’s potential.</p><p class="article__body-text">In June, a Google engineer claimed that an <small>AI</small> chatbot was sentient. We weighed in on the debate with some of the world’s leading experts on <small>AI</small> and consciousness.</p><p class="article__body-text"><small>NASA</small> launched the world’s most powerful rocket, the <a href="/sls-pod">Space Launch System</a>, in 2022. As the private-sector “New Space” industry blossoms, we asked: why did <small>NASA</small> bother?</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_STP503.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230114_STP503.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230114_STP503.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230114_STP503.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230114_STP503.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230114_STP503.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230114_STP503.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230114_STP503.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_STP503.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">Insecticides are more effective. But you lose your organic certification</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_STP002.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230114_STP002.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230114_STP002.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230114_STP002.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230114_STP002.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230114_STP002.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230114_STP002.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230114_STP002.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_STP002.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">The concrete used was self-healing and anachronistically green</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_STP001.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230114_STP001.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230114_STP001.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230114_STP001.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230114_STP001.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230114_STP001.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230114_STP001.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230114_STP001.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230114_STP001.jpg 1280w"  alt=""/></div><p class="css-1tj7b79 e1dj3j7p0">It is rare for insects to be predators of vertebrates</p><p class="ds-footer__mission-statement">Published since September 1843 to take part in<!-- --> <em>“a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.”</em> </p><p id="ds-footer-copyright" class="ds-footer__copyright">Copyright © The Economist Newspaper Limited <!-- -->2023<!-- -->. All rights reserved.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

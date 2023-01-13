@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/united-states/" data-analytics="sidebar:section">United States</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Making little plans</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Chicago’s woes are over-hyped</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">In fact, the Windy City could offer a model for change across America</h2></section>
+<div class="mdui-container"><img alt="A man rides his bicycle near a light dusting of snow at Montrose Beach in Chicago, Monday, Jan. 17, 2022. (AP Photo/Nam Y. Huh)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_USP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_USP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_USP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_USP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_USP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_USP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_USP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_USP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_USP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_USP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">F</span><small>or a sense</small> of what is thriving in Chicago, it is worth visiting the offices of Hazel Technologies, a firm based in Fulton Market, about a mile west of the city’s downtown Loop. Across most of one full floor of a fancy new office building, the usual desks and cubicles have been replaced by a laboratory. Around three dozen scientists use it to design prototypes of packets of chemicals that help keep fruit and vegetables fresh by controlling the creation of ethylene, a gas that induces ripening. On another floor, commercial staff sell the chemicals to clients all over the world. Hazel, founded in 2015 by five students at Northwestern University, in the northern suburbs, has grown in the past few years to over 100 employees. In 2021 it raised $70m in venture financing, and it now works in a dozen countries.</p><p class="article__body-text">Few Chicagoans have heard of Hazel—even the city’s bigwigs are barely aware of it. And yet the West Loop district, where Fulton Market is, is bustling with new firms like this, quietly doing lucrative things. The workers they are hiring are filling up not only offices but also dozens of new apartment buildings. And more are coming. Across the street from Hazel’s offices, cranes are already working on turning what is currently a patch of wasteland into yet another shiny tower of glass and steel. Patrick Flynn, the firm’s co-founder, says even he is bemused by the pace of change around him. When he was a teenager in Chicago in the late 1990s, this far west of the Loop was an area you would be careful walking in at night at weekends, he says. Nowadays, the neighbourhood is so trendy it even has a branch of Soho House, an expensive London members’ club that reliably opens up anywhere in the world seen as hip by management consultants.</p><p class="article__body-text">And yet this story is not the one you hear in the city’s boardrooms. Instead, many people in Chicago think that the city is entering a spiral of decline. “There is a general sense out there that our city is in crisis,” said Chris Kempczinski, the <small>CEO</small> of McDonald’s, which is based in the city, in September. In June, Ken Griffin, the billionaire founder of Citadel, a hedge fund, moved himself, his money and many of his staff out of the city to Miami. Less than a year before, he had claimed that “Chicago is like Afghanistan on a good day.” In the past year, Boeing and Caterpillar have also moved their headquarters in the Chicago region out—to the Washington, <small>DC,</small> area and to Texas, respectively. Even the Chicago Bears, the city’s <small>NFL</small> team, are proposing to leave their home at Soldier Field, on the lakefront, to move to the suburbs. As the city prepares for its mayoral and city council elections in February, this sense of doom is infectious. But is it justified? </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_USP004.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230107_USP004.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230107_USP004.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230107_USP004.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230107_USP004.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230107_USP004.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230107_USP004.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230107_USP004.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_USP004.jpg 1280w"  alt="Pedestrians cross the street in Chicago, Illinois, on December 22, 2022, during a winter storm ahead of the Christmas holiday. - A "/></div><p class="article__body-text">Look at “Chicagoland” as a whole—not only the city’s 2.7m people, but also the other 6m or so in its suburbs—and it is true that the city’s performance looks far more middling. As a share of America’s total <small>GDP</small>, the region declined from 4.3% to 3.7% between 2001 and 2020. Coastal cities such as New York, San Francisco and Seattle have all grown much faster, as have southern <a href="/united-states/2017/04/22/migration-southward-and-westward-is-picking-up-again">sunbelt cities</a> like Austin and Houston, which is on course to overtake Chicago’s population within the next decade. Troublingly, it has even lagged behind a few other midwestern cities, such as Columbus, Ohio, which is now home to 900,000 people, and Indianapolis, Indiana, which is home to 800,000. That is worrying for the region. But when the city proper is growing fast, the chance of it entering a death spiral—as residents leave and taxes cannot cover services, causing more to leave—is low. In fact, the city of Chicago is poaching residents and businesses back from the suburbs. Between the two censuses, the state of Illinois as a whole lost population; Chicago gained it.</p><p class="article__body-text">A similar dynamic applies to the biggest obsession of politicians and the business world: crime. In absolute terms, Chicago has more murders than any other American city—over 800 in 2021 and 723 in 2022. Other high-profile violent crimes, in particular <a href="/united-states/2022/02/12/what-the-carjacking-wave-says-about-american-policing">car-jacking</a>, have soared since the pandemic, generating ugly headlines. Yet crime has soared all over America, and not much more in Chicago than elsewhere. Compared with New York or Los Angeles, Chicago is <a href="/books-and-arts/2019/02/28/an-unflinching-look-at-violence-in-chicago">an appallingly violent place</a>. But the murder rate is still lower than in many other large cities, such as Washington, <small>DC</small>, Indianapolis and Atlanta. Crime ought to concern Chicago’s leaders: the human damage done is enormous. But it is harder to argue that it is a threat to the core economic basis of the city. The violence is concentrated in a few of the poorest neighbourhoods, mostly on the South Side and West Side of the city, where a legacy of segregation has left neighbourhoods abandoned. There, it is getting worse. Murder rates in the city’s wealthier neighbourhoods, including downtown, are hardly higher than elsewhere in America. </p><p class="article__body-text">What Chicago has, says Aaron Renn of the Manhattan Institute, a right-leaning think-tank, is an identity crisis. “Chicago feels like it deserves to be considered one of the big important global cities,” he says. But whereas its culture, museums, restaurants and much else can be considered truly global, its economy is not, quite. Where cities on the coasts have specialised in finance or tech, Chicago is a diversified economy. It has tech: Google is busy renovating a modernist office block, the Thompson Centre, downtown to house over 2,000 workers. It has finance: the Chicago Mercantile Exchange remains a hub of derivatives and commodities trading. It even still has a relatively large manufacturing industry. But no sector dominates, and the city has few top-tier firms headquartered there. Instead of being a truly “global city”, its economy tends to reflect America’s at large. Its greatest asset, Mr Renn says, is affordability—which means that upper-middle-class professionals can have the sort of affluent urban lifestyles scarcely possible in New York or San Francisco.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

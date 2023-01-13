@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/essay/" data-analytics="sidebar:section">Essay</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The viral universe</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Viruses have big impacts on ecology and evolution as well as human health</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">They are ubiquitous, diverse and very powerful</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 360w, https://www.economist.com/img/b/384/216/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 384w, https://www.economist.com/img/b/480/270/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 480w, https://www.economist.com/img/b/600/337/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 600w, https://www.economist.com/img/b/834/469/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 834w, https://www.economist.com/img/b/960/540/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 960w, https://www.economist.com/img/b/1096/616/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1096w, https://www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1280w, https://www.economist.com/img/b/1424/801/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/sites/default/files/images/print-edition/20200822_ESD001_0.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text"><strong>I</strong><br/><span>The outsiders inside</span></p><p class="article__body-text">It is this endlessly repeated, never quite perfect reproduction which explains why oak trees, humans, and every other plant, fungus or single-celled organism you have ever seen or felt the presence of are all alive in the same way. It is the most fundamental of all family resemblances. Go far enough up any creature’s family tree and you will find an ancestor that sits in your family tree, too. Travel further and you will find what scientists call the last universal common ancestor, <small>LUCA</small>. It was not the first living thing. But it was the one which set the template for the life that exists today.</p><p class="article__body-text">And then there are viruses. In viruses the link between metabolism and genes that binds together all life to which you are related, from bacteria to blue whales, is broken. Viral genes have no cells, no bodies, no metabolism of their own. The tiny particles, “virions”, in which those genes come packaged—the dot-studded disks of coronaviruses, the sinister, sinuous windings of Ebola, the bacteriophages with their science-fiction landing-legs that prey on microbes—are entirely inanimate. An individual animal, or plant, embodies and maintains the restless metabolism that made it. A virion is just an arrangement of matter.</p><p class="article__body-text">They may have been responsible for some of the most important events in the history of life, from the appearance of complex multicellular organisms to the emergence of <small>DNA</small> as a preferred genetic material. The legacy they have left in the human genome helps produce placentas and may shape the development of the brain. For scientists seeking to understand life’s origin, they offer a route into the past separate from the one mapped by humans, oak trees and their kin. For scientists wanting to reprogram cells and mend metabolisms they offer inspiration—and powerful tools.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/1280/2721/90/sites/default/files/20200822_ESC001.png" srcSet="https://www.economist.com/img/b/200/425/90/sites/default/files/20200822_ESC001.png 200w,https://www.economist.com/img/b/300/638/90/sites/default/files/20200822_ESC001.png 300w,https://www.economist.com/img/b/400/850/90/sites/default/files/20200822_ESC001.png 400w,https://www.economist.com/img/b/600/1275/90/sites/default/files/20200822_ESC001.png 600w,https://www.economist.com/img/b/640/1361/90/sites/default/files/20200822_ESC001.png 640w,https://www.economist.com/img/b/800/1701/90/sites/default/files/20200822_ESC001.png 800w,https://www.economist.com/img/b/1000/2126/90/sites/default/files/20200822_ESC001.png 1000w,https://www.economist.com/img/b/1280/2721/90/sites/default/files/20200822_ESC001.png 1280w"  alt=""/></div><p class="article__body-text">In four of these seven classes the viruses store their genes not in <small>DNA</small> but in <small>RNA</small>. Those of Baltimore group three use double strands of <small>RNA</small>. In Baltimore groups four and five the <small>RNA</small> is single-stranded; in group four the genome can be used directly as an m<small>RNA</small>; in group five it is the template from which m<small>RNA</small> must be made. In group six—the retroviruses, which include <small>HIV</small>—the viral <small>RNA</small> is copied into <small>DNA</small>, which then provides a template for m<small>RNA</small>s.</p><p class="article__body-text">Studies of the gene for that <small>RNA</small>-copying mechanism, <small>R</small>d<small>R</small>p, reveal just how confusing virus genealogy can be. Some viruses in groups three, four and five seem, on the basis of their <small>R</small>d<small>R</small>p-gene sequence, more closely related to members of one of the other groups than they are to all the other members of their own group. This may mean that quite closely related viruses can differ in the way they store their genomes; it may mean that the viruses concerned have swapped their <small>R</small>d<small>R</small>p genes. When two viruses infect the same cell at the same time such swaps are more or less compulsory. They are, among other things, one of the mechanisms by which viruses native to one species become able to infect another.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/680/90/sites/default/files/20200822_ESD002.jpg" srcSet="https://www.economist.com/img/b/200/224/90/sites/default/files/20200822_ESD002.jpg 200w,https://www.economist.com/img/b/300/336/90/sites/default/files/20200822_ESD002.jpg 300w,https://www.economist.com/img/b/400/447/90/sites/default/files/20200822_ESD002.jpg 400w,https://www.economist.com/img/b/600/671/90/sites/default/files/20200822_ESD002.jpg 600w,https://www.economist.com/img/b/640/716/90/sites/default/files/20200822_ESD002.jpg 640w,https://www.economist.com/img/b/800/895/90/sites/default/files/20200822_ESD002.jpg 800w,https://www.economist.com/img/b/1000/1118/90/sites/default/files/20200822_ESD002.jpg 1000w,https://www.economist.com/img/b/1280/1432/90/sites/default/files/20200822_ESD002.jpg 1280w"  alt=""/></div><p class="article__body-text"><strong>III</strong><br/><span>The scythes of the seas</span></p><p class="article__body-text">Metagenomics, a part of biology that looks at all the nucleic acid in a given sample to get a sense of the range of life forms within it, reveals that these tiny throngs are highly diverse. A metagenomic analysis of two surveys of ocean life, the Tara Oceans and Malaspina missions, by Ahmed Zayed of Ohio State University, found evidence of 200,000 different species of virus. These diverse species play an enormous role in the ecology of the oceans.</p><p class="article__body-text">It is also possible that this endless dance of death between viruses and microbes sets the stage for one of evolution’s great leaps forward. Many forms of single-celled plankton have molecular mechanisms that allow them to kill themselves. They are presumably used when one cell’s sacrifice allows its sister cells—which are genetically identical—to survive. One circumstance in which such sacrifice seems to make sense is when a cell is attacked by a virus. If the infected cell can kill itself quickly (a process called apoptosis) it can limit the number of virions the virus is able to make. This lessens the chances that other related cells nearby will die. Some bacteria have been shown to use this strategy; many other microbes are suspected of it.</p><p class="article__body-text">This is not the only way that animals make use of their <small>ERV</small>s. Evidence has begun to accumulate that genetic sequences derived from <small>ERV</small>s are quite frequently used to regulate the activity of genes of more conventional origin. In particular, <small>RNA</small> molecules transcribed from an <small>ERV</small> called <small>HERV-K</small> play a crucial role in providing the stem cells found in embryos with their “pluripotency”—the ability to create specialised daughter cells of various different types. Unfortunately, when expressed in adults <small>HERV-K</small> can also be responsible for cancers of the testes.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/1280/720/90/sites/default/files/20200822_ESD003.jpg" srcSet="https://www.economist.com/img/b/200/113/90/sites/default/files/20200822_ESD003.jpg 200w,https://www.economist.com/img/b/300/169/90/sites/default/files/20200822_ESD003.jpg 300w,https://www.economist.com/img/b/400/225/90/sites/default/files/20200822_ESD003.jpg 400w,https://www.economist.com/img/b/600/338/90/sites/default/files/20200822_ESD003.jpg 600w,https://www.economist.com/img/b/640/360/90/sites/default/files/20200822_ESD003.jpg 640w,https://www.economist.com/img/b/800/450/90/sites/default/files/20200822_ESD003.jpg 800w,https://www.economist.com/img/b/1000/563/90/sites/default/files/20200822_ESD003.jpg 1000w,https://www.economist.com/img/b/1280/720/90/sites/default/files/20200822_ESD003.jpg 1280w"  alt=""/></div><p class="article__body-text">In the 100m years or so that this has been going on in humans and the species from which they are descended the <small>LINE</small>-1 element has managed to pepper the genome with a staggering 500,000 copies of itself. All told, 17% of the human genome is taken up by these copies—twice as much as by the <small>ERV</small>s.</p><p class="article__body-text">Brains develop through proliferation followed by pruning. First, nerve cells multiply pell-mell; then the cell-suicide process that makes complex life possible prunes them back in a way that looks a lot like natural selection. Dr Gage suspects that the movement of <small>LINE-1</small> transposons provides the variety in the cell population needed for this selection process. Choosing between cells with <small>LINE-1</small> in different places, he thinks, could be a key part of the process from which the eventual neural architecture emerges. What is true in mice is, as he showed in 2009, true in humans, too. He is currently developing a technique for looking at the process in detail by comparing, post mortem, the genomes of different brain cells from single individuals to see if their <small>LINE-1</small> patterns vary in the ways that his theory would predict.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

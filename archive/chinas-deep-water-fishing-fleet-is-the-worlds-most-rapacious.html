@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/international/" data-analytics="sidebar:section">International</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Pelagic politics</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">China’s deep-water fishing fleet is the world’s most rapacious</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Even in a notoriously murky industry, it stands out</h2></section>
+<div class="mdui-container"><img alt="The vessel (a Chinese-owned, Ghanian-flagged bottom trawler) is not actually fishing here, but is engaged in an illegal trans-shipment of illegally caught fish."  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221210_IRP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221210_IRP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221210_IRP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221210_IRP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221210_IRP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221210_IRP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221210_IRP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221210_IRP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221210_IRP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221210_IRP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">F</span><small>rom his </small>shack, Mamadou Sarr points to more than 100 brightly painted pirogues hauled up above the Atlantic surf on Ouakam beach in Dakar, the capital of Senegal. In normal times they would be out fishing. But the dozen boats that ventured out that day had come back with barely any fish. Mr Sarr, who heads the local fishing association, opens boxes that would once have been full of bream and grouper to reveal only flies. At the beachside market, a woman sleeps on the table upon which she would usually gut fish.</p><p class="article__body-text">A story of scarcity runs up and down the once bountiful coast of west Africa. There, communities of “artisanal” fishermen, who fish for subsistence and for the local market, are buffeted by forces shaped on the far side of the world, in China. For at least three decades that country’s central and local governments have encouraged the development of a long-distance fishing fleet, equipping boats that stay at sea for months or even years. </p><p class="article__body-text">A third differentiating feature is the fleet’s rapaciousness and lack of scruple in an industry notorious for both. In its wake comes overfishing, some of which is outright illegal; the collapse of local stocks; smuggling; links to organised crime; and the forced labour and general mistreatment of those who serve on the boats. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221210_IRC108.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221210_IRC108.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221210_IRC108.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221210_IRC108.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221210_IRC108.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221210_IRC108.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221210_IRC108.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221210_IRC108.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221210_IRC108.png 1280w"  alt=""/></div><p class="article__body-text">Sometimes the rules are ignored entirely. Illegal, unreported and unregulated (<small>IUU</small>) fishing is rife among the Chinese fleet. Vessels exceed catch limits, kill protected species or fish where they should not (such as inshore zones reserved for artisanal fishermen). All that puts further pressure on the world’s seas, which are already fished nearly to capacity (see chart). Locally flagged vessels often conceal their Chinese ownership behind shell companies or joint ventures. Although foreign vessels are not allowed to fish in Ghanaian waters, much of its fleet is ultimately controlled by Chinese interests. </p><p class="article__body-text">One common illegal practice in Ghanaian waters is <i>saiko</i>—the transfer at sea of frozen, often illegally caught, fish from big trawlers to small canoes, which run their cargoes ashore under cover of night for sale in local markets. Due partly to <i>saiko</i>, Ghana’s stocks of sardinella—one type of sardine—have collapsed. And the smuggling forges links between Chinese fishermen and the local organised-crime groups that oversee fish markets on land. </p><p class="article__body-text">Fishing for squid in international waters is not necessarily illegal. In the north-western Indian Ocean, squid are excluded from regional agreements that regulate the harvesting of other sorts of marine wildlife, like tuna. But squid do not care about <small>EEZ</small>s, and heavy fishing near another country’s waters is bound to affect its own catch within them. Since squid are prey for other species, including tuna, overfishing will have knock-on effects for other species too. And rapacious techniques are often suggestive of outright illegal activities in other areas. Evidence is mounting that these fleets are catching tuna for which they have no quota, finning sharks and killing other protected species. </p><p class="article__body-text">Still, the “dark fleets” do not have everything their own way. Satellite imagery increasingly helps fishing authorities and <small>NGO</small>s keep track of where boats are and what they are up to. In the face of international criticism, China issued regulations in 2020 to limit high-seas squid-fishing. In May it announced a three-month moratorium for the north-west Indian Ocean. Such moratoriums are only “voluntary”, and apply to times of year when stocks are relatively less abundant. The reforms may be half-hearted, but they suggest that making the fleet’s activities public has at least some power to change behaviour. </p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

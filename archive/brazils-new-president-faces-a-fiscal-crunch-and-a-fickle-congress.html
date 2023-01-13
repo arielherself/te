@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/the-americas/" data-analytics="sidebar:section">The Americas</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Big plans, not much money</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Brazil’s new president faces a fiscal crunch and a fickle Congress</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Luiz Inácio Lula da Silva was sworn in on January 1st, 20 years after first taking office</h2></section>
+<div class="mdui-container"><img alt="TOPSHOT - Brazil&#x27;s new President Luiz Inacio Lula da Silva (C), accompanied by his wife First Lady Rosangela &quot;Janja&quot; da Silva (R) and indigenous Brazilian leader and environmentalist Raoni Metuktire, known as Chief Raoni, after receiving the presidential sash from community representatives at Planalto Palace after his inauguration ceremony at the National Congress, in Brasilia, on January 1, 2023. - Lula da Silva, a 77-year-old leftist who already served as president of Brazil from 2003 to 2010, takes office for the third time with a grand inauguration in Brasilia. (Photo by Sergio Lima / AFP) (Photo by SERGIO LIMA/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_AMP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_AMP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_AMP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_AMP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_AMP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_AMP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_AMP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_AMP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_AMP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_AMP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">O</span><small>n January 1st</small> <a href="/films/2022/09/30/the-economist-interviews-lula-da-silva">Luiz Inácio Lula da Silva</a> looked out from the ramp at Planalto Palace, the Brazilian president’s office, at a sea of supporters dressed in red. The crowd resembled the one that greeted him at his first inauguration in 2003. Brazil’s fortunes have risen and fallen since then. So have those of Lula, as the former union organiser and founder of the left-wing Workers’ Party (<small>PT</small>) is known. He left office in 2010 with an 83% approval rating. From 2018 he spent 19 months in jail on corruption charges that were later annulled. In October 2022 he completed a remarkable political comeback by beating Jair Bolsonaro, the right-wing populist incumbent, in a <a href="/the-americas/2022/11/03/luiz-inacio-lula-da-silva-will-oversee-a-more-divided-brazil">bitterly fought</a> presidential election.</p><p class="article__body-text">Now he must govern. In fact, he has spent the past two months acting as if he were already president. That is partly because Mr Bolsonaro spent the transition sulking. He never explicitly conceded defeat in an election he suggested, without evidence, would be rigged against him; and his party tried unsuccessfully to have the result overturned. In December, while most Brazilians were watching the World Cup, hundreds of <i>bolsonarista</i> protesters stood outside the army headquarters in Brasília, the capital, calling for a coup. Mr Bolsonaro decided he would rather be abroad, in Florida, on inauguration day. The presidential sash, which is supposed to be passed from one president to the next, was given to Lula by a group representing Brazilian society, including a ten-year-old boy and an indigenous chief. </p><p class="article__body-text">Lula has a daunting task ahead because of the economic mess which Mr Bolsonaro <a href="/the-americas/2021/11/13/president-jair-bolsonaro-is-bad-for-brazils-economy">bequeaths his successor</a>. Copious pre-election stimulus spending helped boost growth in 2022; according to the central bank, it will be 2.9%. But it is expected to drop to 1% in 2023. Inflation has fallen from a peak of 12% in April to 6% in November. However, the share of Brazilians who do not get enough to eat has risen from 6%, just before Mr Bolsonaro took office in 2019, to 16%. His government promised liberal economic reforms but, apart from putting state pensions on a sounder footing, failed to enact most of them. </p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/890/90/media-assets/image/20230107_AMC245.png" srcSet="https://www.economist.com/img/b/200/293/90/media-assets/image/20230107_AMC245.png 200w,https://www.economist.com/img/b/300/439/90/media-assets/image/20230107_AMC245.png 300w,https://www.economist.com/img/b/400/586/90/media-assets/image/20230107_AMC245.png 400w,https://www.economist.com/img/b/600/878/90/media-assets/image/20230107_AMC245.png 600w,https://www.economist.com/img/b/640/937/90/media-assets/image/20230107_AMC245.png 640w,https://www.economist.com/img/b/800/1171/90/media-assets/image/20230107_AMC245.png 800w,https://www.economist.com/img/b/1000/1464/90/media-assets/image/20230107_AMC245.png 1000w,https://www.economist.com/img/b/1280/1874/90/media-assets/image/20230107_AMC245.png 1280w"  alt=""/></div><p class="article__body-text">Inflation has helped reduce the burden of government debt, by swelling the size of national income. But high inflation has also pushed up the government’s borrowing costs and eroded confidence in long-run macroeconomic stability, leaving the new government with less room to manoeuvre in dealing with the debt burden, which, at 75% of <small>GDP</small>, remains uncomfortably high (see chart).</p><p class="article__body-text">Lula’s amendment passed on December 21st, the eve of the congressional recess. Having to change the constitution in order to make a budget add up is a symptom of Brazil’s political dysfunction. The charter has been changed 140 times since it was drafted in 1988, usually to allow the government to borrow more, rather than to allow reforms that might increase the efficiency of spending. </p><p class="article__body-text">This has not been easy, despite Lula’s reputation as a skilled negotiator. The <small>PT</small> has just 12% of seats in Congress. As is typical in Brazil’s legislature, a majority coalition must be built via <i>toma lá, dá cá</i> (“give and take”), the grubby process of making deals with opportunistic centre-right parties and giving them positions of power. One <small>PT</small> senator throws up his hands in exasperation at the “exaggerated” number of ministries each party demanded in return for backing the government. Lula has created 14 new ministries, including a fishing ministry, bringing the total to 37.</p><p class="article__body-text">Fernando Haddad, Lula’s finance minister, has promised to deliver a new fiscal rule to replace the spending cap, which will allow the government to borrow more (while establishing new rules for fiscal responsibility in an attempt to calm market jitters). He also wants to implement a tax reform to boost growth, even though this has eluded governments for decades. An initial reform would simplify a byzantine tax code, for example by combining several levies into a single value-added tax. Mr Haddad has said that the government might later try to make taxes more progressive, for example by taxing inheritance.</p><p class="article__body-text">Faster growth than Brazil’s lacklustre 0.5% annual average of the past decade is crucial to fund the social programmes that Lula is planning. But many fear that the <small>PT</small>’s <a href="/the-americas/2022/09/19/how-left-wing-on-economics-is-luiz-inacio-lula-da-silva">left-wing interventionist streak</a> will stifle it. The financial markets will be “far less forgiving” with Lula than they were with Mr Bolsonaro, says Aline Contar de Souza of Ágora, a consultancy. Brazil’s currency lost ground after Mr Haddad was nominated, though it later rebounded. The share price of Petrobras, the state oil giant, fell by 6% the day after the inauguration because of Lula’s decision to continue fuel subsidies launched by Mr Bolsonaro, and to revoke preliminary studies into the privatisation of eight state companies.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

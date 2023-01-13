@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/middle-east-and-africa/" data-analytics="sidebar:section">Middle East &amp; Africa</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Finding faith in the fund</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">Ghana has struck a preliminary IMF deal and halted debt payments</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">Pain and hope loom in equal measure</h2></section>
+<div class="mdui-container"><img alt="Protestors march during a street demonstration against the worsening economic crisis, in Accra, Ghana November 5, 2022. REUTERS/Francis Kokoroko"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20221224_MAP001.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20221224_MAP001.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20221224_MAP001.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20221224_MAP001.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20221224_MAP001.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20221224_MAP001.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20221224_MAP001.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20221224_MAP001.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20221224_MAP001.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20221224_MAP001.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">K</span><small>en Ofori-Atta</small>, Ghana’s finance minister, is fond of invoking scripture in speeches on the economy. Recently, as the country defaulted on its domestic debt, he found solace in the first book of Samuel saying “nothing will be lost, nothing will be missing.” Yet the Bible is a poor guide to macroeconomics. Holders of domestic bonds stand to lose a good chunk of money. Now foreign creditors are getting a buzz cut, too. On December 19th Ghana suspended interest payments to foreign creditors, in effect defaulting, pending talks. </p><p class="article__body-text">It has also appealed to the high priests of economic orthodoxy, agreeing to a preliminary $3bn bail-out (about 4% of <small>gdp</small>) from the <small>IMF</small>. It needs the help. <a href="/middle-east-and-africa/2022/08/05/ghana-an-oft-lauded-african-economy-is-back-for-a-17th-bail-out">Public debt</a> is above 100% of <small>GDP</small> and local and foreign interest payments eat up 70-100% of revenue, according to Mr Ofori-Atta. Inflation is running at 50% and the central bank has raised its main interest rate to 27%. In past crises Ghana has wisely <a href="/leaders/2022/08/11/the-unexpected-lesson-of-ghanas-17th-imf-bail-out">called in the <small>IMF</small> early</a> to head off trouble and avoid spending cuts that were too painful. This time, however, it dallied for so long that austerity alone will not save it. </p><p class="article__body-text">Nonetheless Mr Ofori-Atta was far from contrite as he announced the deal with the <small>IMF</small>. “Let us all gather the harvest with joy,” he proclaimed. He even thanked his disgraced deputy, Charles Adu Boahen, who was sacked by President Nana Akufo-Addo last month after being accused of asking for a $200,000 fee to set up a meeting with the vice-president. The triumphalism will rile long-suffering Ghanaians. Many think Mr Ofori-Atta, a cousin of the president, should himself have been fired for poor management of the economy.</p><div class="mdui-container"><img loading="lazy" src="https://www.economist.com/img/b/608/662/90/media-assets/image/20221224_MAC220.png" srcSet="https://www.economist.com/img/b/200/218/90/media-assets/image/20221224_MAC220.png 200w,https://www.economist.com/img/b/300/327/90/media-assets/image/20221224_MAC220.png 300w,https://www.economist.com/img/b/400/436/90/media-assets/image/20221224_MAC220.png 400w,https://www.economist.com/img/b/600/653/90/media-assets/image/20221224_MAC220.png 600w,https://www.economist.com/img/b/640/697/90/media-assets/image/20221224_MAC220.png 640w,https://www.economist.com/img/b/800/871/90/media-assets/image/20221224_MAC220.png 800w,https://www.economist.com/img/b/1000/1089/90/media-assets/image/20221224_MAC220.png 1000w,https://www.economist.com/img/b/1280/1394/90/media-assets/image/20221224_MAC220.png 1280w"  alt=""/></div><p class="article__body-text">The fund’s deal will bring pain. But it also offers hope. It aims to slash debt to 55% of <small>gdp</small> in the medium term, perhaps by 2028, and the costs of servicing foreign-currency debts to 18% of government revenue. Next year’s budget includes spending cuts worth 2% of <small>GDP</small>. (A vast national cathedral that Mr Ofori-Atta lavished $58m of public money on will remain a stalled building site.) Social programmes will be protected, says the fund, though some worry Mr Ofori-Atta’s promise to review them for efficiencies may be a pretext for more cuts. The agreement is already boosting confidence in Ghana’s economy. The currency, the cedi, had slumped all year but has leapt since the bail-out was announced (see chart).</p><p class="article__body-text">Nervous policymakers are trying to prop up the banks. The central bank will loosen liquidity and capital-adequacy requirements. The government promises that a donor-backed fund worth 15bn cedis will help ensure financial stability. Mr Addison says the World Bank has committed $250m to it. All this should help. Yet when asked if he is therefore not too worried, Mr Addison simply says, “It is early.”</p><p class="article__body-text">Investors holding $13bn of Ghana’s foreign-currency bonds will not get off lightly, either. The government has previously floated talk of a 30% cut to the face value of the debt it will repay and suspension of some interest payments. This, too, may result in a fight, though some bondholders say they expect a relatively quick deal.</p><p class="article__body-text">Yet Ghana has been here before—16 times in fact. All those crises and bail-outs have not stopped it from becoming the richest country in continental west Africa as measured by income per head. It has a relatively educated workforce and widely available (if pricey) electricity. Some of its loose spending went on much-needed infrastructure. “We could actually get quite nice growth within two or three years,” reckons Charles Robertson of Renaissance Capital, an investment bank, “led by cheap currency and a low debt overhang.” </p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

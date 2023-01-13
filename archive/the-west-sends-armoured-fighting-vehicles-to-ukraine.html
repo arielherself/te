@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-11w0l54 e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/europe/" data-analytics="sidebar:section">Europe</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->Thanks but no tanks</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">The West sends armoured fighting vehicles to Ukraine</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">They will help repel Russian attacks, but Ukraine wants heavier weapons</h2></section>
+<div class="mdui-container"><img alt="BAGHDAD, Iraq: A US Bradley Fighting Vehicle of the Lighting Troops 3rd Squadron, 3rd Armored Cavalry Regiment is stationed at the side of a highway on the outskirts of Baghdad, early 20 August 2005. US President George W. Bush, besieged at his Texas ranch by relatives of US soldiers killed in Iraq, said today that the best way to honor fallen troops was to win the war on terrorism. AFP PHOTO/LIU Jin (Photo credit should read LIU JIN/AFP via Getty Images)"  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20230107_EUP503.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20230107_EUP503.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20230107_EUP503.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20230107_EUP503.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20230107_EUP503.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20230107_EUP503.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20230107_EUP503.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_EUP503.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_EUP503.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20230107_EUP503.jpg" decoding="async" data-nimg="responsive" /></div><p class="article__body-text"><i><b> Editor’s</b> note: This article has been updated to include details of America’s new $3bn package of military aid to Ukraine, announced on January 6th.</i></p><p class="article__body-text">Ukraine will still have to wait for Western main battle tanks. But the promised armoured vehicles are a step towards that goal, and should do much to enhance Ukraine’s fighting power once they arrive. America is sending 50 M2A2 Bradley vehicles, part of a new package of military aid worth more than $3bn—the largest yet—including armoured personnel carriers, mine-resistant vehicles, Humvees, self-propelled and towed artillery, and a large quantity of missiles and other ammunition. Germany has promised 40 Marder vehicles (and perhaps eventually its entire fleet). France is supplying an undisclosed but probably similar number of <small>AMX-10RC</small>s.</p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_BLP510.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230107_BLP510.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230107_BLP510.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230107_BLP510.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230107_BLP510.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230107_BLP510.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230107_BLP510.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230107_BLP510.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_BLP510.jpg 1280w"  alt="MUNSTER, GERMANY - MAY 20: A Marder battle tank of the Bundeswehr Panzerlehrbrigade 9 (9th Armoured Demonstration Brigade) during a presentation of capabilities by the unit on May 20, 2019 in Munster, Germany. The brigade is the core of the Very High Readiness Joint Task Force (VJTF), which is a NATO rapid reaction force composed of soldiers from a variety of NATO nations. The German government recently announced it will increase defense spending by EUR 5 billion, the biggest rise since the end of the Cold War. (Photo by Morris MacMatzen/Getty Images)"/></div><p class="article__body-text">It is unclear whether Mr Macron’s early announcement forced the hand of an unwilling Mr Scholz, whose Social Democratic Party (<small>SPD</small>) is particularly wary about arming Ukraine, or whether it was choreographed to ease German angst. Many in Berlin suggest the former; American officials hint at the latter, noting that at one point the three leaders had planned to make a joint announcement. </p><p class="article__body-text">The <small>AMX-10RC</small>, Bradley and Marder are somewhat different beasts. The French vehicle is wheeled and relatively swift on roads and hard ground, but has comparatively thin armour. The heavier Bradley and Marder have tracks, which are harder to maintain but better at operating on Ukraine’s boggy ground, which has not yet frozen everywhere. All have impressive firepower that is likely to torment Russian armour. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_BLP509.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20230107_BLP509.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20230107_BLP509.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20230107_BLP509.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20230107_BLP509.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20230107_BLP509.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20230107_BLP509.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20230107_BLP509.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20230107_BLP509.jpg 1280w"  alt="French soldiers from the 1st Regiment Marines Infantery (RIMA) practice shooting with a tank AMX 10RC on the FOB (Forward Operating Base) Tora in Surobi district on September 24, 2010.  Most of France&amp;#39;s 3,500 soldiers, who are part of a NATO-led multinational force fighting the Taliban inside Afghanistan, are based in districts around Kabul.  AFP PHOTO/Joel SAGET (Photo credit should read JOEL SAGET/AFP via Getty Images)"/></div><p class="article__body-text">Robert Habeck, the German economy minister and deputy chancellor from the Green party, praised the “good decision” on <small>IFV</small>s. Marie-Agnes Strack-Zimmermann, a combative liberal politician who has called for the supply of Marders for months, declared: “The decision came very late, but not too late.” </p><p class="article__body-text">Europe, in particular, is awash with German-made Leopard tanks, whose diesel engines are easier to operate and maintain than the turbines of the American-made M1 Abrams. Ms Cooper acknowledged that Ukraine needed tanks, but hinted that the Leopards would be a better fit for Ukraine. Germany, whose permission for re-export must be obtained, has thus far refused to allow anyone to send them to Ukraine, annoying many allies and even Mr Scholz’s coalition partners.</p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>

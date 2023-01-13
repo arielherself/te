@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            @font-face {
+                font-family: 'custom';
+                src: url('./milo-primary-subset-rg.woff2');
+            } 
+            .customisedFont{
+                font-family: 'custom';
+                font-size:120%;
+                line-height: 140%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://arielherself.github.io/espresso-native/mdui-v1.0.2/css/mdui.min.css"/>
+        <link rel="shortcut icon" href="favicon.f1ea908894.ico" type="image/x-icon">
+        <title>The Economist</title>
+    </head>
+    <body class="mdui-theme-primary-red mdui-drawer-body-left mdui-appbar-with-toolbar mdui-color-theme mdui-typo mdui-theme-layout-auto">
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-red-a700">
+              <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu
+                </i>
+            </button>
+
+              <a href="https://arielherself.github.io/te" class="mdui-typo-title" mdui-tooltip="{content: 'Back to homepage', position: 'bottom'}"><b>T</b>he <b>E</b>conomist</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Reload (Ctrl+R)', position: 'left'}">
+              <i class="mdui-icon material-icons">refresh</i>
+              </a>
+            </div>
+        </div>
+        <div class="mdui-drawer" id="left-drawer">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`leaders.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
+                    <div class="mdui-list-item-content">Leaders</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`letters.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+                    <div class="mdui-list-item-content">Letters</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`briefing.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">all_inclusive</i>
+                    <div class="mdui-list-item-content">Briefing</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`united-states.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">United States</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`the-americas.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">The Americas</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`asia.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Asia</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`china.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">China</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`middle-east-and-africa.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Middle East & Africa</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`europe.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">euro_symbol</i>
+                    <div class="mdui-list-item-content">Europe</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`britain.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">tab</i>
+                    <div class="mdui-list-item-content">Britain</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`international.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>
+                    <div class="mdui-list-item-content">International</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`business.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">business</i>
+                    <div class="mdui-list-item-content">Business</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`finance-and-economics.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">attach_money</i>
+                    <div class="mdui-list-item-content">Finance & economics</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`science-and-technology.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">memory</i>
+                    <div class="mdui-list-item-content">Science & technology</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`culture.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                    <div class="mdui-list-item-content">Culture</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`graphic-detail.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart_outlined</i>
+                    <div class="mdui-list-item-content">Graphic detail</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`obituary.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">people_outline</i>
+                    <div class="mdui-list-item-content">Obituary</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`special-reports.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+                    <div class="mdui-list-item-content">Special reports</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`technology-quarterly.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+                    <div class="mdui-list-item-content">Technology quarterly</div>
+                </li>
+            </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                <li onclick="window.open(`essay.html`);" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">create</i>
+                    <div class="mdui-list-item-content">Essay</div>
+                </li>
+            </div>
+        </div>
+        <div class="mdui-container customisedFont mdui-typo">
+<br><br>
+<div class="mdui-container"><section class="css-17nswhw e139ysjh0"><style data-emotion="css nxgt9g">.css-nxgt9g{margin-bottom:0.25rem;}@media (min-width: 37.5rem){.css-nxgt9g{margin-bottom:0.5rem;}}</style><div class="css-nxgt9g e4rqgur0"><style data-emotion="css 1pipetz">.css-1pipetz{color:var(--ds-color-economist-red);font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);}.css-1pipetz a{-webkit-text-decoration:none;text-decoration:none;color:inherit;-webkit-transition:color var(--ds-interactions-transition);transition:color var(--ds-interactions-transition);outline:solid transparent;}.css-1pipetz a:hover,.css-1pipetz a:active{color:var(--ds-color-chicago-30);}.css-1pipetz a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1pipetz a:focus{color:var(--ds-color-london-10);background-color:var(--ds-color-chicago-95);}</style><span class="css-1pipetz e6o8dkj0"><a href="/essay/" data-analytics="sidebar:section">Essay</a></span><style data-emotion="css 1wi1zzr">.css-1wi1zzr{font-family:var(--ds-type-system-sans);font-size:var(--ds-type-scale--1);font-weight:400;line-height:var(--ds-type-leading-lower);color:var(--ds-color-london-10);}</style><span class="css-1wi1zzr ebyn31n0"> | <!-- -->The view from a tent in the Arctic</span></div><style data-emotion="css 1bo5zl0">.css-1bo5zl0{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-6);font-weight:400;line-height:var(--ds-type-leading-upper);}@media (min-width: 37.5rem){.css-1bo5zl0{font-size:var(--ds-type-scale-8);line-height:var(--ds-type-leading-upper);}}@media (min-width: 60rem){.css-1bo5zl0{font-size:var(--ds-type-scale-9);line-height:var(--ds-type-leading-upper);}}</style><h1 class="css-1bo5zl0 e164j1a30">The Alaskan wilderness reveals the past and the future</h1><style data-emotion="css 13b9ga2">.css-13b9ga2{color:var(--ds-color-london-10);font-family:var(--ds-type-system-serif);font-size:var(--ds-type-scale-2);font-weight:400;line-height:var(--ds-type-leading-lower);}</style><h2 class="css-13b9ga2 e1fr8l080">The oil flows more slowly, the climate changes more quickly</h2></section>
+<div class="mdui-container"><img alt=""  srcSet="https://www.economist.com/img/b/360/202/90/media-assets/image/20220910_ESP030.jpg 360w, https://www.economist.com/img/b/384/216/90/media-assets/image/20220910_ESP030.jpg 384w, https://www.economist.com/img/b/480/270/90/media-assets/image/20220910_ESP030.jpg 480w, https://www.economist.com/img/b/600/337/90/media-assets/image/20220910_ESP030.jpg 600w, https://www.economist.com/img/b/834/469/90/media-assets/image/20220910_ESP030.jpg 834w, https://www.economist.com/img/b/960/540/90/media-assets/image/20220910_ESP030.jpg 960w, https://www.economist.com/img/b/1096/616/90/media-assets/image/20220910_ESP030.jpg 1096w, https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP030.jpg 1280w, https://www.economist.com/img/b/1424/801/90/media-assets/image/20220910_ESP030.jpg 1424w" src="https://www.economist.com/img/b/1424/801/90/media-assets/image/20220910_ESP030.jpg" decoding="async" data-nimg="responsive" /></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">I</span><small>t is june</small> in the Alaskan Arctic and two grizzlies are traversing the tundra at an hour that would, at lower latitudes, be dawn. One, a blonde, ambles along a riverbank, light from the already-high sun glinting off her massive haunches. The other, chocolate-coloured, is loping to catch up with her, his heaving breath audible from your correspondent’s seat at the mouth of her small tent. Though she is camping on the other side of a frigid river, its channel is narrow enough to be a moment’s swim for a bear so inclined. Thankfully humans are incidental to these grizzlies’ morning. The dark bear reaches the blonde. They mate and loll, briefly, then lumber up a hill, over a ridge and vanish. </p><p class="article__body-text">The camping party was brought to this northern tundra by a bush plane, tossed around like a wiffle ball as it flew over the craggy peaks of the Brooks Range. Bulbous bush tyres bounced along a gravel riverbed; conservationists, a handful of amateur explorers and their paraphernalia were unloaded and left alone on the North Slope. </p><p class="article__body-text">But the emptiness is alive. Northern white anemones and purple saxifrage soak up precious sun, full grown, tiny and miraculous, shimmying defiantly in the howling summer wind. Braided rivers diverge and converge around long strips of gravel. Nesting among the mud, flowers and cotton grass are the birds—here the golden plover, a ribbon of white feathers draped from brow to breast, there the willow ptarmigan, mottled brown in summer, white when the snows come.</p><p class="article__body-text">There is life across the North Slope’s surface. Beneath it there is ice—or at least frozen soil. The warmth of a single summer never gets deep enough to undo the work of winter. The summed effect of many warmer summers, though, is reaching deeper; the permafrost is thinning. Below the permafrost are sedimentary rocks, some of them laid down in a basin created by the rise of the Brooks Range to the south. The seas in that basin, too, were full of life. Some of its buried, liquefied remains went on to follow their own slow migration to what today are oilfields. </p><p class="article__body-text">Persistent fights over who controls Alaska’s land, how it should be developed and how it should be protected are ramping up in the face of uncertainty over both oil and ice. Alaska’s crude-oil output is nearly 80% below the peak it reached in 1988, when the great Prudhoe Bay field was in its pomp. The state, still sorely dependent on oil revenue, is keen to slow its decline and ideally increase production. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP031.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220910_ESP031.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220910_ESP031.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220910_ESP031.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220910_ESP031.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220910_ESP031.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220910_ESP031.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220910_ESP031.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP031.jpg 1280w"  alt="NORTH SLOPE BOROUGH, AK - MAY 25: An oil pipeline stretches across the landscape outside Prudhoe Bay in North Slope Borough, AK on May 25, 2019. (Photo by Bonnie Jo Mount/The Washington Post via Getty Images)"/></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">A</span><small>nchorage, alaska’s</small> biggest city, is the 137th largest metropolitan area in the United States, and in some ways not that unlike Peoria, Illinois, the 138th. Mid-size office buildings sit in a modest grid. There are nail salons and hunting shops. Busy suburban intersections boast pharmacies of ecclesiastical scale. </p><p class="article__body-text">In Anchorage the climate is at the cool end of temperate. Utqiagvik (formerly known as Barrow), the northernmost town in America, frequently reports temperatures of -25°C (-13°F); its midwinter night lasts for two months. Many villages and some towns—even the state capital, Juneau—are not accessible by road. Huge swathes of land feel as they might have done before the settlers came. Its beauties range from the exquisite to the gobsmacking. After rain on the tundra, the leaves of a young lupine flower cradle a single sphere of water at their centre. When a clear day allows the huge bulk of the continent’s highest peak to be seen from Anchorage, 160km away, locals say “Denali is out” in the way people elsewhere speak of the Sun. </p><p class="article__body-text">This vast land has also been a setting in which America’s national impulse to bend nature to its use has clashed relentlessly with its urge to protect it. In 1954, 87 years after Alaska was bought from Russia and five years before it became a state, America’s Army Corps of Engineers proposed a 1.5km-long dam across the Yukon river. This Rampart dam would have created a reservoir ten times the volume of that which the Aswan Dam, begun the same year, would impound in Lake Nasser. It would have had a surface area the size of Lake Erie, or nearly as large as Belgium. </p><p class="article__body-text">The need to address the claims of native Alaskans led to the Alaska Native Claims Settlement Act, of 1971. It ordered the <small>blm</small> to transfer more than 180,000 square kilometres to Alaska natives, about 11% of the state’s total land, and paid them nearly $1bn for lands not given. Title to native lands went to regional and village corporations charged with advancing the prosperity of their native shareholders. Along the North Slope, in particular, the interests of the most powerful native organisations were now aligned with those of the oil sector. </p><p class="article__body-text">In August the last oil firm with an interest in the refuge, a tiny company called Knik Arm Services, gave up its lease. <small>bp</small>, a supermajor, has sold its holdings in Prudhoe Bay to Hilcorp, a private company that an analysis of greenhouse emissions by the Clean Air Task Force and Ceres, two non-profits, ranks as America’s dirtiest. Deadhorse, Prudhoe Bay’s main air hub, is strewn with pipe and rigs. Some will be transported to drill sites in winter, when ice roads can bear their weight. But it is hard to escape the impression that a giant toddler has lost interest in its playthings. </p><div class="mdui-container"><img loading="lazy"   src="https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP032.jpg" srcSet="https://www.economist.com/img/b/200/113/90/media-assets/image/20220910_ESP032.jpg 200w,https://www.economist.com/img/b/300/169/90/media-assets/image/20220910_ESP032.jpg 300w,https://www.economist.com/img/b/400/225/90/media-assets/image/20220910_ESP032.jpg 400w,https://www.economist.com/img/b/600/338/90/media-assets/image/20220910_ESP032.jpg 600w,https://www.economist.com/img/b/640/360/90/media-assets/image/20220910_ESP032.jpg 640w,https://www.economist.com/img/b/800/450/90/media-assets/image/20220910_ESP032.jpg 800w,https://www.economist.com/img/b/1000/563/90/media-assets/image/20220910_ESP032.jpg 1000w,https://www.economist.com/img/b/1280/720/90/media-assets/image/20220910_ESP032.jpg 1280w"  alt="It&amp;#39;s Caribou calfing season in Nelchina, Alaska, and that only means one thing for Grizzly bears: dinner. This Grizzly has sniffed a Caribou herd, and is on their trail.  America the Beautiful (2022)Season 1, Episode 101 - "/></div><p data-caps="initial" class="article__body-text article__body-text--dropcap"><span data-caps="initial">A</span><small>bout 50km</small> north of the Arctic Circle, on the edge of the Chukchi Sea, sits Kotzebue (pop. 3,283). It has an airport, a hotel owned by <small>nana</small>, a native regional corporation, a grocery store and a hospital. It has a playground and beside it a cemetery. In summer it buzzes with the dull roar of all-terrain vehicles as residents enjoy the midnight sun; there is often a child perched between driver and wheel. A bulletin board features notices for Miss Teen Arctic Circle and a food bank funded by ConocoPhillips. </p><p class="article__body-text">And it feeds on itself. The cranking up of temperatures speeds the further melting of sea-ice, which speeds further warming. Other feedbacks come into play, too. As temperatures rise trees will creep further north; snow hidden beneath forest canopies reflects less sun than snow spread over empty tundra, so more warmth will follow. </p><p class="article__body-text">If the pace of permafrost thaw is uncertain, the way to limit its ultimate extent is clear: slash emissions. “What’s happening here is America’s wake-up call,” Barack Obama told a crowd packed into Kotzebue’s gym when he visited in 2015. It was the first time a sitting president had come north of the Arctic Circle. “Part of the reason why I wanted to take this trip”, he told <i>Rolling Stone</i>, “was to start making it a little more visceral and to highlight for people that this is not a distant problem that we can keep putting off.” He spoke of the urgency of both investing in clean energy and adapting to the impacts of climate change. </p><script src="https://arielherself.github.io/espresso-native/mdui-v1.0.2/js/mdui.min.js"></script>
+</div>
+</div>
+</body>
+</html>
