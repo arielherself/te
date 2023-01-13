@@ -3,7 +3,7 @@ import datetime
 
 MIRROR = 'https://www.economist.com'
 
-def get(proxy=False, http_proxy='', https_proxy='') -> tuple:
+def getHome(proxy=False, http_proxy='', https_proxy='') -> tuple:
     try:
         if proxy:
             raw = requests.get('https://www.economist.com', proxies={'http': http_proxy, 'https': https_proxy})
@@ -147,10 +147,14 @@ def layout(cells) -> str:
     for cell in cells:
         html += cell
 
+    with open('home_suf.html') as f:
+        sf = ''.join(f.readlines())
+    html += sf
+
     return html
 
 if __name__ == '__main__':
-    html = layout(makeCell(*get()))
+    html = layout(makeCell(*getHome()))
     with open('index.html', 'w') as f:
         print(html, file = f)
     
