@@ -11,6 +11,7 @@ def get(sectionName='', proxy=False, http_proxy='', https_proxy='') -> tuple:
             raw = requests.get(f'https://www.economist.com/{sectionName}')
     except:
         return None #####################################
+    raw.encoding = 'utf8'
     content = raw.text
     if not sectionName:
         content = content[content.find('top-stories'):]
@@ -74,6 +75,7 @@ def getSection1(sectionName, proxy=False, http_proxy='', https_proxy='') -> tupl
             raw = requests.get(f'https://www.economist.com/{sectionName}')
     except:
         return None #####################################
+    raw.encoding = 'utf8'
     content = raw.text
     content = content[content.find('id="reports-archive"'):]
     
@@ -215,7 +217,7 @@ def sectionGet(sectionName=''):
     print(f'Processing {sectionName if sectionName else "index"} ...')
     try:
         html = layout(makeCell(*get(sectionName)))
-        with open(f'{sectionName if sectionName else "index"}.html', 'w') as f:
+        with open(f'{sectionName if sectionName else "index"}.html', 'w', encoding='utf8') as f:
             print(html, file = f)
         return 0
     except:
@@ -225,7 +227,7 @@ def section1Get(sectionName=''):
     print(f'Processing {sectionName if sectionName else "index"} ...')
     try:
         html = layout(makeCell(*getSection1(sectionName)))
-        with open(f'{sectionName}.html', 'w') as f:
+        with open(f'{sectionName}.html', 'w', encoding='utf8') as f:
             print(html, file = f)
         return 0
     except:
