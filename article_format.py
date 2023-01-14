@@ -39,7 +39,7 @@ def mark(uri: str) -> int:      # return an error code.
             h1 = '<h1>' + content[content.find('>')+1:content.find('<')] + '</h1><br>\n'
             content = content[content.find('<h2')+1:]
             h2 = '<h2>' + content[content.find('>')+1:content.find('<')] + '</h2><br>\n'
-            html += h1 + h2
+            html += h1 + h2 + '<hr>'
             while content.find('<img ') != -1 or content.find('<div class="article-text') != -1:
                 if content.find('<img ') == -1:
                     content = content[content.find('<div class="article-text'):]
@@ -60,7 +60,7 @@ def mark(uri: str) -> int:      # return an error code.
         else:
             content = content[content.find('<section'):content.rfind('</section>')]
             head = content[:content.find('</section>')+10]
-            html += head + '\n'
+            html += head + '\n<hr>'
             while content.find('<img ') != -1 or content.find('<p ') != -1:
                 if content.find('<img ') == -1:
                     html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
