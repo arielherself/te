@@ -47,7 +47,7 @@ def mark(uri: str) -> int:      # return an error code.
                     content = content[content.find('</div>')+6:]
                 elif content.find('<div class="article-text') == -1:
                     content = content[content.find('<img '):]
-                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+2]) + '</div>' + '<br>'
                     content = content[content.find('/>')+2:]
                 elif content.find('<div class="article-text') < content.find('<img '):
                     content = content[content.find('<div class="article-text'):]
@@ -55,7 +55,7 @@ def mark(uri: str) -> int:      # return an error code.
                     content = content[content.find('</div>')+6:]
                 else:
                     content = content[content.find('<img '):]
-                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+2]) + '</div>' + '<br>'
                     content = content[content.find('/>')+2:]
         else:
             content = content[content.find('<section'):content.rfind('</section>')]
@@ -67,14 +67,14 @@ def mark(uri: str) -> int:      # return an error code.
                     content = content[content.find('</p>')+4:]
                 elif content.find('<p ') == -1:
                     content = content[content.find('<img '):]
-                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+2]) + '</div>' + '<br>'
                     content = content[content.find('/>')+2:]
                 elif content.find('<p ') < content.find('<img '):
                     html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
                     content = content[content.find('</p>')+4:]
                 else:
                     content = content[content.find('<img '):]
-                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+2]) + '</div>' + '<br>'
                     content = content[content.find('/>')+2:]
 
         # print(content)
