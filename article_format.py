@@ -32,34 +32,57 @@ def mark(uri: str) -> int:      # return an error code.
         with open('article_template.html') as f:
             html += ''.join(f.readlines())
         raw = requests.get(uri)
+        raw.encoding = 'utf8'
         content = raw.text
-        
-        content = content[content.find('<section'):content.rfind('</section>')]
-        head = content[:content.find('</section>')+10]
-        html += head + '\n'
+        if content.find('<section') == -1:
+            content = content[content.find('<h1')+1:]
+            h1 = '<h1>' + content[content.find('>')+1:content.find('<')] + '</h1><br>\n'
+            content = content[content.find('<h2')+1:]
+            h2 = '<h2>' + content[content.find('>')+1:content.find('<')] + '</h2><br>\n'
+            html += h1 + h2
+            while content.find('<img ') != -1 or content.find('<div class="article-text') != -1:
+                if content.find('<img ') == -1:
+                    content = content[content.find('<div class="article-text'):]
+                    html += content[:content.find('</div>')+6] + '<br>'
+                    content = content[content.find('</div>')+6:]
+                elif content.find('<div class="article-text') == -1:
+                    content = content[content.find('<img '):]
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    content = content[content.find('/>')+2:]
+                elif content.find('<div class="article-text') < content.find('<img '):
+                    content = content[content.find('<div class="article-text'):]
+                    html += content[:content.find('</div>')+6] + '<br>'
+                    content = content[content.find('</div>')+6:]
+                else:
+                    content = content[content.find('<img '):]
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    content = content[content.find('/>')+2:]
+        else:
+            content = content[content.find('<section'):content.rfind('</section>')]
+            head = content[:content.find('</section>')+10]
+            html += head + '\n'
+            while content.find('<img ') != -1 or content.find('<p ') != -1:
+                if content.find('<img ') == -1:
+                    html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
+                    content = content[content.find('</p>')+4:]
+                elif content.find('<p ') == -1:
+                    content = content[content.find('<img '):]
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    content = content[content.find('/>')+2:]
+                elif content.find('<p ') < content.find('<img '):
+                    html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
+                    content = content[content.find('</p>')+4:]
+                else:
+                    content = content[content.find('<img '):]
+                    html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
+                    content = content[content.find('/>')+2:]
 
-        while content.find('<img ') != -1 or content.find('<p ') != -1:
-            if content.find('<img ') == -1:
-                html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
-                content = content[content.find('</p>')+4:]
-            elif content.find('<p ') == -1:
-                content = content[content.find('<img '):]
-                html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
-                content = content[content.find('/>')+2:]
-            elif content.find('<p ') < content.find('<img '):
-                html += content[content.find('<p '):content.find('</p>')+3] + '<br>'
-                content = content[content.find('</p>')+4:]
-            else:
-                content = content[content.find('<img '):]
-                html += '<div class="mdui-container">' + imgZoom(content[:content.find('/>')+1]) + '</div>' + '<br>'
-                content = content[content.find('/>')+2:]
-
-        print(content)
+        # print(content)
 
         with open('home_suf.html') as f:
             html += ''.join(f.readlines())
         
-        with open('./archive/' + uri[uri.rfind('/')+1:] + '.html', 'w', encoding='utf8') as f:
+        with open('./archive/' + uri[uri.rfind('/')+1:] + '.html', 'w', encoding='utf16') as f:
             print(html, file = f)
         return 0
     
@@ -68,4 +91,4 @@ def mark(uri: str) -> int:      # return an error code.
 
 
 if __name__ == '__main__':
-    print(mark('https://www.economist.com/leaders/2023/01/12/the-destructive-new-logic-that-threatens-globalisation'))
+    print(mark('https://www.economist.com/interactive/business/2023/01/14/investments-in-ports-foretell-the-future-of-global-commerce'))
